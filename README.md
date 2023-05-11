@@ -1,20 +1,10 @@
 ## Ng Exercises  [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1)
 Welcome to Speed Code Exercises.
-This project is the base project for "Angular Skill".
 
-## This version : main : 20230511-1745
-This current version is an "ng new ..." project.
-It's purpose is to be a starting point for every Assignment + Solution.
+## This branch is : Card-20230511-1758-Q
 
-## How to create an assignment branch from this main branch
-
-### Step 1 : Create a name for the branch
-- (1) Each assignments has 2 branches, a "Question" and an "Solution" branch.
-- (2) The question branch has all the codebase needed to start the assignment.
-- (3) The solution branch has all the codebase for the solution.
-- (4) Name Question branch with this convention: CARD-YYYMMDD-HHMM-Q
-    - For the solution branch use "S" instead of "Q".
-    - The timestamp section of the convention is from the card creation spreadsheet.
+### Assignment instructions :
+- Write code that the value of a parameter named "message" defined in ParentComponent is displayed in the template defined in ChildComponent
 
 ### Step - 2 : Create the branch
 - (1) Checkout "main branch". FYI it is locked so cannot change its content.
