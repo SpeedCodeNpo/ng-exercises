@@ -1,4 +1,4 @@
-## Ng Exercises  [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1)
+## Ng Exercises  [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1?file=README.md)
 Welcome to Speed Code Exercises.
 
 ## This branch is : Card-20230511-1758-Q
