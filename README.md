@@ -1,6 +1,4 @@
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1)
-
-## Ng Exercises
+## Ng Exercises  [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1)
 Welcome to Speed Code Exercises.
 This project is the base project for "Angular Skill".
 
