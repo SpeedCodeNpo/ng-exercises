@@ -1,18 +1,16 @@
-# ng-exercises
-
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1)
 
-# Ng Exercises
+## Ng Exercises
 Welcome to Speed Code Exercises.
 This project is the base project for "Angular Skill".
 
-# This version : main : 20230511-1745
+## This version : main : 20230511-1745
 This current version is an "ng new ..." project.
 It's purpose is to be a starting point for every Assignment + Solution.
 
-# How to create an assignment branch from this main branch
+## How to create an assignment branch from this main branch
 
-## Step 1 : Create a name for the branch
+### Step 1 : Create a name for the branch
 - (1) Each assignments has 2 branches, a "Question" and an "Solution" branch.
 - (2) The question branch has all the codebase needed to start the assignment.
 - (3) The solution branch has all the codebase for the solution.
@@ -20,7 +18,7 @@ It's purpose is to be a starting point for every Assignment + Solution.
     - For the solution branch use "S" instead of "Q".
     - The timestamp section of the convention is from the card creation spreadsheet.
 
-## Step - 2 : Create the branch
+### Step - 2 : Create the branch
 - (1) Checkout "zero-branch". FYI it is locked so cannot change its content.
 - (2) From this branch create your question branch example: git switch -c CARD-Q-20231106-1417
 - (3) Work on that branch and commit as many times as needed.
