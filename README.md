@@ -8,5 +8,11 @@ Welcome to Speed Code Exercises.
 - Make the parentComponent a child of AppComponent.
 - Add a unit test for the child component.
 
+- The output displayed should be:
+This is App Component
+This is Parent Component
+This is Child Component
+The Child Component message is: Hello, World!
+
 ### Assignment hint :
 - Create the components and use interpolation to pass the value of the message from parent to child componnet.
