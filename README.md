@@ -5,6 +5,8 @@ Welcome to Speed Code Exercises.
 
 ### Assignment instructions :
 - Write code that will display the value of a parameter named "message" defined in ParentComponent, in in a template belonging to component ChildComponent.
+- Make the parentComponent a child of AppComponent.
+- Add a unit test for the child component.
 
 ### Assignment hint :
 - Create the components and use interpolation to pass the value of the message from parent to child componnet.
