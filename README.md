@@ -15,3 +15,6 @@ The Child Component message is: Hello, World!
 
 ### Assignment hint :
 - Create the components and use interpolation to pass the value of the message from parent to child componnet.
+
+### Solution
+- The solution can be found at this link : [Card-20230511-1758-S](https://stackblitz.com/edit/ng-exercise1?file=README.md)
