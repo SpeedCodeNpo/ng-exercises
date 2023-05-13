@@ -16,4 +16,4 @@ Welcome to Speed Code Exercises.
 - Use two way binding.
 
 ### Solution
-- The solution can be found at this link : [Card-20230511-1758-S](https://stackblitz.com/edit/ng-exercise1?file=README.md)
+- The solution can be found at this link : [Card-20230513-2220-Q](https://stackblitz.com/edit/ng-exercise1?file=README.md)
