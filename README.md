@@ -28,7 +28,7 @@ It's purpose is to be a starting point for every Assignment + Solution.
 ### Step - 3 : Maintenance
 - (1) When need to fix bugs or update the Question or Soultion you can open a temporary branch under the branch you want to fix/update, when done merge to the parent branch and delete the temporary branch.
 
-##  A P E N D I X
+##  A P E N D I X :
 ### Template content to copy into new README.md file:
 - The content below is just an example, edit it to your specific project case.
 
