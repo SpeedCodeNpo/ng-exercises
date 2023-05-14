@@ -2,7 +2,7 @@
 
 Welcome to Speed Code Exercises.
 
-## This branch is : Card-20230513-2220-Q
+## This branch is : Card-20230513-2220-S
 
 ### Assignment instructions :
 
@@ -22,4 +22,4 @@ Welcome to Speed Code Exercises.
 
 ### Solution
 
-- The solution can be found at this link : [Card-20230513-2220-Q]()
+- The assignment can be found at this link : [Card-20230513-2220-Q]()
