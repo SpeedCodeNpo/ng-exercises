@@ -6,7 +6,7 @@ Welcome to Speed Code Exercises.
 
 ### Assignment title :
 
-- Implement two way binding with Angular directive
+Two way binding with directive
 
 ### Assignment instructions :
 
