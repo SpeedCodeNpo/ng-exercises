@@ -4,10 +4,14 @@ Welcome to Speed Code Exercises.
 
 ## This branch is : Card-20230513-2220-Q
 
+### Assignment title :
+
+- Implement two way binding with Angular directive
+
 ### Assignment instructions :
 
-- Show an example of angular two way binding using an input field.
-- The component name will be MyDemoComponent.
+- Implement two-way binding on an input box using an Angular directive.
+- Name the input component MyInputComponent.
 
 ### The output displayed should be:
 
