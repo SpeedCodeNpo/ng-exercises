@@ -24,6 +24,6 @@ Two way binding with directive
 
 - Use ngModel to implememnt two way binding.
 
-### Solution
-
-- The solution can be found at this link : [Card-20230513-2220-Q]()
+### Solution for this assignment:  
+- The solution branch can be found using this link:
+- https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230513-2220-s
