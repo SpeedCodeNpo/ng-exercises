@@ -3,6 +3,7 @@
 Welcome to Speed Code Exercises.
 
 ## This branch is : Card-20230513-2220-Q
+- GitHub link:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230513-2220-q
 
 ### Assignment title :
 
