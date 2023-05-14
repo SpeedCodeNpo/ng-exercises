@@ -1,7 +1,7 @@
 ## Ng Exercises  [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1?file=README.md)
-Welcome to Speed Code Exercises.
+Welcome to Speed Code Exercises Solution for Card-20230511-1758.
 
-## This branch is : Card-20230511-1758-Q
+## This branch is : Card-20230511-1758-S
 
 ### Assignment instructions :
 - Write code that will display the value of a parameter named "message" defined in ParentComponent, in in a template belonging to component ChildComponent.
