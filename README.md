@@ -3,6 +3,7 @@
 Welcome to Speed Code Exercises.
 
 ## This branch is : Card-20230513-2220-S
+- GitHub link:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230513-2220-s
 
 ### Assignment instructions :
 
@@ -20,6 +21,6 @@ Welcome to Speed Code Exercises.
 
 - Use ngModel to implememnt two way binding.
 
-### Solution
-
-- The assignment can be found at this link : [Card-20230513-2220-Q]()
+### Assignment GitHub link:  
+- The assignment branch is the starting point of the assignment.
+- https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230513-2220-q
