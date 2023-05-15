@@ -16,10 +16,9 @@ Two way binding with directive
 
 ### The output displayed should be:
 
-- Display an input element with a default placeholder value.
-- The default placeholder value is defined in the component class.
-- Under the input-box display text showing the content of the input-box dunamically.
-- When the user types in the input box the text below updates with same value.
+- Display an input element with a default value.
+- Under the input-box display text showing the same default value.
+- While the user types in the input box the text below needs to update with same value.
 
 ### Assignment hint :
 
