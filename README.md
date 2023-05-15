@@ -4,7 +4,7 @@ Welcome to Speed Code Exercises.
 
 ## This branch is : card-20230513-2220-q
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230515-1500-Q
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230515-1500-q
 
 ### Assignment title :
 
@@ -14,7 +14,7 @@ Two way binding with directive
 
 - Implement two-way binding on an input box using an Angular directive.
 - Name the input component MyInputComponent.
-- Do not use the [(ngModel)] two-way-binding directive, do this assignment.
+- DO NOT use the [(ngModel)] two-way-binding directive, do this assignment.
 
 ### User experience specification
 
