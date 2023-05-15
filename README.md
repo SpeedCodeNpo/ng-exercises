@@ -29,4 +29,5 @@ Two way binding with directive
 ### Solution for this assignment:
 
 - The solution branch can be found using this link:
-- https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230515-1500-s
+- GitHub:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230515-1500-s
+- Stackblitz:  https://stackblitz.com/edit/ng-exercise1-tlazxm?file=README.md
