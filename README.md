@@ -26,6 +26,17 @@ Two way binding with directive
 
 - Use ngModel to implememnt two way binding.
 
-### Link to the source assignment branch:
+### Assignment Solution :
+1. Create a new component called MyInputComponent.
+2. Inside the component's template create an input-box element with 2 bindings:
+   2a. The first binding is a property binding [value].
+      FYI, you may also use [ngValue] it is intended for all types 
+      while [value] is just for "string" types.
+   2b. The second binding is event-binding for keystrokes, use (keyup).
+       This means that after he user finished input of key then the event is triggered.
+3. In the component's typescript wireup the property and the event function.
 
+For more details see the solution code.
+
+### Link to the source assignment branch:
 - https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230515-1500-q
