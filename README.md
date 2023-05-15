@@ -29,4 +29,4 @@ Two way binding with directive
 ### Solution for this assignment:
 
 - The solution branch can be found using this link:
-- xxxxxxxxxxxxxxx
+- https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230515-1500-s
