@@ -12,7 +12,7 @@ Two way binding with directive
 
 ### Assignment instructions :
 
--xxxxx
+-xxxL CONTENT MY UPDATE xx
 
 ### User experience specification
 
