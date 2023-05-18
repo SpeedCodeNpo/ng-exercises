@@ -17,7 +17,7 @@ Binding to CSS style and class
 ### Page design
 - The page will display two sets of a text message & button/s.
 - This is how the display should look like: 
-- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/f549b248-8f06-4267-955f-c648c2d0e88e)
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a0ec8cde-c5b4-48b3-b140-46d04c0223b4)
 
 ### User experience
 - The first message is : "This is message one"
