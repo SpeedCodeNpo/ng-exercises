@@ -1,31 +1,30 @@
 ## Ng Exercises
-Welcome to Speed Code Exercises
+- Welcome to Speed Code Exercises
+- Instructions for assignment: card-20230516-1220
 
-
-## This branch is the assignment : card-20230516-1220
+## This branch is the instructions an start-project for card-20230516-1220
 - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230616-1220-q
 
 ### Assignment title :
-Binding to CSS style and class
+Binding to CSS class
 
 ### Assignment instructions :
-- Use two class binding ways to change the style of a message
+- Use class binding to add / remove a class from CSS element
 
 ### Page design
-- The page will display two sets of a text message & button/s.
-- This is how the display should look like: 
+- The page will display a message and button.
+- Example of display before and after clicking the button:
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a0ec8cde-c5b4-48b3-b140-46d04c0223b4)
 
 ### User experience
-- The first message is : "This is my message"
-- Under the message a button "CHANGE STYLE"
-- When clicking the button the style changes from default to this style:
+- The message to display is : "This is my message"
+- Under the message a button "CHANGE CLASS"
+- When clicking the button it toglles on/off a the message style from default style to: 
 - - color: purple; and font-size: xx-large;
 
 ### Assignment hint :
 - Use class binding syntax. It is the most suitable for handling a single class.
 
 ### Solution for this assignment:
-- The solution branch can be found using this link:
+- The branch with the solution for this assignment is at link: 
 - GitHub:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230516-1220-s
-- Stackblitz:  xxx
