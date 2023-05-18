@@ -1,13 +1,20 @@
 div {
-  padding: 5px;
+  margin-bottom: 10px;
 }
 .zoom-in {
   color: purple;
   font-size: xx-large;
-  padding: 5px;
 }
-.zoom-out {
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.blue {
   color: blue;
-  font-size: x-small;
-  padding: 5px;
+}
+
+button {
+  margin-right: 10px;
 }

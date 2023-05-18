@@ -6,14 +6,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.scss'],
 })
 export class FirstComponent {
-  isBtnOne = false;
-  isBtnTwo = false;
+  isBtnStyle = false;
+  isRed = false;
+  isGreen = false;
+  isBlue = false;
+  //isBtnTwo = false;
 
   clickBtnOne() {
-    this.isBtnOne = true;
+    this.isBtnStyle = !this.isBtnStyle;
   }
 
-  clickBtnTwo() {
-    this.isBtnTwo = true;
+  toggleRed() {
+    this.isRed = !this.isRed;
+    this.isGreen = false;
+    this.isBlue = false;
   }
+
+  toggleGreen() {
+    this.isRed = false;
+    this.isGreen = !this.isGreen;
+    this.isBlue = false;
+  }
+
+  toggleBlue() {
+    this.isRed = false;
+    this.isGreen = false;
+    this.isBlue = !this.isBlue;
+  }
+
+  resetColor() {
+    this.isRed = false;
+    this.isGreen = false;
+    this.isBlue = false;
+  }
+
+  // clickBtnTwo() {
+  //   this.isBtnTwo = true;
+  // }
 }

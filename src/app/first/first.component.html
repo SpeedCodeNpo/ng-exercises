@@ -1,5 +1,18 @@
-<div [class.zoom-in]="isBtnOne">This is message one</div>
-<button (click)="clickBtnOne()">CHANGE STYLE 1</button>
+<div [class.zoom-in]="isBtnStyle">This is message one</div>
+<button (click)="clickBtnOne()">CHANGE STYLE</button>
 
-<div [ngClass]="{ 'zoom-out': isBtnTwo }">This is message two</div>
-<button (click)="clickBtnTwo()">CHANGE STYLE 2</button>
+<div
+  [ngClass]="{
+    red: isRed,
+    green: isGreen,
+    blue: isBlue
+  }"
+>
+  <p>This is message two</p>
+</div>
+<div>
+  <button (click)="toggleRed()">RED</button>
+  <button (click)="toggleGreen()">GREEN</button>
+  <button (click)="toggleBlue()">BLUE</button>
+  <button (click)="resetColor()">RESET</button>
+</div>
