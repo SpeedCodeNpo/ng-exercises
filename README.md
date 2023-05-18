@@ -16,6 +16,7 @@ Binding to CSS style and class
 
 ### User experience specification
 - The page will display two sets each having a text message (inside a div) and a button.
+- How the page needs to look like:
 
 - The first message is : This is message one
 - Under the message a button "CHANGE STYLE 1"
