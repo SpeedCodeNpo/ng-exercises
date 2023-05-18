@@ -6,15 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.scss'],
 })
 export class FirstComponent {
-  isBtnStyle = false;
   isRed = false;
   isGreen = false;
   isBlue = false;
   //isBtnTwo = false;
-
-  clickBtnOne() {
-    this.isBtnStyle = !this.isBtnStyle;
-  }
 
   toggleRed() {
     this.isRed = !this.isRed;

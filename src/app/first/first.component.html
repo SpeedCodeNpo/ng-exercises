@@ -1,6 +1,3 @@
-<div [class.zoom-in]="isBtnStyle">This is my message</div>
-<button (click)="clickBtnOne()">CHANGE STYLE</button>
-
 <div
   [ngClass]="{
     red: isRed,
@@ -9,10 +6,10 @@
   }"
 >
   <p>This is my color changing message</p>
-</div>
-<div>
+  
   <button (click)="toggleRed()">RED</button>
   <button (click)="toggleGreen()">GREEN</button>
   <button (click)="toggleBlue()">BLUE</button>
   <button (click)="resetColor()">RESET</button>
 </div>
+
