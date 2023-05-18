@@ -1,6 +1,6 @@
 ## Ng Exercises
-Welcome to Speed Code Exercises
-This is the solution for assignment: card-20230516-1220
+- Welcome to Speed Code Exercises
+- Solution for assignment: card-20230516-1220
 
 ## This branch is the solution for card-20230516-1220
 - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230616-1220-s
@@ -13,7 +13,7 @@ Binding to CSS class
 
 ### Page design
 - The page will display a message and button.
-- Example of display:
+- Example of display before and after clicking the button:
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a0ec8cde-c5b4-48b3-b140-46d04c0223b4)
 
 ### User experience
