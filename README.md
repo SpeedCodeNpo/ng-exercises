@@ -1,6 +1,6 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Assignment:  card-20230518-1828
+Instructions for assignment:  card-20230518-1828
 
 ## This branch is : card-20230518-1828-q
 - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230618-1828-q
