@@ -15,29 +15,33 @@ Binding to CSS style and class
 - Use two class binding ways to change the style of a message
 
 ### Page design
-- The page will display two sets of text & button/s
-- See this screen shot for illustration:
+- The page will display two sets of a text message & button/s.
+- This is how the display should look like: 
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/f549b248-8f06-4267-955f-c648c2d0e88e)
 
 ### User experience
 - The first message is : "This is message one"
 - Under the message a button "CHANGE STYLE"
-- When clicking the button the style changes so that :
-- - The color is purple
-- - The font-size is xx-large
--
+- When clicking the button the style changes from default to this style:
+- - color: purple; and font-size: xx-large;
+-_______
 - The second message is : "This is message two"
-- Under the message a button "CHANGE STYLE 2"
-- When clicking the button the style changes so that :
-- - The color is blue
-- - The font-size is x-small
+- - The message needs to be in font-size: large;
+-
+- Under the message display 4 buttons RED, GREEN, BLUE & RESET
+-
+- When clicking on each of the color buttons the color toggles between the default to the color.
+- - For example clicking on GREEN will toggle between grren and default.
+-
+- When clicking on the RESET button then color resets to default.
+- - After reset the color buttons need to return to their default state (not remember their last state)
 
 ### Assignment hint :
 
-- The first way is to use the class binding syntax.
-- - This way is best suiyted for handling a single class.
-- The second way is to use ngClass.
-- - [ngClass] is more usefull for cases of handlig multiple classes on a condition and also when the class add/remove is dependent on data that is dynamically and  frequenty changing.
+- For the first message use class binding syntax.
+- - It is the most suitable for handling a single class.
+- The second way is to use ngClass directive.
+- - ngClass is more suitable for handling multiple classes on a condition, and when the addition or removal of classes is dependent on data that is dynamically and frequently changing.
 
 ### Solution for this assignment:
 
