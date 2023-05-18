@@ -17,6 +17,7 @@ Binding to CSS style and class
 ### User experience specification
 - The page will display two sets each having a text message (inside a div) and a button.
 - How the page needs to look like:
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/f549b248-8f06-4267-955f-c648c2d0e88e)
 
 - The first message is : This is message one
 - Under the message a button "CHANGE STYLE 1"
