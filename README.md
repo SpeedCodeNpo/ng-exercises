@@ -14,18 +14,19 @@ Binding to CSS style and class
 
 - Use two class binding ways to change the style of a message
 
-### User experience specification
-- The page will display two sets each having a text message (inside a div) and a button.
-- How the page needs to look like:
+### Page design
+- The page will display two sets of text & button/s
+- See this screen shot for illustration:
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/f549b248-8f06-4267-955f-c648c2d0e88e)
 
-- The first message is : This is message one
-- Under the message a button "CHANGE STYLE 1"
+### User experience
+- The first message is : "This is message one"
+- Under the message a button "CHANGE STYLE"
 - When clicking the button the style changes so that :
 - - The color is purple
 - - The font-size is xx-large
 -
-- The second message is : This is message two
+- The second message is : "This is message two"
 - Under the message a button "CHANGE STYLE 2"
 - When clicking the button the style changes so that :
 - - The color is blue
