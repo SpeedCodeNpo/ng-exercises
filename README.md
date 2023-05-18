@@ -14,7 +14,7 @@ Binding to CSS style and class using a directive
 ### Page design
 - The page will display a message and 4 buttons that control the style.
 - This is how the display should look like: 
-- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a0ec8cde-c5b4-48b3-b140-46d04c0223b4)
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/7ee4b86a-7fb3-499a-a532-064d7b5cff39)
 
 ### User experience
 - The message is : "This is my color changing message"
