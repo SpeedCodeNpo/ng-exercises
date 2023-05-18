@@ -23,7 +23,7 @@ Binding to CSS style and class using a directive
 - Under the message display 4 buttons RED, GREEN, BLUE & RESET
 -
 - When clicking on each of the color buttons the color toggles between the default to the color.
-- - For example clicking on GREEN will toggle between grren and default.
+- - For example clicking on GREEN will toggle between green and default.
 -
 - When clicking on the RESET button then color resets to default.
 - - After reset the color buttons need to return to their default state (not remember their last state)
@@ -31,9 +31,8 @@ Binding to CSS style and class using a directive
 ### Assignment hint :
 - Use the 'ngClass' directive.
 - - ngClass is suitable for handling multiple classes on a condition
-- - Also FYI, it is usefull when the addition/removal of classes is dependent on data that is dynamically and frequently changing.
+- - Also FYI, ngClass is usefull when the addition/removal of classes is dependent on data that is dynamically and frequently changing.
 
 ### Solution for this assignment:
 - The solution branch can be found using this link:
 - GitHub:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230516-1220-s
-- Stackblitz:  xxx
