@@ -17,7 +17,7 @@ Binding to CSS style and class using a directive
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a0ec8cde-c5b4-48b3-b140-46d04c0223b4)
 
 ### User experience
-- The message is : "This is my message"
+- The message is : "This is my color changing message"
 - - The message needs to be in font-size: large;
 -
 - Under the message display 4 buttons RED, GREEN, BLUE & RESET
