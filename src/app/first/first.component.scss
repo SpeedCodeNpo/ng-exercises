@@ -1,7 +1,19 @@
 div {
-  margin-bottom: 10px;
+  margin: 10px;
 }
 .my-custom-class {
   color: purple;
   font-size: xx-large;
+}
+
+.my-box {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid blue;
+  background-color: red;
+}
+
+button {
+  margin: 5px;
 }

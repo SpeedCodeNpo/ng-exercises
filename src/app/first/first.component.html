@@ -1,2 +1,9 @@
 <div [class.my-custom-class]="isMyCustomClass">This is my message</div>
 <button (click)="clickChangeClass()">CHANGE CLASS</button>
+<div></div>
+<div>Change the box height:</div>
+<div>
+  <button (click)="increaseSize()">BIGGER</button>
+  <button (click)="decreaseSize()">SMALLER</button>
+</div>
+<div class="my-box" [style.height.px]="boxSize"></div>

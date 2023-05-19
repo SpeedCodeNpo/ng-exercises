@@ -7,9 +7,17 @@ import { Component } from '@angular/core';
 })
 export class FirstComponent {
   isMyCustomClass = false;
+  boxSize = 50;
 
   clickChangeClass() {
     this.isMyCustomClass = !this.isMyCustomClass;
   }
- 
+
+  increaseSize() {
+    this.boxSize += 10;
+  }
+
+  decreaseSize() {
+    this.boxSize -= 10;
+  }
 }
