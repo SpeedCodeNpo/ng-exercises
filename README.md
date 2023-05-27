@@ -6,33 +6,31 @@ Solution for assignment:  card-20230526-1133
 - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230526-1133-q
 
 ### Assignment title :
-Binding to CSS style and class using a directive
+Binding using multiple binding tools:
+ Includes: event-binding, property-binding, style-binding
 
 ### Assignment instructions :
-- Use class binding with a directive to switch between multiple CSS classes of a div
 
 ### Page design
-- The page will display a message and 4 buttons that control the style.
-- This is how the display should look like before and after clicking the GREEN button: 
-- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/1ee3ccac-bb2b-4db8-8c2c-391bc54cd13f)
+- The interface resembles a form (but dont use angular form tools).
+- Here is an illustration of the page design:
+- ![image](link here)
 
-### User experience
-- The message is : "This is my color changing message"
-- - The message needs to be in font-size: large;
--
-- Under the message display 4 buttons RED, GREEN, BLUE & RESET
--
-- When clicking on each of the color buttons the color toggles between the default to the color.
-- - For example clicking on GREEN will toggle between green and default.
--
-- When clicking on the RESET button then color resets to default.
-- - After reset the color buttons need to return to their default state (not remember their last state)
+### User experience :
+Here is the user flow:
+(1) The user chooses the max number of letters (up to 10)
+(2) The user picks word category using checkboxes.
+       (animals, vehicles, food).
+(3) The user clicks "scramble" button.
+(4) The user sees the scramble.
+(5) Then user types the word they think it is.
+(6) User clicks submit and feedback  correct / wrong is replied.
+(7) If correct then input field resets and submit disabled.
+(8) If wrong can retype or click show answer.
 
 ### Assignment hint :
-- Use the 'ngClass' directive.
-- - ngClass is suitable for handling multiple classes on a condition
-- - Also FYI, ngClass is usefull when the addition/removal of classes is dependent on data that is dynamically and frequently changing.
+- Use event binding for the checkboxes
 
 ### Solution for this assignment:
 - The solution branch can be found using this link:
-- GitHub:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230516-1220-q
+- GitHub:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230526-1133-s
