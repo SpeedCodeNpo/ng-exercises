@@ -6,10 +6,23 @@ Solution for assignment:  card-20230526-1133
 - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230526-1133-q
 
 ### Assignment title :
-Binding using multiple binding tools:
- Includes: event-binding, property-binding, style-binding
+Word scramble game using data binding
 
 ### Assignment instructions :
+- As a starting point you are given a service (in the 'core' module).
+- Your task is to create the app described below by creating a feature component
+  that displays the user interface and does the interaction logic while using the 
+  included DataService component in the src/core/services folder.
+-
+### Overview of the included DataService :
+This service includes 3 lists of words and on method.
+-
+- The method enables you to filter a specific list with words of given length or less.
+- - You need to inject the service into your module.
+- - Then you can access one of the 3 lists, 
+- - - Example-1 : const animalList = this.dataService.animals will return a list with animal words.
+- - - Example-2 : this.dataService.getByLength(animalList, 3); will return a filtered list with only words 3 letters or less.
+
 
 ### Page design
 - The interface resembles a form (but dont use angular form tools).
