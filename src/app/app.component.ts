@@ -10,7 +10,6 @@ export class AppComponent {
   dataService: DataService;
 
   constructor() {
-    // OK: constructor body
     this.dataService = inject(DataService);
   }
 
