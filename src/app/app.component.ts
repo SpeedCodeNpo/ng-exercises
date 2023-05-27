@@ -15,6 +15,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    // Tיhe following is an example of how to use the DataService:
     console.log(this.dataService.animals);
     const myList = this.dataService.getByLength(this.dataService.animals, 3);
     console.log(myList);
