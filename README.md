@@ -1,9 +1,10 @@
-## Ng Exercises
+# Ng Exercises
 Welcome to Speed Code Exercises
-Solution for assignment:  card-20230526-1133
 
-## This branch is : card-20230526-1133-q
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230526-1133-q
+## Solution for assignment:  card-20230526-1133
+
+## Branch name:  card-20230526-1133-s
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230526-1133-s
 
 ### Assignment title :
 Word scramble game using data binding
