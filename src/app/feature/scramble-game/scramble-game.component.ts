@@ -9,6 +9,9 @@ import { DataService } from 'src/app/core/services/data.service';
 export class ScrambleGameComponent {
   dataService: DataService;
   maxWordLength: number = 0;
+  useAnimals = false;
+  useVehicals = false;
+  useFoods = false;
 
   constructor() {
     this.dataService = inject(DataService);
@@ -39,8 +42,43 @@ export class ScrambleGameComponent {
     console.log(this.maxWordLength);
   }
 
+  onUseAnimals() {
+    this.useAnimals = !this.useAnimals;
+    console.log('Animals : ' + this.useAnimals);
+  }
+
+  onUseVehicals() {
+    this.useVehicals = !this.useVehicals;
+    console.log('Vehicals : ' + this.useVehicals);
+  }
+
+  onUseFoods() {
+    this.useFoods = !this.useFoods;
+    console.log('Foods : ' + this.useFoods);
+  }
+
   onScrambleWord() {
-    console.log(`input length is : ${this.maxWordLength}`);
+    //==== Step 1: Create a list of the potential words
+    // console.log(this.dataService.animals);
+    let listOfChosenWords: string[] = [];
+
+    if (this.useAnimals) {
+      listOfChosenWords.push(...this.dataService.animals);
+    }
+    if (this.useVehicals) {
+      listOfChosenWords.push(...this.dataService.vehicals);
+    }
+    if (this.useFoods) {
+      listOfChosenWords.push(...this.dataService.food);
+    }
+    console.log(listOfChosenWords);
+
+    //==== Step 2: From the list get only words that are <= max length
+    const chosenWord: string = this.dataService.getOneByLength(
+      listOfChosenWords,
+      this.maxWordLength
+    );
+    console.log(chosenWord);
   }
 
   onShowAnswer() {}

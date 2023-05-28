@@ -58,7 +58,18 @@ export class DataService {
 
   getByLength(wordList: string[], wordLength: number): string[] {
     const filteredList = wordList.filter((word) => word.length <= wordLength);
-
     return filteredList;
   }
+
+  getOneByLength(wordList: string[], wordLength: number): string {
+    const listOfWords = this.getByLength(wordList , wordLength);
+
+    const lengthOflistOfWords = listOfWords.length;
+
+    const randomIndex = Math.floor(Math.random() * lengthOflistOfWords);
+  
+    return listOfWords[randomIndex];
+
+  }
+
 }
