@@ -18,7 +18,7 @@ Word scramble game using data binding
 ### Overview of the included DataService :
 This service includes 3 lists of words and on method.
 -
-- The method enables you to filter a specific list with words of given length or less.
+- The method enables you to  filter a specific list with words of given length or less.
 - - You need to inject the service into your module.
 - - Then you can access one of the 3 lists, 
 - - - Example-1 : const animalList = this.dataService.animals will return a list with animal words.

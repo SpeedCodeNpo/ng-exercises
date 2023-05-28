@@ -1,1 +1,38 @@
-<p>scramble-game works!</p>
+<h1>Word Scramble Game</h1>
+<div>
+  <label for="word-length">Max word length:</label>
+  <input
+    id="word-length"
+    type="text"
+    (input)="onInputLength($any($event.target).value)"
+  />
+</div>
+<div>
+  <label for="check-animals">Include animals</label>
+  <input id="check-animals" type="checkbox" />
+</div>
+<div>
+  <label for="check-vehicals">Include vehicals</label>
+  <input id="check-vehicals" type="checkbox" />
+</div>
+<div>
+  <label for="check-foods">Include foods</label>
+  <input id="check-foods" type="checkbox" />
+</div>
+<div>
+  <button (click)="onScrambleWord()">Scramble Word</button>
+</div>
+<div>
+  <label for="word-attempt">What is the word:</label>
+  <input id="word-attempt" type="text" />
+</div>
+<div>
+  <h2>SUCCESS !</h2>
+</div>
+<div>
+  <button (click)="onShowAnswer()">Show Answer</button>
+</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
