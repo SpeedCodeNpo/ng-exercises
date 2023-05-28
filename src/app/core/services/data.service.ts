@@ -1,3 +1,4 @@
+import { I18nPluralPipe } from '@angular/common';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -7,22 +8,16 @@ export class DataService {
   //animals, vehicles, food
 
   animals = [
-    'cat',
-    'dog',
     'mouse',
     'bird',
     'fish',
     'elephant',
-    'cow',
-    'pig',
     'rabbit',
     'horse',
   ];
 
   vehicals = [
-    'car',
     'truck',
-    'bus',
     'motorcycle',
     'bicycle',
     'ship',
@@ -62,14 +57,28 @@ export class DataService {
   }
 
   getOneByLength(wordList: string[], wordLength: number): string {
-    const listOfWords = this.getByLength(wordList , wordLength);
+    const listOfWords = this.getByLength(wordList, wordLength);
 
-    const lengthOflistOfWords = listOfWords.length;
+    if (listOfWords) {
+      const lengthOflistOfWords = listOfWords.length;
 
-    const randomIndex = Math.floor(Math.random() * lengthOflistOfWords);
-  
-    return listOfWords[randomIndex];
+      const randomIndex = Math.floor(Math.random() * lengthOflistOfWords);
 
+      return listOfWords[randomIndex];
+    }
+
+    return '';
   }
 
+  scrambleThisWord(inputWord: string): string{
+
+    // Create an array of the letters in the word.
+    const letters = Array.from(inputWord);
+  
+    // Shuffle the letters in the array.
+    letters.sort(() => Math.random() - 0.5);
+  
+    // Return the scrambled word.
+    return letters.join('');
+  }
 }

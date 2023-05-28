@@ -12,6 +12,8 @@ export class ScrambleGameComponent {
   useAnimals = false;
   useVehicals = false;
   useFoods = false;
+  chosenWord = '';
+  scrambledWord = '';
 
   constructor() {
     this.dataService = inject(DataService);
@@ -71,14 +73,23 @@ export class ScrambleGameComponent {
     if (this.useFoods) {
       listOfChosenWords.push(...this.dataService.food);
     }
-    console.log(listOfChosenWords);
+    //console.log(listOfChosenWords);
 
     //==== Step 2: From the list get only words that are <= max length
-    const chosenWord: string = this.dataService.getOneByLength(
+    this.chosenWord = this.dataService.getOneByLength(
       listOfChosenWords,
       this.maxWordLength
     );
-    console.log(chosenWord);
+
+    if (!this.chosenWord) {
+      console.log('No words found. Try again.');
+    } else {
+      this.scrambledWord = this.dataService.scrambleThisWord(this.chosenWord);
+      console.log('word = ' + this.chosenWord);
+      console.log('scrambledWord = ' + this.scrambledWord);
+    }
+
+    //==== Step 2: From the list get only words that are <= max length
   }
 
   onShowAnswer() {}
