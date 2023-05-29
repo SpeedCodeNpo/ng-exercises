@@ -58,7 +58,32 @@ export class DataService {
 
   getByLength(wordList: string[], wordLength: number): string[] {
     const filteredList = wordList.filter((word) => word.length <= wordLength);
-
     return filteredList;
+  }
+
+  getOneByLength(wordList: string[], wordLength: number): string {
+    const listOfWords = this.getByLength(wordList, wordLength);
+
+    if (listOfWords) {
+      const lengthOflistOfWords = listOfWords.length;
+
+      const randomIndex = Math.floor(Math.random() * lengthOflistOfWords);
+
+      return listOfWords[randomIndex];
+    }
+
+    return '';
+  }
+
+  scrambleThisWord(inputWord: string): string{
+
+    // Create an array of the letters in the word.
+    const letters = Array.from(inputWord);
+  
+    // Shuffle the letters in the array.
+    letters.sort(() => Math.random() - 0.5);
+  
+    // Return the scrambled word.
+    return letters.join('');
   }
 }
