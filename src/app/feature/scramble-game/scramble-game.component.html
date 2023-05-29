@@ -28,18 +28,17 @@
   <h2>{{ scrambledWord }}</h2>
 </div>
 <div>
-  <p>What do you think the word is ? (click enter to see result): </p>
+  <p>What do you think the word is ?</p>
   <div>
-    <input type="text" [(ngModel)]="userAnswer" />
-    <input #answer (keyup.enter)="onEnterAnswer(answer.value)">
+    <input #answer (keyup.enter)="onEnterAnswer(answer.value)" />
   </div>
-</div>
-<div>--</div>
-<div>
-  <button (click)="onSubmitAnswer()">Submit</button>
+  <p>Click ENTER to see result.</p>
 </div>
 <div>
   <h2>{{ answerResult }}</h2>
 </div>
 
-<div></div>
+<div>---</div>
+<div>
+  <button (click)="onNewGame()">New Game</button>
+</div>

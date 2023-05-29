@@ -15,7 +15,7 @@ export class ScrambleGameComponent {
   chosenWord = '';
   scrambledWord = '';
   answerResult = '';
-  @Input() userAnswer = '';
+  userAnswer = '';
 
   constructor() {
     this.dataService = inject(DataService);
@@ -95,11 +95,15 @@ export class ScrambleGameComponent {
   }
 
   onEnterAnswer(answer: string) {
-    console.log('userAnswer' + this.userAnswer);
-    if (this.chosenWord === this.chosenWord) {
+    console.log('userAnswer = ' + answer);
+    if (answer === this.chosenWord) {
       this.answerResult = 'SUCCESS !';
     } else {
       this.answerResult = 'w r o n g - a n s w e r';
     }
+  }
+
+  onNewGame() {
+    location.reload();
   }
 }
