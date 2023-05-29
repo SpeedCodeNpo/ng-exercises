@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { DataService } from 'src/app/core/services/data.service';
 
 @Component({
@@ -14,6 +14,8 @@ export class ScrambleGameComponent {
   useFoods = false;
   chosenWord = '';
   scrambledWord = '';
+  answerResult = '';
+  @Input() userAnswer = '';
 
   constructor() {
     this.dataService = inject(DataService);
@@ -92,5 +94,12 @@ export class ScrambleGameComponent {
     //==== Step 2: From the list get only words that are <= max length
   }
 
-  onShowAnswer() {}
+  onSubmitAnswer() {
+    console.log('userAnswer' + this.userAnswer);
+    if (this.chosenWord === this.chosenWord) {
+      this.answerResult = 'SUCCESS !';
+    } else {
+      this.answerResult = 'w r o n g - a n s w e r';
+    }
+  }
 }

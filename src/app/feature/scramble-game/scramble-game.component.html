@@ -19,6 +19,7 @@
   <label for="check-foods">Include foods</label>
   <input id="check-foods" type="checkbox" (click)="onUseFoods()" />
 </div>
+<div>--</div>
 <div>
   <button (click)="onScrambleWord()">Scramble Word</button>
 </div>
@@ -27,16 +28,17 @@
   <h2>{{ scrambledWord }}</h2>
 </div>
 <div>
-  <label for="word-attempt">What is the word:</label>
-  <input id="word-attempt" type="text" />
+  <label for="word-attempt">What do you think the word is ? : </label>
+  <div>
+    <input id="word-attempt" type="text" [input]="userAnswer" />
+  </div>
+</div>
+<div>--</div>
+<div>
+  <button (click)="onSubmitAnswer()">Submit</button>
 </div>
 <div>
-  <h2>SUCCESS !</h2>
-</div>
-<div>
-  <button (click)="onShowAnswer()">Show Answer</button>
+  <h2>{{ answerResult }}</h2>
 </div>
 
-<div></div>
-<div></div>
 <div></div>
