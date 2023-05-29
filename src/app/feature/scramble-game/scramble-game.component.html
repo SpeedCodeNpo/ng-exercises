@@ -28,9 +28,10 @@
   <h2>{{ scrambledWord }}</h2>
 </div>
 <div>
-  <label for="word-attempt">What do you think the word is ? : </label>
+  <p>What do you think the word is ? (click enter to see result): </p>
   <div>
-    <input id="word-attempt" type="text" [input]="userAnswer" />
+    <input type="text" [(ngModel)]="userAnswer" />
+    <input #answer (keyup.enter)="onEnterAnswer(answer.value)">
   </div>
 </div>
 <div>--</div>

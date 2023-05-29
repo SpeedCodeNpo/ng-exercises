@@ -94,7 +94,7 @@ export class ScrambleGameComponent {
     //==== Step 2: From the list get only words that are <= max length
   }
 
-  onSubmitAnswer() {
+  onEnterAnswer(answer: string) {
     console.log('userAnswer' + this.userAnswer);
     if (this.chosenWord === this.chosenWord) {
       this.answerResult = 'SUCCESS !';
