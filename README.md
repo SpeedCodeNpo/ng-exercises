@@ -28,9 +28,10 @@ Here is the user flow:
 
 ### Page design
 - The interface resembles a form (but dont use angular form tools).
-- Here is an illustration of the page design:
+### Before user input, illustration of webpage : 
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0a4cf87e-a5aa-4ff2-96d4-b24e6f121004)
-
+### After user input: case of wrong answer (in the example the correct answer is 'ship'):
+- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0d3dba65-9236-4c6c-aa5e-2f57b26590bb)
 
 ### Overview of the included DataService :
 - The DataService component is located in 'src/core/services'.
