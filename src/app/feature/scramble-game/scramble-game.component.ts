@@ -14,7 +14,7 @@ export class ScrambleGameComponent {
   useFoods = false;
   chosenWord = '';
   scrambledWord = '';
-  answerResult = '';
+  answerResult = ''; // Other possible values : 'Correct', 'Wrong'
   userAnswer = '';
 
   constructor() {
@@ -97,9 +97,9 @@ export class ScrambleGameComponent {
   onEnterAnswer(answer: string) {
     console.log('userAnswer = ' + answer);
     if (answer === this.chosenWord) {
-      this.answerResult = 'SUCCESS !';
+      this.answerResult = 'Sucess';
     } else {
-      this.answerResult = 'w r o n g - a n s w e r';
+      this.answerResult = 'Wrong';
     }
   }
 

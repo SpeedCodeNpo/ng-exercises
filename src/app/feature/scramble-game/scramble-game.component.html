@@ -35,7 +35,9 @@
   <p>Click ENTER to see result.</p>
 </div>
 <div>
-  <h2>{{ answerResult }}</h2>
+  <h2 [style.color]="answerResult === 'Wrong' ? 'red' : 'black'">
+    {{ answerResult }}
+  </h2>
 </div>
 
 <div>---</div>
