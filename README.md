@@ -10,6 +10,7 @@ Word scramble game using data binding
 
 ### Assignment instructions :
 - As a starting point you are given a service (in the 'core' module).
+- This service has the data (lists of words) and functions (to fetch and scramble words).
 - Your task is to create the app described below by creating a feature component
   that displays the user interface and does the interaction logic while using the 
   included DataService component in the src/core/services folder.
@@ -27,7 +28,7 @@ This service includes 3 lists of words and on method.
 ### Page design
 - The interface resembles a form (but dont use angular form tools).
 - Here is an illustration of the page design:
-- ![image](link here)
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0a4cf87e-a5aa-4ff2-96d4-b24e6f121004)
 
 ### User experience :
 Here is the user flow:
