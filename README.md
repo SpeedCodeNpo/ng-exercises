@@ -19,6 +19,9 @@ Display cards from an array of cards
 - Your task is to display the cards create a one page app word game.
 - You will need to implement data binding.
 
+### Illustration :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e994173c-11a4-4c55-865e-ddd75caab4e4)
+
 ### User experience :
 Here is the user flow:
 (1) The user chooses the max number of letters (up to 10)
