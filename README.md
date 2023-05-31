@@ -1,54 +1,54 @@
-## Ng Exercises  [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1)
-Welcome to Speed Code Exercises.
-This project is the base project for "Angular Skill".
+## Ng Exercises
+Welcome to Speed Code Exercises
+Instructions for assignment:  card-20230531-1715
 
-## This version : main : 20230511-1745
-This current version is an "ng new ..." project.
-It's purpose is to be a starting point for every Assignment + Solution.
+### Practice goals :
+Practice using binding
 
-## How to create an assignment branch from this main branch
+## Branch name : card-20230526-1133-q
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-q
 
-### Step 1 : Create a name for the branch
-- (1) Each assignments has 2 branches, a "Question" and an "Solution" branch.
-- (2) The question branch has all the codebase needed to start the assignment.
-- (3) The solution branch has all the codebase for the solution.
-- (4) Name Question branch with this convention: CARD-YYYMMDD-HHMM-Q
-    - For the solution branch use "S" instead of "Q".
-    - The timestamp section of the convention is from the card creation spreadsheet.
-
-### Step - 2 : Create the branch
-- (1) Checkout "main branch". FYI it is locked so cannot change its content.
-- (2) From this branch create your question branch example: git switch -c CARD-20231106-1417-Q
-- - FYI When creating a new branch this README.md file is overwritten by an auto-created Stackblitz version.
-- (3) In the new README.md file copy the content in the APENDIX below and update it to your project.
-- (3) Work on that branch and commit as many times as needed.
-- (4) When done create from it another branch for the solution: git switch -c CARD-20231106-1417-S
-- (5) When done commiting all your coding sessions you are done working on the branch.
-
-### Step - 3 : Maintenance
-- (1) When need to fix bugs or update the Question or Soultion you can open a temporary branch under the branch you want to fix/update, when done merge to the parent branch and delete the temporary branch.
-
-##  A P E N D I X :
-### Template content to copy into new README.md file:
-- The content below is just an example, edit it to your specific project case.
-
-## Ng Exercises  
-Welcome to Speed Code Exercises.
-
-## This branch is : Card-20230511-1758-Q
+### Assignment title :
+Display cards from an array of cards
 
 ### Assignment instructions :
-- Write code that will display the value of a parameter named "message" defined in ParentComponent, in in a template belonging to component ChildComponent.
-- Make the parentComponent a child of AppComponent.
+- As a starting point you are given a service (in the 'core' module).
+- This service has the data, a list of game cards and get function.
+- The get function gets the number of cards you request.
+- 
+- Your task is to display the cards create a one page app word game.
+- You will need to implement data binding.
 
-- The output displayed should be:
-This is App Component
-This is Parent Component
-This is Child Component
-The Child Component message is: Hello, World!
+### User experience :
+Here is the user flow:
+(1) The user chooses the max number of letters (up to 10)
+(2) The user picks word category using checkboxes.
+       (animals, vehicles, food).
+(3) The user clicks "Scramble Word" button.
+(4) The user sees the scrambled word.
+(5) Then user types the word they think it is.
+(6) When user clicks ENTER they get feedback  success / wrong .
+(7) When wanting to play another round then user clicks the New Game button.
+
+### Page design
+- The interface resembles a form (but dont use angular form tools).
+### Before user input, illustration of webpage : 
+-
+### After user input: case of wrong answer (in the example the correct answer is 'ship'):
+- - 
+
+### Overview of the included DataService :
+- The DataService component is located in 'src/core/services'.
+- This service includes 3 lists of words and several methods.
+- 
+- The getOneByLength(string[], number) gets an array of strings (words) and a number representing max-length of words. From the words whose length is equal or lower than the required length, it  randomly chooses a word and returns it.
+- - Then you can access one of the 3 lists, 
+- - - Example-1 : const animalList = this.dataService.animals will return a list with animal words.
+- - - Example-2 : this.dataService.getOneByLength(myWordList, 4); will return a word from the myWordList whose length is no longer than 4.
 
 ### Assignment hint :
-- Create the components and use interpolation to pass the value of the message from parent to child componnet.
+- Use event binding for the checkboxes
 
-### Solution
-- The solution can be found at this link : [Card-20230511-1758-S](https://stackblitz.com/edit/ng-exercise1?file=README.md)
+### Solution for this assignment:
+- The solution branch can be found using this link:
+- GitHub:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-s
