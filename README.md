@@ -20,7 +20,7 @@ Display cards from an array of cards
 - You will need to implement data binding.
 
 ### Illustration :
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e994173c-11a4-4c55-865e-ddd75caab4e4)
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/9a0ef22f-3149-47e0-8b72-558217923da5)
 
 ### User experience :
 Here is the user flow:
