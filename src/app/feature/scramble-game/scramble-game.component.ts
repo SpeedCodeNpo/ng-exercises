@@ -7,7 +7,7 @@ import { DataService } from 'src/app/core/services/data.service';
   styleUrls: ['./scramble-game.component.scss'],
 })
 export class ScrambleGameComponent {
-  dataService: DataService;
+  dataService = inject(DataService);
   maxWordLength: number = 0;
   useAnimals = false;
   useVehicals = false;
@@ -16,10 +16,6 @@ export class ScrambleGameComponent {
   scrambledWord = '';
   answerResult = ''; // Other possible values : 'Correct', 'Wrong'
   userAnswer = '';
-
-  constructor() {
-    this.dataService = inject(DataService);
-  }
 
   ngOnInit() {
     // Tיhe following is an example of how to use the DataService:
