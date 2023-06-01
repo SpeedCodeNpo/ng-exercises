@@ -8,16 +8,12 @@ import { DataService } from 'src/app/core/services/data.service';
 })
 export class CardPageComponent {
   dataService = inject(DataService);
-  activeCards = this.dataService.dealCards(0);
-  requestedCards = 0;
+  activeCards = [this.dataService.dzCards[0]];
+  quantityOfCardsRequested = this.dataService.dzCards.length;
 
   onDealCards() {
-    if (this.requestedCards < 1 || this.requestedCards > 5) {
-      this.requestedCards = 5;
-    }
-    this.activeCards = this.dataService.dealCards(this.requestedCards);
-    console.log(
-      `Items in this.activeCards are = ${JSON.stringify(this.activeCards)}`
+    this.activeCards = this.dataService.dealCards(
+      this.quantityOfCardsRequested
     );
   }
 }

@@ -1,18 +1,17 @@
-<h1>Dragon Ball Z</h1>
 <div>
-  <p>How many cards do you want (max is 5)</p>
-  <input type="text" [(ngModel)]="requestedCards" />
+  <h1>Dragon Ball Z</h1>
+  <label>How many cards do you want : </label>
+  <input type="text" [(ngModel)]="quantityOfCardsRequested" />
 </div>
 <div>
   <button (click)="onDealCards()">DEAL CARDS</button>
-  <p>Quantity of cards chosen = {{ requestedCards }}</p>
 </div>
-<div>
-  <h2>a b</h2>
-  <img
-    src="https://stackblitz.com/files/ng-exercise1/github/SpeedCodeNpo/ng-exercises/card-20230531-1715-q/src/assets/files/1_goku_1000.png"
-  />
-  <div>Power-1-name Power-1-rank</div>
-  <div>Power-2-name Power-2-rank</div>
-  <div>Power-3-name Power-3-rank</div>
+<div class="card-body" *ngFor="let card of activeCards">
+  <h2>{{ card.titleName }} {{ card.titleHp }}</h2>
+  <img class="card-image" [src]="card.imageUrl" />
+  <div>
+    <p>{{ card.power1Name }} {{ card.power1Points }}</p>
+    <p>{{ card.power2Name }} {{ card.power2Points }}</p>
+    <p>{{ card.power3Name }} {{ card.power3Points }}</p>
+  </div>
 </div>

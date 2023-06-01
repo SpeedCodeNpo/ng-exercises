@@ -1,3 +1,19 @@
 div {
   margin: 10px;
 }
+
+input {
+  width: 30px;
+  text-align: center;
+}
+.card-body {
+  width: 220px;
+  padding: 10px;
+  text-align: center;
+  background-color: lightgray;
+  border: solid 1px black;
+}
+
+.card-image {
+  width: 200px;
+}

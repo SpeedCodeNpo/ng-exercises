@@ -23,7 +23,7 @@ export class DataService {
       titleName: 'Goku',
       titleHp: 330,
       imageUrl:
-        'https://stackblitz.com/edit/ng-exercise1?file=src%2Fapp%2Fcore%2Fservices%2Fdata.service.ts,src%2Fassets%2Ffiles%2F2_goku_330.png',
+        'https://stackblitz.com/files/ng-exercise1/github/SpeedCodeNpo/ng-exercises/card-20230531-1715-q/src/assets/files/2_goku_330.png',
       power1Name: 'Super Kamehameha',
       power1Points: 400,
       power2Name: 'Kamehameha',
@@ -35,7 +35,7 @@ export class DataService {
       titleName: 'Kid Goku',
       titleHp: 180,
       imageUrl:
-        'https://stackblitz.com/edit/ng-exercise1?file=src%2Fapp%2Fcore%2Fservices%2Fdata.service.ts,src%2Fassets%2Ffiles%2F3_kid_goku_180.png',
+        'https://stackblitz.com/files/ng-exercise1/github/SpeedCodeNpo/ng-exercises/card-20230531-1715-q/src/assets/files/3_kid_goku_180.png',
       power1Name: 'Kamehameha',
       power1Points: 100,
       power2Name: 'Power Pole Extend',
@@ -47,7 +47,7 @@ export class DataService {
       titleName: 'Son Goku',
       titleHp: 150,
       imageUrl:
-        'https://stackblitz.com/edit/ng-exercise1?file=src%2Fapp%2Fcore%2Fservices%2Fdata.service.ts,src%2Fassets%2Ffiles%2F4_son_goku_150.png',
+        'https://stackblitz.com/files/ng-exercise1/github/SpeedCodeNpo/ng-exercises/card-20230531-1715-q/src/assets/files/4_son_goku_150.png',
       power1Name: 'Meteor Crash',
       power1Points: 30,
       power2Name: 'Kamehameha',
@@ -59,11 +59,11 @@ export class DataService {
       titleName: 'God Goku',
       titleHp: 200,
       imageUrl:
-        'https://stackblitz.com/edit/ng-exercise1?file=src%2Fapp%2Fcore%2Fservices%2Fdata.service.ts,src%2Fassets%2Ffiles%2F5_god_goku_200.png',
+        'https://stackblitz.com/files/ng-exercise1/github/SpeedCodeNpo/ng-exercises/card-20230531-1715-q/src/assets/files/5_god_goku_200.png',
       power1Name: 'Akiras Blessing',
       power1Points: 10,
       power2Name: 'Main Protagonist',
-      power2Points: 10,
+      power2Points: 30,
       power3Name: 'Aurora Stream',
       power3Points: 40,
     },
@@ -93,23 +93,44 @@ export class DataService {
     return items;
   } //shuffle
 
+  /**
+   * This function will deal the deck of cards and
+   * return the number of cards requested.
+   *
+   * It will first verify input value. Only allows in range
+   * of 2 up to the number of cards in the deck.
+   *
+   * Then it shuffles all the deck cards.
+   * Finally it returns only the number of cards requested.
+   */
   dealCards(quantity: number) {
+    //Step 1 : first verify the input request
     const deckLength = this.dzCards.length;
-    if (quantity > deckLength) {
-      quantity = deckLength;
+    console.log(`deckLength = ${deckLength}`);
+    console.log(`requested quantity ${quantity} cards`);
+
+    if (quantity < 2 || quantity > deckLength) {
+      quantity = deckLength; //fallsback to default which return all cards
     }
 
-    console.log('quantity = ' + quantity);
+    //Step 2 : shuffle all the cards in the deck
+    const cardsToShuffle = this.dzCards.slice();
+    const dealtCards = cardsToShuffle;
+    console.log(
+      `shuffeled dzCards got dealtCards with ${dealtCards.length} cards inside`
+    );
 
-    let dealtCards = this.shuffle(this.dzCards);
-
-    //console.log(`dealtCards[]= ${JSON.stringify(dealtCards)}\n-----\n`);
-    for (let i = 0; i <= quantity - 1; i++) {
-      console.log(
-        `dealtCards[${i}] = ${JSON.stringify(dealtCards[i])}\n----\n`
-      );
-    } //for
-
+    //Step 3 : from the shuffled deck we take the first ones
+    //         by requested quantity.
+    dealtCards.splice(0, deckLength - quantity);
+    console.log(
+      `spliced dealtCards now it has ${dealtCards.length} cards inside`
+    );
     // console.log(`dealtCards[]= ${JSON.stringify(dealtCards)}`);
+
+    //We use slice() because it creates a new rference copy
+    // In other words it returns a brand new array that has identical items as
+    // the 'dealtCards' array.
+    return dealtCards.slice();
   } //dealCards
 }
