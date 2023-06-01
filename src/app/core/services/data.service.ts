@@ -69,8 +69,12 @@ export class DataService {
     },
   ];
 
-  shuffle(values: any[]) {
-    let index = values.length,
+  /**
+   * Input an array of items
+   * Returns the same array (same refrence) but the items inside are shuffled.
+   */
+  shuffle(items: any[]) {
+    let index = items.length,
       randomIndex;
 
     // While there remain elements to shuffle.
@@ -80,15 +84,13 @@ export class DataService {
       index--;
 
       // And swap it with the current element.
-      //Destructuring assignment allows you to unpack the values from an array into multiple variables. In this case, the destructuring assignment is unpacking the values from the array [values[index], values[randomIndex]] into the variables values[index] and values[randomIndex].
+      //We use a destructuring assignment, it allows you to unpack the values from an array into multiple variables.
+      // In this case, the destructuring assignment is unpacking the values from the array [items[index], items[randomIndex]] into the variables items[index] and items[randomIndex].
       // This is like [ a , b ] = [1 ,2]; It means that variable a will get the value 1 and variable b will get the value 2. Like a = 1 and b=2.
-      [values[index], values[randomIndex]] = [
-        values[randomIndex],
-        values[index],
-      ];
+      [items[index], items[randomIndex]] = [items[randomIndex], items[index]];
     }
 
-    return values;
+    return items;
   } //shuffle
 
   dealCards(quantity: number) {
@@ -99,15 +101,14 @@ export class DataService {
 
     console.log('quantity = ' + quantity);
 
-    const myTest = ['a', 'b', 'c', 'd'];
-    let dealtCards = this.shuffle(myTest); //this.dzCards);
+    let dealtCards = this.shuffle(this.dzCards);
 
-    console.log(`dealtCards[]= ${dealtCards}`);
-    // for (let i = 1; i <= quantity; i++) {
-    //   console.log('i= ' + i);
-
-    //   dealtCards.push(this.dzCards[i - 1]);
-    // } //for
+    //console.log(`dealtCards[]= ${JSON.stringify(dealtCards)}\n-----\n`);
+    for (let i = 0; i <= quantity - 1; i++) {
+      console.log(
+        `dealtCards[${i}] = ${JSON.stringify(dealtCards[i])}\n----\n`
+      );
+    } //for
 
     // console.log(`dealtCards[]= ${JSON.stringify(dealtCards)}`);
   } //dealCards
