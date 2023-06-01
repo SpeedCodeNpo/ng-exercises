@@ -81,6 +81,7 @@ export class DataService {
 
       // And swap it with the current element.
       //Destructuring assignment allows you to unpack the values from an array into multiple variables. In this case, the destructuring assignment is unpacking the values from the array [values[index], values[randomIndex]] into the variables values[index] and values[randomIndex].
+      // This is like [ a , b ] = [1 ,2]; It means that variable a will get the value 1 and variable b will get the value 2. Like a = 1 and b=2.
       [values[index], values[randomIndex]] = [
         values[randomIndex],
         values[index],
