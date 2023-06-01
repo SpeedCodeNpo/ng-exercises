@@ -1,8 +1,9 @@
 <h1>Dragon Ball Z</h1>
 <div>
   <p>How many cards do you want (max is 5)</p>
-  <input />
+  <input #answer (keyup.enter)="onEnterQuantity(answer.value)" />
 </div>
 <div>
   <button (click)="onDealCards()">DEAL CARDS</button>
+  <p>Quantity of cards chosen = {{ quantityOfCardsToDeal }}</p>
 </div>

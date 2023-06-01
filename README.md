@@ -6,7 +6,7 @@ Instructions for assignment:  card-20230531-1715
 Practice using binding
 
 ## Branch name : card-20230526-1133-q
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-q
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-s
 
 ### Assignment title :
 Display cards from an array of cards
