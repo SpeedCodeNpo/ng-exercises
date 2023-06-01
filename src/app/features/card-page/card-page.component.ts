@@ -8,8 +8,9 @@ import { DataService } from 'src/app/core/services/data.service';
 })
 export class CardPageComponent {
   dataService = inject(DataService);
-  activeCards = [this.dataService.dzCards[0]];
   quantityOfCardsRequested = this.dataService.dzCards.length;
+  // activeCards = [this.dataService.dzCards[0]];
+  activeCards = this.dataService.dealCards(this.quantityOfCardsRequested);
 
   onDealCards() {
     this.activeCards = this.dataService.dealCards(
