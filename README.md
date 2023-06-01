@@ -1,57 +1,55 @@
 ## Ng Exercises
+
 Welcome to Speed Code Exercises
-Instructions for assignment:  card-20230531-1715
+Instructions for assignment: card-20230531-1715
 
 ### Practice goals :
+
 Practice using binding
 
 ## Branch name : card-20230526-1133-q
+
 - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-s
 
 ### Assignment title :
-Display cards from an array of cards
+
+Display dealt cards from a "Dragon Ball Z" card deck.
 
 ### Assignment instructions :
+
 - As a starting point you are given a service (in the 'core' module).
-- This service has the data, a list of game cards and get function.
-- The get function gets the number of cards you request.
-- 
-- Your task is to display the cards create a one page app word game.
-- You will need to implement data binding.
-
-### Illustration :
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/9a0ef22f-3149-47e0-8b72-558217923da5)
-
-### User experience :
-Here is the user flow:
-(1) The user chooses the max number of letters (up to 10)
-(2) The user picks word category using checkboxes.
-       (animals, vehicles, food).
-(3) The user clicks "Scramble Word" button.
-(4) The user sees the scrambled word.
-(5) Then user types the word they think it is.
-(6) When user clicks ENTER they get feedback  success / wrong .
-(7) When wanting to play another round then user clicks the New Game button.
+- This service has the data, a list of game cards and 'dealCards(number)' function.
+- The function will return to you a shuffled number of cards from the deck.
+-
+- Your assignment is to display those cards and the UI for user to set number of cards and deal cards button.
 
 ### Page design
-- The interface resembles a form (but dont use angular form tools).
-### Before user input, illustration of webpage : 
--
-### After user input: case of wrong answer (in the example the correct answer is 'ship'):
-- - 
+
+When app starts the display shows all deck of cards, every click on DEAL CARDS causes cards to shuffle:
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/5677ccee-af70-43e1-b11b-2cfed9454c1f)
+
+- After user updates number of cards and clicks the DEAL Cards button then that amount of cards are dealt & displayed :
+  ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/b0311978-e309-4a1f-b0d9-00d66131ea58)
+
+### User experience :
+
+Here is the user flow:
+(1) The user chooses the number of cards to deal.
+(2) The user clicks on DEAL CARDS button.
+(3) The app displays the randomly shuffled and dealt cards.
+(4) Subsequent clicks on the button will reshuffle the same amount of cards.
 
 ### Overview of the included DataService :
+
 - The DataService component is located in 'src/core/services'.
-- This service includes 3 lists of words and several methods.
-- 
-- The getOneByLength(string[], number) gets an array of strings (words) and a number representing max-length of words. From the words whose length is equal or lower than the required length, it  randomly chooses a word and returns it.
-- - Then you can access one of the 3 lists, 
-- - - Example-1 : const animalList = this.dataService.animals will return a list with animal words.
-- - - Example-2 : this.dataService.getOneByLength(myWordList, 4); will return a word from the myWordList whose length is no longer than 4.
+- This service includes a list of cards and several methods.
 
 ### Assignment hint :
+
 - Use event binding for the checkboxes
+- use \*ngFor to display the array of cards
 
 ### Solution for this assignment:
+
 - The solution branch can be found using this link:
-- GitHub:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-s
+- GitHub: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-s
