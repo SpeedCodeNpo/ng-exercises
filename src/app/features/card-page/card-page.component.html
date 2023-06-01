@@ -6,12 +6,14 @@
 <div>
   <button (click)="onDealCards()">DEAL CARDS</button>
 </div>
-<div class="card-body" *ngFor="let card of activeCards">
-  <h2>{{ card.titleName }} {{ card.titleHp }}</h2>
-  <img class="card-image" [src]="card.imageUrl" />
-  <div>
-    <p>{{ card.power1Name }} {{ card.power1Points }}</p>
-    <p>{{ card.power2Name }} {{ card.power2Points }}</p>
-    <p>{{ card.power3Name }} {{ card.power3Points }}</p>
+<div class="card-group">
+  <div class="card-body" *ngFor="let card of activeCards">
+    <h2>{{ card.titleName }} {{ card.titleHp }}</h2>
+    <img class="card-image" [src]="card.imageUrl" />
+    <div>
+      <p>{{ card.power1Name }} {{ card.power1Points }}</p>
+      <p>{{ card.power2Name }} {{ card.power2Points }}</p>
+      <p>{{ card.power3Name }} {{ card.power3Points }}</p>
+    </div>
   </div>
 </div>

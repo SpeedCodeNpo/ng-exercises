@@ -6,6 +6,12 @@ input {
   width: 30px;
   text-align: center;
 }
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+}
+
 .card-body {
   width: 220px;
   padding: 10px;
