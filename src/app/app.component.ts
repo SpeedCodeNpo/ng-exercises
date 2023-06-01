@@ -6,8 +6,5 @@ import { Component, inject } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-
-  ngOnInit() {
-    console.log('Hello from app component');
-  }
+  title = 'Hello';
 }
