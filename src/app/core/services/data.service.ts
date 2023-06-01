@@ -88,6 +88,7 @@ export class DataService {
       // In this case, the destructuring assignment is unpacking the values from the array [items[index], items[randomIndex]] into the variables items[index] and items[randomIndex].
       // This is like [ a , b ] = [1 ,2]; It means that variable a will get the value 1 and variable b will get the value 2. Like a = 1 and b=2.
       [items[index], items[randomIndex]] = [items[randomIndex], items[index]];
+      // console.log(`index[${index}] randomIndex  = ${randomIndex}`);
     }
 
     return items;
@@ -104,28 +105,30 @@ export class DataService {
    * Finally it returns only the number of cards requested.
    */
   dealCards(quantity: number) {
+    //Setup
+    const cardsToShuffle = this.dzCards.slice(); //make a copy of original
+    const deckLength = cardsToShuffle.length;
+
     //Step 1 : first verify the input request
-    const deckLength = this.dzCards.length;
-    console.log(`deckLength = ${deckLength}`);
-    console.log(`requested quantity ${quantity} cards`);
+    // console.log(`deckLength = ${deckLength}`);
+    // console.log(`requested quantity ${quantity} cards`);
 
     if (quantity < 2 || quantity > deckLength) {
       quantity = deckLength; //fallsback to default which return all cards
     }
 
     //Step 2 : shuffle all the cards in the deck
-    const cardsToShuffle = this.dzCards.slice();
-    const dealtCards = cardsToShuffle;
-    console.log(
-      `shuffeled dzCards got dealtCards with ${dealtCards.length} cards inside`
-    );
+    const dealtCards = this.shuffle(cardsToShuffle);
+    // console.log(
+    //   `shuffeled dzCards got dealtCards with ${dealtCards.length} cards inside, expected to always be deckLength cards.`
+    // );
 
     //Step 3 : from the shuffled deck we take the first ones
     //         by requested quantity.
     dealtCards.splice(0, deckLength - quantity);
-    console.log(
-      `spliced dealtCards now it has ${dealtCards.length} cards inside`
-    );
+    // console.log(
+    //   `spliced dealtCards now it has ${dealtCards.length} cards inside, expected to always be quantity requested`
+    // );
     // console.log(`dealtCards[]= ${JSON.stringify(dealtCards)}`);
 
     //We use slice() because it creates a new rference copy
