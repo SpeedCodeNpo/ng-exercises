@@ -20,6 +20,10 @@ Display cards from an array of cards
 - You will need to implement data binding.
 
 ### Illustration :
+When app starts the display shows all deck of cards, every click on DEAL CARDS causes cards to shuffle:
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/5677ccee-af70-43e1-b11b-2cfed9454c1f)
+-
+After user updates number of cards and clicks the DEAL Cards button then that amount of cards are dealt & displayed :
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/b0311978-e309-4a1f-b0d9-00d66131ea58)
 
 ### User experience :
