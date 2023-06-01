@@ -11,7 +11,7 @@ export class DataService {
       titleName: 'Goku',
       titleHp: 1000,
       imageUrl:
-        'https://stackblitz.com/edit/ng-exercise1?file=src%2Fapp%2Fcore%2Fservices%2Fdata.service.ts,src%2Fassets%2Ffiles%2F1_goku_1000.png',
+        'https://stackblitz.com/files/ng-exercise1/github/SpeedCodeNpo/ng-exercises/card-20230531-1715-q/src/assets/files/1_goku_1000.png',
       power1Name: 'Spirit Bomb',
       power1Points: 3000,
       power2Name: 'Kioken Finish',
