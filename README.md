@@ -1,15 +1,18 @@
 ## Ng Exercises
 
 Welcome to Speed Code Exercises
-Instructions for assignment: card-20230531-1715
+Solution for assignment: card-20230531-1715
 
 ### Practice goals :
 
 Practice using binding
 
-## Branch name : card-20230526-1133-q
+## Links to card-20230526-1133-s
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-s
+- GitHub branch link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-s
+- Stackblitz shared link: https://stackblitz.com/edit/ng-exercise1-zj94dc?file=README.md
+-
+- GitHub instructions starter branch link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-q
 
 ### Assignment title :
 
@@ -25,8 +28,8 @@ Display dealt cards from a "Dragon Ball Z" card deck.
 
 ### Page design
 
-When app starts the display shows all deck of cards, every click on DEAL CARDS causes cards to shuffle:
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/5677ccee-af70-43e1-b11b-2cfed9454c1f)
+- When app starts the display shows all deck of cards, every click on DEAL CARDS causes cards to shuffle:
+  ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/5677ccee-af70-43e1-b11b-2cfed9454c1f)
 
 - After user updates number of cards and clicks the DEAL Cards button then that amount of cards are dealt & displayed :
   ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/b0311978-e309-4a1f-b0d9-00d66131ea58)
@@ -48,8 +51,3 @@ Here is the user flow:
 
 - Use event binding for the checkboxes
 - use \*ngFor to display the array of cards
-
-### Solution for this assignment:
-
-- The solution branch can be found using this link:
-- GitHub: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230531-1715-s
