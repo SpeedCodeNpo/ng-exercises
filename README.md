@@ -7,12 +7,18 @@ Instructions for assignment: card-20230609-1300
 
 Practice using piping
 
-## Links to card-20230526-1133-q
-
-- GitHub branch link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-s
-- Stackblitz shared link:
+## Links
+- 
+- GitHub instruction & empty project link:
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-q
 -
-- GitHub solution link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-s
+- Stackblitz empty project link:
+-
+- GitHub solution project link:
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-s
+
+- Stackblitz solution project link:
+- 
 
 ### Assignment title :
 
