@@ -1,0 +1,13 @@
+<h1>Angular Pipes Playground</h1>
+
+<div class="div-box">
+  <h2>Text Case Formatting</h2>
+  <label>Customer Name :</label>
+  <div></div>
+  <input type="text" (input)="onMyInput($any($event.target).value)" />
+  <p>.......Title Case : {{ myCustomerName | titlecase }}</p>
+  <p>UPPER CASE : {{ myCustomerName | uppercase }}</p>
+  <p>......lower case : {{ myCustomerName | lowercase }}</p>
+</div>
+<p>---</p>
+<div></div>
