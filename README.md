@@ -1,54 +1,53 @@
-## Ng Exercises  [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng-exercise1)
-Welcome to Speed Code Exercises.
-This project is the base project for "Angular Skill".
+## Ng Exercises
 
-## This version : main : 20230511-1745
-This current version is an "ng new ..." project.
-It's purpose is to be a starting point for every Assignment + Solution.
+Welcome to Speed Code Exercises
+Instructions for assignment: card-20230609-1300
 
-## How to create an assignment branch from this main branch
+### Practice goals :
 
-### Step 1 : Create a name for the branch
-- (1) Each assignments has 2 branches, a "Question" and an "Solution" branch.
-- (2) The question branch has all the codebase needed to start the assignment.
-- (3) The solution branch has all the codebase for the solution.
-- (4) Name Question branch with this convention: CARD-YYYMMDD-HHMM-Q
-    - For the solution branch use "S" instead of "Q".
-    - The timestamp section of the convention is from the card creation spreadsheet.
+Practice using piping
 
-### Step - 2 : Create the branch
-- (1) Checkout "main branch". FYI it is locked so cannot change its content.
-- (2) From this branch create your question branch example: git switch -c CARD-20231106-1417-Q
-- - FYI When creating a new branch this README.md file is overwritten by an auto-created Stackblitz version.
-- (3) In the new README.md file copy the content in the APENDIX below and update it to your project.
-- (3) Work on that branch and commit as many times as needed.
-- (4) When done create from it another branch for the solution: git switch -c CARD-20231106-1417-S
-- (5) When done commiting all your coding sessions you are done working on the branch.
+## Links to card-20230526-1133-q
 
-### Step - 3 : Maintenance
-- (1) When need to fix bugs or update the Question or Soultion you can open a temporary branch under the branch you want to fix/update, when done merge to the parent branch and delete the temporary branch.
+- GitHub branch link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-q
+- Stackblitz shared link:
+-
+- GitHub solution link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-s
 
-##  A P E N D I X :
-### Template content to copy into new README.md file:
-- The content below is just an example, edit it to your specific project case.
+### Assignment title :
 
-## Ng Exercises  
-Welcome to Speed Code Exercises.
-
-## This branch is : Card-20230511-1758-Q
+Create a piping playground.
 
 ### Assignment instructions :
-- Write code that will display the value of a parameter named "message" defined in ParentComponent, in in a template belonging to component ChildComponent.
-- Make the parentComponent a child of AppComponent.
 
-- The output displayed should be:
-This is App Component
-This is Parent Component
-This is Child Component
-The Child Component message is: Hello, World!
+- This app displays multiple input options and uses different pipes to convert the inputs.
+- The pipes to implement in this assignment are :
+- Title Case
+- Upper Case
+- Decimal
+- Date
+- Currency
+- Custom Pipe
+
+### Page design
+
+- The page displays a list of div blocks, each dedicated to its own pipe implementation
+- Here is an example screen shot of the page to create:
+
+### User experience :
+
+Here is the user flow:
+(1) The user chooses the number of cards to deal.
+(2) The user clicks on DEAL CARDS button.
+(3) The app displays the randomly shuffled and dealt cards.
+(4) Subsequent clicks on the button will reshuffle the same amount of cards.
+
+### Overview of the included DataService :
+
+- The DataService component is located in 'src/core/services'.
+- This service includes a list of cards and several methods.
 
 ### Assignment hint :
-- Create the components and use interpolation to pass the value of the message from parent to child componnet.
 
-### Solution
-- The solution can be found at this link : [Card-20230511-1758-S](https://stackblitz.com/edit/ng-exercise1?file=README.md)
+- Use event binding for the checkboxes
+- use \*ngFor to display the array of cards
