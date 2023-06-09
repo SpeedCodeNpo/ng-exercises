@@ -9,7 +9,7 @@ Practice using piping
 
 ## Links to card-20230526-1133-q
 
-- GitHub branch link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-q
+- GitHub branch link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-s
 - Stackblitz shared link:
 -
 - GitHub solution link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230609-1300-s
