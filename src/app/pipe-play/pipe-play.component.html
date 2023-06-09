@@ -2,12 +2,45 @@
 
 <div class="div-box">
   <h2>Text Case Formatting</h2>
-  <label>Customer Name :</label>
+  <label>Type in a short sentence :</label>
   <div></div>
   <input type="text" (input)="onMyInput($any($event.target).value)" />
   <p>.......Title Case : {{ myCustomerName | titlecase }}</p>
   <p>UPPER CASE : {{ myCustomerName | uppercase }}</p>
   <p>......lower case : {{ myCustomerName | lowercase }}</p>
+</div>
+<p>---</p>
+
+<div class="div-box">
+  <h2>Date Formatting</h2>
+  <label>Choose a date :</label>
+  <div></div>
+  <input type="date" (input)="onMyDate($any($event.target).value)" />
+  <p>.......short : {{ myDate | date: 'short' }}</p>
+  <p>short date : {{ myDate | date: 'shortDate' }}</p>
+  <p>...medium : {{ myDate | date: 'medium' }}</p>
+</div>
+<p>---</p>
+
+<div class="div-box">
+  <h2>Currency Formatting</h2>
+  <label>Type in a sum of money :</label>
+  <div></div>
+  <input type="text" (input)="onMyCurrency($any($event.target).value)" />
+  <p>....US (USD) : {{ myMoneyAmount | currency: 'USD' }}</p>
+  <p>Europe (EUR) : {{ myMoneyAmount | currency: 'EUR' }}</p>
+  <p>Japan (JPY) : {{ myMoneyAmount | currency: 'JPY' }}</p>
+</div>
+<p>---</p>
+
+<div class="div-box">
+  <h2>Metric Converter</h2>
+  <label>Enter distance in miles :</label>
+  <div></div>
+  <input type="text" (input)="onMyDistance($any($event.target).value)" />
+  <p>Converted distance is :</p>
+  <p>Kilometers : {{ myDistance | metricConverter: 'km' }} km</p>
+  <p>Meters : {{ myDistance | metricConverter: 'meter' }} m</p>
 </div>
 <p>---</p>
 <div></div>

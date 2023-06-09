@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PipePlayComponent } from './pipe-play/pipe-play.component';
+import { MetricConverterPipe } from './custom-pipes/metric-converter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PipePlayComponent
+    PipePlayComponent,
+    MetricConverterPipe
   ],
   imports: [
     BrowserModule
