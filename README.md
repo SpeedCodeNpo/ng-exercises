@@ -48,4 +48,4 @@ Here is the user flow:
 
 ### Assignment hint :
 - Use the relavent piping for each div-block.
-- Use \*ngFor to display the div blocks.
+- Use \*ngFor to display the div blocks in a column.
