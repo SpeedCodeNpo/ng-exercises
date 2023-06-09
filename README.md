@@ -33,7 +33,11 @@ Create a piping playground.
 
 - The page displays a list of div blocks, each dedicated to its own pipe implementation
 - Here is an example screen shot of the page to create:
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/de55a6b5-8471-414c-bdda-c3572721aabc)
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/de761350-b353-4930-a92e-9e6046165e4f)
+
+The following image shows the div blocks content in more detail:
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/d776c4e2-54c5-466f-b41c-737d0e6a7ded)
+
 
 
 ### User experience :
