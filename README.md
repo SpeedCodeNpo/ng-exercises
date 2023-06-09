@@ -39,17 +39,9 @@ Create a piping playground.
 ### User experience :
 
 Here is the user flow:
-(1) The user chooses the number of cards to deal.
-(2) The user clicks on DEAL CARDS button.
-(3) The app displays the randomly shuffled and dealt cards.
-(4) Subsequent clicks on the button will reshuffle the same amount of cards.
-
-### Overview of the included DataService :
-
-- The DataService component is located in 'src/core/services'.
-- This service includes a list of cards and several methods.
+(1) The user can scroll veritcaly to any div block.
+(2) In each block the user can use the input boxes to type in info and see the pipe convert the info. 
 
 ### Assignment hint :
-
-- Use event binding for the checkboxes
-- use \*ngFor to display the array of cards
+- Use the relavent piping for each div-block.
+- Use \*ngFor to display the div blocks.
