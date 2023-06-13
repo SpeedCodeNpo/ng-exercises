@@ -10,6 +10,8 @@ export class AttribPageComponent {
   alignRequested = this.defaultAlignment;
   classRequested = '';
   styleRequested = '';
+  defaultId = 'some-id-value';
+  idRequested = this.defaultId;
 
   onClickAlign(alignValue: string) {
     if (alignValue !== 'left' || 'center' || 'right' || 'justify') {
@@ -27,5 +29,13 @@ export class AttribPageComponent {
   //
   onStyleInput(styleValue: string) {
     this.styleRequested = styleValue;
+  }
+  //
+  onClickIdToggle() {
+    if (this.idRequested === 'jill-id') {
+      this.idRequested = this.defaultId;
+    } else {
+      this.idRequested = 'jill-id';
+    }
   }
 }

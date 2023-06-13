@@ -21,15 +21,33 @@
   <div>Attribute align='{{ alignRequested }}'</div>
 </div>
 
-<div>----------------------</div>
+<div class="spacer">----------------------</div>
 <button type="button" (click)="onClickClass('my-class1')">my-class1</button>
 <button type="button" (click)="onClickClass('my-class2')">my-class2</button>
 <div>Attribute class='{{ classRequested }}'</div>
 
-<div>----------------------</div>
+<div class="spacer">----------------------</div>
 
 <label>Type in the CSS style you want</label>
-<input type="text" 
-      (input)="onStyleInput($any($event.target).value)" >
+<input type="text" (input)="onStyleInput($any($event.target).value)" />
 <div>Attribute style='{{ styleRequested }}'</div>
-<div>----------------------</div>
+<div class="spacer">----------------------</div>
+
+<div>
+  <label for="jill-id"
+    >I am a label for jill-id. If the id is jill-id then clicking me will
+    highlight the input box</label
+  >
+  <input
+    type="text"
+    [id]="idRequested"
+    placeholder="Jill input filed with id = jill-id"
+  />
+</div>
+<p>
+  Click the buton to toggle the value of the id from jill-id to aome other value
+</p>
+<button (click)="onClickIdToggle()">Toggle id value</button>
+<div>The attribute id='{{ idRequested }}'</div>
+
+<div class="spacer">----------------------</div>
