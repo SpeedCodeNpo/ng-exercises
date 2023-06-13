@@ -1,5 +1,10 @@
 <div>
-  <h2 [align]="alignRequested" [class]="classRequested" id="my-demo" style="">
+  <h2
+    [align]="alignRequested"
+    [class]="classRequested"
+    id="my-demo"
+    [style]="styleRequested"
+  >
     An h1 heading with all its 4 attributes: align, class , style & id managed
     by attribute binding.
   </h2>
@@ -21,4 +26,10 @@
 <button type="button" (click)="onClickClass('my-class2')">my-class2</button>
 <div>Attribute class='{{ classRequested }}'</div>
 
+<div>----------------------</div>
+
+<label>Type in the CSS style you want</label>
+<input type="text" 
+      (input)="onStyleInput($any($event.target).value)" >
+<div>Attribute style='{{ styleRequested }}'</div>
 <div>----------------------</div>
