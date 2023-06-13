@@ -33,6 +33,26 @@ Attribute binding the h1 element
 - - id
 - - style
 ---------------------
+- Create a component for this page in a 'features' folder.
+- The 'align' attribute: 
+- For the value of 'align' create a 4 buttons with the possible align values:
+- - align value can be : "left | right | center | justify"
+- - - 
+- The 'class' attribute: 
+- For the value of 'class' attribute create 2 buttons:
+- - class value can be : " | my-class-1 | my-class-2 "
+- - - 
+- The 'id' attribute: 
+- For the value of 'id' attribute create 2 buttons:
+- - id value can be : " | jack-id | jill-id "
+- - - 
+- The 'style' attribute: 
+- For the value of 'style' attribute create 2 buttons:
+- - style value can be : " | my-style-1 | my-style-2 "
+ 
+
+
+---------------------
 - FYI: 
 - - These are not properties of the h1 element, properties are NOT part of <HTML> syntax.
 - - Properties are are part of the DOM (Document Object Model = a way of representig HTML in JS) syntax.
