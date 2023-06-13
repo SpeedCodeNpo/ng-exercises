@@ -37,6 +37,8 @@ Attribute binding the h1 element
 - The 'align' attribute: 
 - For the value of 'align' create a 4 buttons with the possible align values:
 - - align value can be : "left | right | center | justify"
+- - The UI should look something like this :
+
 - - - 
 - The 'class' attribute: 
 - For the value of 'class' attribute create 2 buttons:
