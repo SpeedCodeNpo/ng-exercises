@@ -38,6 +38,7 @@ Attribute binding the h1 element
 - For the value of 'align' create a 4 buttons with the possible align values:
 - - align value can be : "left | right | center | justify"
 - - The UI should look something like this :
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/d50540d1-3f56-4181-93c8-a3ce67a77da4)
 
 - - - 
 - The 'class' attribute: 
