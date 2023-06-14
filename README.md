@@ -1,41 +1,41 @@
 ## Ng Exercises
 
 Welcome to Speed Code Exercises
-Instructions for assignment: card-202300613-1311
+Instructions for assignment: card-202300614-2206-q
 
 ### Practice goals :
 
-Practice using Attribute Binding
+Practice using Property Binding
 
 ## Links
 - 
 - GitHub instruction & empty project link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230613-1311-q
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202300614-2206-q
 -
 - Stackblitz empty project link:
 -
 - GitHub solution project link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230613-1311-s
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202300614-2206-s
 
 - Stackblitz solution project link:
-- 
 
 ### Assignment title :
 
-Attribute binding the h1 element
+Property binding the h2 element
 
 ### Assignment instructions :
 
 - In this assignment you will use attribute binding to all the <h1> element attributes.
 - All the attributes that exist for the h1 element are: 
-- - align
-- - class
-- - id
-- - style
+- - innerHTML
+- - textContent
+- - tagName
+- - className
 ---------------------
 - Create a component for this page in a 'features' folder.
-- The 'align' attribute: 
-- For the value of 'align' create a 4 buttons with the possible align values:
+- The 'innerHTML' property: 
+- For the value of 'innerHTML' create an input box.
+- The user is asked to type  4 buttons with the possible align values:
 - - align value can be : "left | right | center | justify"
 - - The UI should look something like this :
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e9222517-bafb-465b-a271-965a694d3d13)
