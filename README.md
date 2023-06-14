@@ -28,7 +28,7 @@ Attribute binding the h1 element
 
 - In this assignment you will use attribute binding to all the <h1> element attributes.
 - All the attributes that exist for the h1 element are: 
-- - align
+- - align (This attribute is deprecated but still used here for demo purpose)
 - - class
 - - id
 - - style
