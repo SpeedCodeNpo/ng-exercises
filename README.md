@@ -38,22 +38,40 @@ Property binding an <h2> DOM element:
 
 ---
 
-- Create a component named 'prop-page'for this page in a 'features' folder.
+- Create a component for this page in a 'features' folder.
 
 ---
+The general design of the page should look something like this:
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/3c7f7801-c37c-4370-b695-cd672bbd69d2)
 
+---
 - The 'textContent' property:
 - For the value of 'textContent' create an input box.
 - Whatever the user types in the input box will be transfered to the DOM's <h> tag 'textContent' property.
 - - The UI should look something like this :
-- ***
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/398d2203-7f18-457b-8c91-0a36c0be9a62)
+- -
+- - When typing in the input box the display is:
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/cc98f868-4b13-4360-be8b-4ef8624d5ebd)
+
+
+---
 
 - The 'className' attribute:
 - For the value of 'class' attribute create 2 buttons:
 - - class value can be : " | my-class-1 | my-class-2 "
 - - On every click the DOM property className will change.
 - - The UI should look something like this :
-- ***
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/939d4d06-2c18-43c6-aaf2-cf329a87f975)
+-
+- - When choosing class-1 button the display changes as shown:   color: red;  font-size: 1em;
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/9b4cbe37-3dee-4046-ba50-a5b50f0906f0)
+-
+-
+- - When choosing class-2 button the display changes as shown:   color: blue;  font-size: 0.75em;
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/9c50f7ea-2359-4696-9025-b5700d5a893a)
+
+---
 
 - FYI:
 - - These 'textContent' & 'className' & are Properties of DOM's mirroring of the <h> element.
