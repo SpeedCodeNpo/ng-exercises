@@ -11,7 +11,6 @@ Practice using Property Binding
 
 ## Links
 
--
 - GitHub instruction & empty project link:
   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202300614-2206-q
 -
