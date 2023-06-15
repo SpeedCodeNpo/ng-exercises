@@ -3,7 +3,7 @@
 ## Ng Exercises
 
 Welcome to Speed Code Exercises
-Instructions for assignment: card-202300614-2206-q
+Instructions for assignment: card-20230614-2206-q
 
 ### Practice goals :
 
@@ -12,12 +12,12 @@ Practice using Property Binding
 ## Links
 
 - GitHub instruction & empty project link:
-  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202300614-2206-q
+  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230614-2206-q
 -
 - Stackblitz empty project link:
 -
 - GitHub solution project link:
-  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202300614-2206-s
+  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230614-2206-s
 
 - Stackblitz solution project link:
 
