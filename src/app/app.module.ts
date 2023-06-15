@@ -7,7 +7,7 @@ import { AttribPageComponent } from './features/attrib-page/attrib-page.componen
 @NgModule({
   declarations: [
     AppComponent,
-    AttribPageComponent
+    AttribPageComponent,
   ],
   imports: [
     BrowserModule
