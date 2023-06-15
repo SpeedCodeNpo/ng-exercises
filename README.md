@@ -38,7 +38,7 @@ Property binding an <h2> DOM element:
 
 ---
 
-- Create a component for this page in a 'features' folder.
+- Create a component named 'prop-page'for this page in a 'features' folder.
 
 ---
 
@@ -46,18 +46,14 @@ Property binding an <h2> DOM element:
 - For the value of 'textContent' create an input box.
 - Whatever the user types in the input box will be transfered to the DOM's <h> tag 'textContent' property.
 - - The UI should look something like this :
--
-
----
+- ***
 
 - The 'className' attribute:
 - For the value of 'class' attribute create 2 buttons:
 - - class value can be : " | my-class-1 | my-class-2 "
 - - On every click the DOM property className will change.
 - - The UI should look something like this :
--
-
----
+- ***
 
 - FYI:
 - - These 'textContent' & 'className' & are Properties of DOM's mirroring of the <h> element.

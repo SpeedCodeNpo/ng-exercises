@@ -1,0 +1,14 @@
+<div>
+  <h1 [textContent]="headerTextContent" [className]="classNamePicked"></h1>
+</div>
+<div>
+  <h3>Using property binding to the textContent DOM property</h3>
+  <label> Enter text for the header </label>
+  <input type="text" (input)="onInputHeaderText($any($event.target).value)" />
+</div>
+<div>
+  <h3>Using property binding to the className DOM property</h3>
+  <button (click)="onClickClass('my-class-1')">my-class-1</button>
+  <button (click)="onClickClass('my-class-2')">my-class-2</button>
+</div>
+<div></div>
