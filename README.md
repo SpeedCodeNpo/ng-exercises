@@ -1,11 +1,11 @@
 ## Ng Exercises
 
 Welcome to Speed Code Exercises
-Instructions for assignment: card-20230616-1454
+Solution for assignment: card-20230616-1454
 
 ### Practice goals :
 
-Practice creating Custom Pipes
+Practice creating a Custom Pipe for filtering
 
 ## Links
 - 
