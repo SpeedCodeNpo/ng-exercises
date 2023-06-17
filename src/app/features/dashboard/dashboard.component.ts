@@ -12,4 +12,16 @@ export class DashboardComponent {
 
   topicInput = '';
   topicValue = '';
+
+  onClickAddStudent() {
+    const newDemoStudent = {
+      name: 'MyDemo',
+      gender: 'male',
+      module: '3',
+      chapter: 'Test',
+      isPayed: true,
+    };
+
+    this.studentInfo.unshift(newDemoStudent);
+  }
 }

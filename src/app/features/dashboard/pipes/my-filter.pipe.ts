@@ -3,6 +3,7 @@ import { filter } from 'rxjs';
 
 @Pipe({
   name: 'myFilter',
+  pure: false,
 })
 export class MyFilterPipe implements PipeTransform {
   transform(value: any[], filterTopic: string, filterInput: string): any {
@@ -13,7 +14,6 @@ export class MyFilterPipe implements PipeTransform {
 
     let filteredResult = [];
     for (const item of value) {
-      
       if (item[filterTopic] === filterInput) {
         filteredResult.push(item);
       }
