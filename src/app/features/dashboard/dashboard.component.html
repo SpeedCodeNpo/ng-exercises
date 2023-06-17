@@ -1,7 +1,19 @@
-<h2>Student Information</h2>
+<h2>Student Information Dashboard</h2>
 <div>
-  <label id="searchbox"> Search filter : </label>
-  <input type="text" [(ngModel)]="filterInput" />
+  <label id="searchbox"> Topic to filter : </label>
+  <input
+    type="text"
+    [(ngModel)]="topicInput"
+    placeholder="gender / module / chapter"
+  />
+</div>
+<div>
+  <label id="searchbox"> Value for topic : </label>
+  <input
+    type="text"
+    [(ngModel)]="topicValue"
+    placeholder="see values in the table"
+  />
 </div>
 <div>
   <table>
@@ -9,18 +21,16 @@
       <tr>
         <th>Name</th>
         <th>Gender</th>
-        <th>Course Module</th>
-        <th>Course Topic</th>
-        <th>Is Payed</th>
+        <th>Module</th>
+        <th>Chapter</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let student of studentInfo | myFilter:'gender' : 'female'">
+      <tr *ngFor="let student of studentInfo | myFilter: topicInput:topicValue">
         <td>{{ student.name }}</td>
         <td>{{ student.gender }}</td>
-        <td>{{ student.courseModule }}</td>
-        <td>{{ student.courseTopic }}</td>
-        <td>{{ student.isPayed }}</td>
+        <td>{{ student.module }}</td>
+        <td>{{ student.chapter }}</td>
       </tr>
     </tbody>
   </table>

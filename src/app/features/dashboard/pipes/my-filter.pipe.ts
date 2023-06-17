@@ -13,6 +13,7 @@ export class MyFilterPipe implements PipeTransform {
 
     let filteredResult = [];
     for (const item of value) {
+      
       if (item[filterTopic] === filterInput) {
         filteredResult.push(item);
       }

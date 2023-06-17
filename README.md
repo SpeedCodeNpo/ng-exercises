@@ -24,6 +24,9 @@ Practice creating a Custom Pipe for filtering
 
 Creating a custom pipe to filter table rows.
 
+### Screenshot of page :
+
+
 ### Assignment instructions :
 
 - In this assignment you will display a table and use a 'search' input box to filter the displayed table rows.
