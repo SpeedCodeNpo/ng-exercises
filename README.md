@@ -25,7 +25,8 @@ Practice creating a Custom Pipe for filtering
 Creating a custom pipe to filter table rows.
 
 ### Screenshot of page :
-
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/d258e424-0075-4ad1-9437-bffafd09c0c2)
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/7b5aae3d-0231-4a21-ab81-31483e938248)
 
 ### Assignment instructions :
 
@@ -33,25 +34,13 @@ Creating a custom pipe to filter table rows.
 - The data for the table is accesable via a prebuilt data service included in this template.
 - The table will mimic a list of students and their in a bootcamp.
 
----------------------
-- Create an input box labeled 'Search', 
-  whatever text is typed in it will filter the tables rows being displayed.
-- - The UI should look something like this :
--
-- - Create a table where only rows that answer the filter are displayed.
----------------------
-
-### Page design
-Screenshot Image of full page:
-
-
-
 ### User experience :
 
-- By default user sees all rows in table.
-- When user types into the textbox then the rows react.
-- If the filter includes one or more tags then they disapear
-  from the table.
+- The user has 2 input fields and a table with student info
+- By default all the data is displayed in the table.
+- In one inputbox the user types in the topic from option shown in placeholder.
+- In the second input box the user types a value of the topic.
+- The table will react and display the filtered data only.
   
 ### Assignment hint :
 
