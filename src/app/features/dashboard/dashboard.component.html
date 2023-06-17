@@ -1,0 +1,21 @@
+<h2>Student Information</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Course Module</th>
+      <th>Course Topic</th>
+      <th>Is Payed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of studentInfo">
+      <td>{{ student.name }}</td>
+      <td>{{ student.gender }}</td>
+      <td>{{ student.courseModule }}</td>
+      <td>{{ student.courseTopic }}</td>
+      <td>{{ student.isPayed }}</td>
+    </tr>
+  </tbody>
+</table>
