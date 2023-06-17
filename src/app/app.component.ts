@@ -8,4 +8,5 @@ import { StudentDataService } from './core/services/student-data.service';
 })
 export class AppComponent {
   title = 'ngExercise';
+ 
 }

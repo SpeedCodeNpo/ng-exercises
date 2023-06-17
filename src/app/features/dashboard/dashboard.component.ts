@@ -4,10 +4,11 @@ import { StudentDataService } from 'src/app/core/services/student-data.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
-  studentService = inject( StudentDataService);
+  studentService = inject(StudentDataService);
   studentInfo = this.studentService.students;
 
+  filterInput = 'default';
 }
