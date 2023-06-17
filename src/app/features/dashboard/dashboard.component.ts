@@ -10,5 +10,5 @@ export class DashboardComponent {
   studentService = inject(StudentDataService);
   studentInfo = this.studentService.students;
 
-  filterInput = 'default';
+  filterInput = '';
 }

@@ -5,10 +5,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
+import { MyFilterPipe } from './features/dashboard/pipes/my-filter.pipe';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, DashboardComponent],
+  declarations: [AppComponent, DashboardComponent, MyFilterPipe],
   providers: [],
   bootstrap: [AppComponent],
 })
