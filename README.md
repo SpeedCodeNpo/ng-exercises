@@ -5,7 +5,7 @@ Instructions for assignment: card-20230616-1454
 
 ### Practice goals :
 
-Practice creating Custom Pipes
+Practice creating a Custom Pipe for filtering
 
 ## Links
 - 
@@ -24,32 +24,44 @@ Practice creating Custom Pipes
 
 Creating a custom pipe to filter table rows.
 
+### Screenshot of page :
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/d81dffad-9f02-495c-b12b-ced4291e6e8f)
+-
+- Screenshot of filter in action : 
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/661f71fa-1684-45c7-9ba5-153fc62f719d)
+
 ### Assignment instructions :
 
-- In this assignment you will display a table and use a 'search' input box to filter the displayed table rows.
-- The data for the table is accesable via a prebuilt data service included in this template.
-- The table will mimic a list of students and their in a bootcamp.
-
----------------------
-- Create an input box labeled 'Search', 
-  whatever text is typed in it will filter the tables rows being displayed.
-- - The UI should look something like this :
+- In this assignment you will create a filter pipe for a list of students.
+- The filter will be activated using 2 input fields, one for the topic the other for the value.
+- In addition you will experience what a 'pure' & 'impure' pipe actually does.
+- - For this you will create a button that adds more students to the list.
+  - You will see that when the pipe is set to "pure" the filter will ignore the added students.
+  - Then when you set the pipe decorator's "pure" property to 'false' the filter will react to added students.
 -
-- - Create a table where only rows that answer the filter are displayed.
----------------------
-
-### Page design
-Screenshot Image of full page:
-
-
+- The data for the table is accesable via a prebuilt data service included in this template.
 
 ### User experience :
 
-- By default user sees all rows in table.
-- When user types into the textbox then the rows react.
-- If the filter includes one or more tags then they disapear
-  from the table.
+- The user has these 4 divs:
+- - An input box to type in the topic you want to focus on.
+- - An input box to type in a value with wich to filter the topic by.
+- - An "Add Student" button to experience how the true / false value of the pipe's "pure" attribute works.
+  - A table that by default displays all the students and when filtered diaplys the filter's result.
   
-### Assignment hint :
+### How to experience the pure / impure pipe functionality :
+- In the code update the @Pipe() decorator's "pure" property to false. This sets the pipe to be "impure".
+- Run the app.
+- Click the Add Student button, a new row in the table appears with data of the new student.
+- Type in the filter values topic  'Chapter' and value for topic 'Test'.
+- Only the added student should be displayed in the table.
+- Now click the Add student again and again and you should see more demo students added to the table.
+- This is happening because the pipe is 'impure' that means it uses change detection to see if any
+-    of the student list items is updated, since it is (because we are adding items to the list) then
+-    the filter recalculates and updates.
+- But if you change the value of the pure property to 'true' then clicking the Add Student will have no affect
+-   this is because the pipe wont use change detection so it is not aware that items are added and wont trigger recalculation.
 
-- NA.
+Here is a snapshot for illustration : 
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/099bed7a-fefd-4bad-92c7-4125ffde1362)
+
