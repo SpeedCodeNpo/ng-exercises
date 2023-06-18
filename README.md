@@ -1,12 +1,26 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Solution for assignment:  card-20230518-1828
+Solution for assignment:  card-20230618-0711
 
-## This branch is : card-20230518-1828-s
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230618-1828-s
+### Practice goals :
+
+Practice attribute directives with [NgClass].
+
+## Links
+- 
+### GitHub instruction & empty project link:
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230618-0711-q
+-
+- Stackblitz empty project link:
+-
+### GitHub solution project link:
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230618-0711-s
+
+- Stackblitz solution project link:
+- 
 
 ### Assignment title :
-Attribute directive [NgClass] capabilities.
+Custom style a paragraph with [NgClass]
 
 ### Assignment spec :
 - Create an app to demonstrate the capabilities of an Attribute Directive.
