@@ -10,6 +10,7 @@ export class FirstComponent {
   currentColor = 'black';
   currentFont = 'medium';
   currentBorder = 'no-border';
+  myRedColor = 'red';
 
   pickColor(colorPicked: string) {
     this.currentColor = colorPicked;
@@ -17,12 +18,12 @@ export class FirstComponent {
   }
 
   pickFont(fontPicked: string) {
-    this.currentColor = fontPicked;
+    this.currentFont = fontPicked;
     this.updateMyClassString();
   }
 
   pickBorder(borderPicked: string) {
-    this.currentColor = borderPicked;
+    this.currentBorder = borderPicked;
     this.updateMyClassString();
   }
 

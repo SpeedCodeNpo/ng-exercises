@@ -1,11 +1,5 @@
 <div>
-  <p
-    [ngClass]="{
-      red: isRed,
-      green: isGreen,
-      blue: isBlue
-    }"
-  >
+  <p [ngClass]="{ [myClassString]: true }">
     I am a paragraph in a div. Click below to build my style.
   </p>
 </div>
@@ -19,7 +13,7 @@
   <p>Pick font-size :</p>
   <button (click)="pickFont('smaller')">SMALLER</button>
   <button (click)="pickFont('medium')">MEDIUM</button>
-  <button (click)="pickFont('largeer')">LARGER</button>
+  <button (click)="pickFont('larger')">LARGER</button>
 </div>
 <div>
   <p>Pick border style :</p>
