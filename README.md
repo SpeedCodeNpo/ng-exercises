@@ -58,4 +58,4 @@ Custom style a paragraph with [NgClass]
 ### Assignment hints :
 - Use the '[ngClass]' directive with a ternary operator.
 - To save time on css content, the css styles are included in the app starter version.
-  - It can be located at path : app/assets/css-for-my-style.scss
+  - It can be located at path : src/assets/css-for-my-style.scss
