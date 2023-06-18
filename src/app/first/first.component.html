@@ -1,5 +1,5 @@
 <div>
-  <p [ngClass]="{ [myClassString]: true }">
+  <p [ngClass]="[myClassString ? my-default-style : impact]">
     I am a paragraph in a div. Click below to build my style.
   </p>
 </div>
