@@ -54,10 +54,12 @@ input[type='checkbox']:checked {
 }
 
 .solid {
+  padding: 5px;
   border: 2px solid black;
 }
 .dashed {
   border: 2px dashed black;
+  padding: 5px;
 }
 .no-border {
   border: 0px;

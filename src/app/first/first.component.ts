@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.scss'],
 })
 export class FirstComponent {
-  myClassString = '';
-
   customClassString = '';
   isDefaultLocked = false;
 
@@ -30,10 +28,6 @@ export class FirstComponent {
   pickBorder(borderPicked: string) {
     this.currentBorder = borderPicked;
     this.updateMyClassString();
-  }
-
-  resetStyle() {
-    this.myClassString = 'myDefaultStyle';
   }
 
   updateMyClassString() {
