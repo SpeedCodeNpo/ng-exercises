@@ -6,10 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.scss'],
 })
 export class FirstComponent {
-  myClassString = 'my-default-style';
+  myClassString = '';
+
+  customClassString = '';
+  isDefaultLocked = false;
+
   currentColor = 'black';
   currentFont = 'medium';
   currentBorder = 'no-border';
+
   myRedColor = 'red';
 
   pickColor(colorPicked: string) {
@@ -28,11 +33,11 @@ export class FirstComponent {
   }
 
   resetStyle() {
-    this.myClassString = 'my-default-style';
+    this.myClassString = 'myDefaultStyle';
   }
 
   updateMyClassString() {
-    this.myClassString =
+    this.customClassString =
       this.currentColor + ' ' + this.currentFont + ' ' + this.currentBorder;
   }
 }

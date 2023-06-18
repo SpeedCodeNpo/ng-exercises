@@ -3,14 +3,34 @@ div {
 }
 
 button {
-  margin-right: 10px;
+  margin: 5px;
 }
 
-.my-default-style {
+span {
+  font-weight: bolder;
+}
+input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+  background-color: #000;
+  color: #fff;
+}
+.myDefaultStyle {
   color: black;
   font-size: medium;
   border: 0px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.impact {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .red {
   color: red;
 }
@@ -41,8 +61,4 @@ button {
 }
 .no-border {
   border: 0px;
-}
-
-.impact {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
