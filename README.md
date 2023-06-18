@@ -55,5 +55,7 @@ Custom style a paragraph with [NgClass]
 - See image below where the checkbox is cleared thus enabling to see the current custom style :
   - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/3dce33d6-6a44-4a24-9842-fd24c3100137)
 
-### Assignment hint :
+### Assignment hints :
 - Use the '[ngClass]' directive with a ternary operator.
+- To save time on css content, the css styles are included in the app starter version.
+  - It can be located at path : app/assets/css-for-my-style.scss
