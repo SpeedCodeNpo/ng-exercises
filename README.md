@@ -6,33 +6,40 @@ Solution for assignment:  card-20230518-1828
 - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230618-1828-s
 
 ### Assignment title :
-Binding to CSS style and class using a directive
+Attribute directive [NgClass] capabilities.
 
-### Assignment instructions :
-- Use class binding with a directive to switch between multiple CSS classes of a div
+### Assignment spec :
+- Create an app to demonstrate the capabilities of an Attribute Directive.
+- The app will control the styling of a paragraph <p> element.
+- The style will be one of these two :
+  - (1) A custom style that the app user creates.
+  - (2) A default style.
+- In order to toggle between these two user clicks a checkbox.
+  - If checked, then the default style is locked-in, the custom style is ignored.
+  - When unchecked, the custom style is displayed.
+- The custom style is created by the user who controlls these HTML attributes :
+  - Color (red, blue or black)
+  - Font size (smaller, medium or larger)
+  - Border style (solid , dashed or none)
+  - These are controlled by buttons.
+  - At the bottom of the button panel the value of the custom class is displyed.
 
 ### Page design
-- The page will display a message and 4 buttons that control the style.
-- This is how the display should look like before and after clicking the GREEN button: 
-- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/1ee3ccac-bb2b-4db8-8c2c-391bc54cd13f)
+- See image below of app screen before user input :
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/eefbf556-3b5c-48d6-b445-4bb8d1db3dcb)
 
 ### User experience
-- The message is : "This is my color changing message"
-- - The message needs to be in font-size: large;
--
-- Under the message display 4 buttons RED, GREEN, BLUE & RESET
--
-- When clicking on each of the color buttons the color toggles between the default to the color.
-- - For example clicking on GREEN will toggle between green and default.
--
-- When clicking on the RESET button then color resets to default.
-- - After reset the color buttons need to return to their default state (not remember their last state)
+- See image below of user creating a custom style:
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/1169632b-a331-4cd0-883b-7e0d3d942771)
+
+- See image below of user locking-in the default style.
+  - This causes the default to be the style, ignoring the custom.
+  - While locked-in as default the user can still build a custom style, but
+  - they cannot see it because it is not activated.
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/196260ad-00a7-4523-b942-eb83a1a88783)
+
+- See image below where the checkbox is cleared thus enabling to see the current custom style :
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/3dce33d6-6a44-4a24-9842-fd24c3100137)
 
 ### Assignment hint :
-- Use the 'ngClass' directive.
-- - ngClass is suitable for handling multiple classes on a condition
-- - Also FYI, ngClass is usefull when the addition/removal of classes is dependent on data that is dynamically and frequently changing.
-
-### Solution for this assignment:
-- The solution branch can be found using this link:
-- GitHub:  https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230516-1220-q
+- Use the '[ngClass]' directive with a ternary operator.
