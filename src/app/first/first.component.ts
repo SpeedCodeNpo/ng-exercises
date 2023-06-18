@@ -6,36 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.scss'],
 })
 export class FirstComponent {
-  isRed = false;
-  isGreen = false;
-  isBlue = false;
-  //isBtnTwo = false;
+  myClassString = 'my-default-style';
+  currentColor = 'black';
+  currentFont = 'medium';
+  currentBorder = 'no-border';
 
-  toggleRed() {
-    this.isRed = !this.isRed;
-    this.isGreen = false;
-    this.isBlue = false;
+  pickColor(colorPicked: string) {
+    this.currentColor = colorPicked;
+    this.updateMyClassString();
   }
 
-  toggleGreen() {
-    this.isRed = false;
-    this.isGreen = !this.isGreen;
-    this.isBlue = false;
+  pickFont(fontPicked: string) {
+    this.currentColor = fontPicked;
+    this.updateMyClassString();
   }
 
-  toggleBlue() {
-    this.isRed = false;
-    this.isGreen = false;
-    this.isBlue = !this.isBlue;
+  pickBorder(borderPicked: string) {
+    this.currentColor = borderPicked;
+    this.updateMyClassString();
   }
 
-  resetColor() {
-    this.isRed = false;
-    this.isGreen = false;
-    this.isBlue = false;
+  resetStyle() {
+    this.myClassString = 'my-default-style';
   }
 
-  // clickBtnTwo() {
-  //   this.isBtnTwo = true;
-  // }
+  updateMyClassString() {
+    this.myClassString =
+      this.currentColor + ' ' + this.currentFont + ' ' + this.currentBorder;
+  }
 }

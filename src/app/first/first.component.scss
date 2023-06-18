@@ -1,6 +1,16 @@
 div {
   margin-bottom: 10px;
 }
+
+button {
+  margin-right: 10px;
+}
+
+.my-default-style {
+  color: black;
+  font-size: medium;
+  border: 0px;
+}
 .red {
   color: red;
 }
@@ -11,6 +21,24 @@ div {
   color: blue;
 }
 
-button {
-  margin-right: 10px;
+.smaller {
+  font-size: smaller;
+}
+
+.medium {
+  font-size: medium;
+}
+
+.larger {
+  font-size: larger;
+}
+
+.solid {
+  border: 2px solid black;
+}
+.dashed {
+  border: 2px dashed black;
+}
+.no-border {
+  border: 0px;
 }

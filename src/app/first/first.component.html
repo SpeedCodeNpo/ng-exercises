@@ -1,15 +1,34 @@
-<div
-  [ngClass]="{
-    red: isRed,
-    green: isGreen,
-    blue: isBlue
-  }"
->
-  <p>This is my color changing message</p>
-  
-  <button (click)="toggleRed()">RED</button>
-  <button (click)="toggleGreen()">GREEN</button>
-  <button (click)="toggleBlue()">BLUE</button>
-  <button (click)="resetColor()">RESET</button>
+<div>
+  <p
+    [ngClass]="{
+      red: isRed,
+      green: isGreen,
+      blue: isBlue
+    }"
+  >
+    I am a paragraph in a div. Click below to build my style.
+  </p>
+</div>
+<div>
+  <p>Pick color :</p>
+  <button (click)="pickColor('red')">RED</button>
+  <button (click)="pickColor('blue')">BLUE</button>
+  <button (click)="pickColor('black')">BLACK</button>
+</div>
+<div>
+  <p>Pick font-size :</p>
+  <button (click)="pickFont('smaller')">SMALLER</button>
+  <button (click)="pickFont('medium')">MEDIUM</button>
+  <button (click)="pickFont('largeer')">LARGER</button>
+</div>
+<div>
+  <p>Pick border style :</p>
+  <button (click)="pickBorder('solid')">SOLID</button>
+  <button (click)="pickBorder('dashed')">DASHED</button>
+  <button (click)="pickBorder('')">NONE</button>
 </div>
 
+<div>
+  <p>The myClassString value is : {{ myClassString }}</p>
+  <button (click)="resetStyle()">RESET TO DEFAULT</button>
+</div>
