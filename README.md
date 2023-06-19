@@ -27,7 +27,8 @@ Custom style a paragraph with *ngFor & *ngIf
 
 
 ### Screenshot of page :
--
+- This is how the page looks before user interaction:
+- - 
 -
 - Screenshot of filter in action : 
 - 
