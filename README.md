@@ -1,28 +1,30 @@
 ## Ng Exercises
-
 Welcome to Speed Code Exercises
 Instructions for assignment: card-20230619-1233
 
 ### Practice goals :
 
-Practice creating a Custom Pipe for filtering
+- Practice structure directives with *ngFor and *ngIf.
+- Understand the [ngForOf] directive and its alias *ngFor.
 
 ## Links
 - 
-- GitHub instruction & empty project link:
+### GitHub project starter link:
    https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230619-1233-q
 -
-- Stackblitz empty project link:
+- Stackblitz starter project link:
 -
-- GitHub solution project link:
+### GitHub project solution link:
    https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230619-1233-s
 
 - Stackblitz solution project link:
 - 
 
 ### Assignment title :
+Custom style a paragraph with *ngFor & *ngIf
 
-Creating a custom pipe to filter table rows.
+### Assignment spec :
+
 
 ### Screenshot of page :
 -
