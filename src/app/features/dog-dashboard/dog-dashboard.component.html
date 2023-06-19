@@ -1,20 +1,65 @@
-<p>dog-dashboard works!</p>
+<h2>Dog Sitter Dashboard</h2>
 
-<ul>
-  <li
-    *ngFor="let currentDog of dogData; let i = index; let totalDogCount = count"
-  >
-    {{ i + 1 }} {{ currentDog.dogName }} Total {{ totalDogCount }}
-  </li>
-
-  <hr />
+<div>
+  <ul>
+    <li
+      *ngFor="
+        let currentDog of dogData;
+        index as i;
+        let totalDogCount = count;
+        first as isFirst;
+        let isLast = last;
+        odd as isOdd;
+        let isEven = even
+      "
+    >
+      <p *ngIf="isFirst">Total dogs: {{ totalDogCount }}</p>
+      {{ i + 1 }}. {{ currentDog.dogName }}
+      <span *ngIf="isOdd"> : Even </span>
+      <span *ngIf="isEven"> : Odd</span>
+      <span *ngIf="isFirst"> : This is the first dog</span>
+      <span *ngIf="isLast"> : This is the last dog</span>
+    </li>
+  </ul>
+</div>
+<!------------------------------ -->
+<hr />
+<div>
+  <button (click)="onToggleList()">
+    <span *ngIf="isListActive">HIDE LIST</span>
+    <span *ngIf="!isListActive">SHOW LIST</span>
+  </button>
   <ng-template
     ngFor
     let-currentDog
     [ngForOf]="dogData"
     let-myIndex="index"
+    let-isFirst="first"
+    let-isLast="last"
+    let-isOdd="odd"
+    let-isEven="even"
+    let-totalDogCount="count"
     [ngForTrackBy]="trackByFn"
   >
-    <li *ngIf="true">{{ myIndex + 1 }} {{ currentDog.dogName }}</li>
+    <li *ngIf="isListActive">
+      {{ myIndex + 1 }} of {{ totalDogCount }} :
+      {{ currentDog.dogName }}
+      <span *ngIf="isOdd"> : Even </span>
+      <span *ngIf="isEven"> : Odd</span>
+      <!-- The Odd / Even are switched, we show odd when flagged even and vice-versa -->
+      <!-- This is because we added +1 to the index so we wont start with zero. -->
+
+      <span *ngIf="isFirst"> : This is the first dog</span>
+      <span *ngIf="isLast"> : This is the last dog</span>
+    </li>
   </ng-template>
-</ul>
+</div>
+<!------------------------------ -->
+<hr />
+<div>
+  <button (click)="onAddDog()">ADD DOG</button>
+  <button (click)="onChangeDogName()">RENAME LAST DOG</button>
+  <button (click)="onSwitchFirstLast()">SWITCH 1st & LAST</button>
+</div>
+<!------------------------------ -->
+<hr />
