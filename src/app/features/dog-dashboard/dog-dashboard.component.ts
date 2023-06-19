@@ -20,7 +20,7 @@ export class DogDashboardComponent {
   }
 
   trackByFn(index: number, item: DogObject) {
-    return item.dogName;
+    return item;
   }
 
   onToggleList() {
@@ -44,7 +44,7 @@ export class DogDashboardComponent {
     this.dogData[lastIndex].dogName = 'Newname';
   }
 
-  onSwitchFirstLast(){
+  onSwitchFirstLast() {
     const firstItem = this.dogData[0];
     const lastIndex = this.dogData.length - 1;
     const lastItem = this.dogData[lastIndex];

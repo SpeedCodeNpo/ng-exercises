@@ -24,10 +24,18 @@
 </div>
 <!------------------------------ -->
 <hr />
+<p>Button Pannel</p>
+<div>
+  <button (click)="onAddDog()">ADD DOG</button>
+  <button (click)="onChangeDogName()">RENAME LAST DOG</button>
+  <button (click)="onSwitchFirstLast()">SWITCH 1st & LAST</button>
+</div>
+<!------------------------------ -->
+<hr />
 <div>
   <button (click)="onToggleList()">
-    <span *ngIf="isListActive">HIDE LIST</span>
-    <span *ngIf="!isListActive">SHOW LIST</span>
+    <span *ngIf="isListActive">HIDE 2nd LIST</span>
+    <span *ngIf="!isListActive">SHOW 2nd LIST</span>
   </button>
   <ng-template
     ngFor
@@ -53,13 +61,6 @@
       <span *ngIf="isLast"> : This is the last dog</span>
     </li>
   </ng-template>
-</div>
-<!------------------------------ -->
-<hr />
-<div>
-  <button (click)="onAddDog()">ADD DOG</button>
-  <button (click)="onChangeDogName()">RENAME LAST DOG</button>
-  <button (click)="onSwitchFirstLast()">SWITCH 1st & LAST</button>
 </div>
 <!------------------------------ -->
 <hr />
