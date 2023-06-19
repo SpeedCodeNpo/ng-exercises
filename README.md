@@ -5,7 +5,6 @@ Instructions for assignment: card-20230619-1233
 ### Practice goals :
 
 - Practice structure directives with *ngFor and *ngIf.
-- Understand the [ngForOf] directive and its alias *ngFor.
 
 ## Links
 - 
@@ -21,10 +20,20 @@ Instructions for assignment: card-20230619-1233
 - 
 
 ### Assignment title :
-Custom style a paragraph with *ngFor & *ngIf
+- Dog sitter dashboard with *ngFor & *ngIf
+
+### What it teaches :
+- You will need to use your skills with *ngFor & *ngIf
+- In the *ngFor yu will need to use all its exported 
 
 ### Assignment spec :
-
+- You are given a service with a list of dogs.
+- Your task is to create an app that :
+  - Displays total amount of dogs in list (using *ngFor exported value)
+  - Displays the list of dogs
+  - Can add a hardcoded dog element to the list.
+  - Can rename the last dog in the list to 'newname'.
+  - Can switch between the first and last dog in the list.
 
 ### Screenshot of page :
 - This is how the page looks before user interaction:
@@ -36,27 +45,13 @@ Custom style a paragraph with *ngFor & *ngIf
 
 ### Assignment instructions :
 
-- In this assignment you will create a filter pipe for a list of students.
-- The filter will be activated using 2 input fields, one for the topic the other for the value.
-- In addition you will experience what a 'pure' & 'impure' pipe actually does.
-- - For this you will create a button that adds more students to the list.
-  - You will see that when the pipe is set to "pure" the filter will ignore the added students.
-  - Then when you set the pipe decorator's "pure" property to 'false' the filter will react to added students.
--
-- The data for the table is accesable via a prebuilt data service included in the starter version on branch card-20230616-1454-q.
-- The service is at : /app/core/doginfo.service.ts
+- Create a component in a 'features' folder.pure" property to 'false' the filter will react to added students.
+- Use the data from the pre-made 'DoginfoService' see path : /app/core/doginfo.service.ts
+- See illustration above for styling the UI.
 
 ### User experience :
-
-- The user has these 4 divs:
-- - An input box to type in the topic you want to focus on.
-- - An input box to type in a value with wich to filter the topic by.
-- - An "Add Student" button to experience how the true / false value of the pipe's "pure" attribute works.
-  - A table that by default displays all the students and when filtered diaplys the filter's result.
+- See screenshots above.
   
-### How to experience the pure / impure pipe functionality :
-- 
-
-Here is a snapshot for illustration : 
-- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/099bed7a-fefd-4bad-92c7-4125ffde1362)
-
+### Hint :
+- The solution has two implementations, the second one uses ngForOf which is a longer expression than *ngFor.
+- Actually *ngFor is a wrapper over ngForOf, it as created for more human readble and less code to write.
