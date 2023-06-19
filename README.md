@@ -28,10 +28,11 @@ Custom style a paragraph with *ngFor & *ngIf
 
 ### Screenshot of page :
 - This is how the page looks before user interaction:
-- - 
+- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/d0fc7a7d-405f-4fb2-8878-1b633caf71a7)
 -
-- Screenshot of filter in action : 
-- 
+- Screenshot after added dog, renamed and switched 1st & last in list:
+- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/765615bc-c088-4c2a-95e4-729b4e2cf8cf)
+
 
 ### Assignment instructions :
 
