@@ -1,0 +1,20 @@
+<p>dog-dashboard works!</p>
+
+<ul>
+  <li
+    *ngFor="let currentDog of dogData; let i = index; let totalDogCount = count"
+  >
+    {{ i + 1 }} {{ currentDog.dogName }} Total {{ totalDogCount }}
+  </li>
+
+  <hr />
+  <ng-template
+    ngFor
+    let-currentDog
+    [ngForOf]="dogData"
+    let-myIndex="index"
+    [ngForTrackBy]="trackByFn"
+  >
+    <li *ngIf="true">{{ myIndex + 1 }} {{ currentDog.dogName }}</li>
+  </ng-template>
+</ul>
