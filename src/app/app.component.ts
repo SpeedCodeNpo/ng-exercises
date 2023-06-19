@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { StudentDataService } from './core/services/student-data.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
