@@ -4,7 +4,7 @@ Instructions for assignment: card-20230619-1233
 
 ### Practice goals :
 
-- Practice structure directives with *ngFor and *ngIf.
+- Practice custom attribute directives.
 
 ## Links
 - 
