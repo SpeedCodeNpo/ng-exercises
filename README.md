@@ -1,6 +1,6 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Instructions for assignment: card-20230621-1245
+Solution for assignment: card-20230621-1245
 
 ### Practice goals :
 
@@ -29,11 +29,16 @@ Instructions for assignment: card-20230621-1245
 ### Assignment spec :
 - The user has two input controls:
 - - An input box to type in the color.
-- - A radio button to picj the font style :
-- - - Options are: bold, italic, bold+italic or normal
+- - A radio button to pick one of the font style values:
+- - - normal: The default font style.
+- - - italic: The text is italicized.
+- - - oblique: The text is slanted.
+- - - inherit: The font style is inherited from the parent element.
 - 
 - A sentence is displayed with a section of it highlited.
-
+- The default highlight values are:
+- - color "yellow"
+- - font-style is "inherit"
 - 
 - Use a custom attribute directive to inplemnet this feature. 
 

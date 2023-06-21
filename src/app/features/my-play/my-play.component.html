@@ -1,0 +1,18 @@
+<h2>Custom Attribute Directive Practice</h2>
+
+<label for="color-input">Type in the highlight color : </label>
+<input
+  id="color-input"
+  type="text"
+  [(ngModel)]="highlightColor"
+  placeholder="yellow"
+/>
+
+<p>highlightColor = {{ highlightColor }}</p>
+<p>
+  This is the line of text and this is the
+  <span appHighlightMarker directiveColor="{{ highlightColor }}">
+    highlighted
+  </span>
+  of the text.
+</p>
