@@ -5,6 +5,8 @@ import { AfterViewInit, Directive, ElementRef, Input } from '@angular/core';
 })
 export class HighlightMarkerDirective /* implements AfterViewInit*/ {
   @Input() directiveColor: string = 'yellow';
+  @Input() directiveFontStyle: string = 'normal';
+
   // @Input() directiveFontStyle = 'inherit';
   // Possible font-style values are:
   // - - - normal: The default font style.
@@ -20,6 +22,7 @@ export class HighlightMarkerDirective /* implements AfterViewInit*/ {
   // }
 
   ngOnChanges(): any {
-    this.elRef.nativeElement.style.background = this.directiveColor; //this.directiveColor;
+    this.elRef.nativeElement.style.background = this.directiveColor; 
+    this.elRef.nativeElement.style.fontStyle = this.directiveFontStyle;
   }
 }

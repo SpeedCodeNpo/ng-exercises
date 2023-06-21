@@ -1,17 +1,37 @@
 <h2>Custom Attribute Directive Practice</h2>
 
-<label for="color-input">Type in the highlight color : </label>
-<input
-  id="color-input"
-  type="text"
-  [(ngModel)]="highlightColor"
-  placeholder="yellow"
-/>
+<div>
+  <label for="color-input">Type in the highlight color : </label>
+  <input
+    id="color-input"
+    type="text"
+    [(ngModel)]="highlightColor"
+    placeholder="yellow"
+  />
+</div>
+<div>
+  <label for="radio-pack">Ch0ose the font style: </label>
+  <div id="radio-pack">
+    <input type="radio" id="italic" name="options" />
+    <label for="italic">Italic</label>
+    <input type="radio" id="oblique" name="options" />
+    <label for="oblique">Oblique</label>
+    <input type="radio" id="normal" name="options" />
+    <label for="normal">Normal</label>
+  </div>
+</div>
+
+<hr />
 
 <p>highlightColor = {{ highlightColor }}</p>
+<p>highlightFontStyle = {{ highlightFontStyle }}</p>
 <p>
   This is the line of text and this is the
-  <span appHighlightMarker directiveColor="{{ highlightColor }}">
+  <span
+    appHighlightMarker
+    directiveColor="{{ highlightColor }}"
+    directiveColor="{{ highlightColor }}"
+  >
     highlighted
   </span>
   of the text.
