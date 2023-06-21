@@ -22,7 +22,7 @@ export class HighlightMarkerDirective /* implements AfterViewInit*/ {
   // }
 
   ngOnChanges(): any {
-    this.elRef.nativeElement.style.background = this.directiveColor; 
+    this.elRef.nativeElement.style.background = this.directiveColor;
     this.elRef.nativeElement.style.fontStyle = this.directiveFontStyle;
   }
 }

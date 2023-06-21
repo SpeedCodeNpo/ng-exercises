@@ -9,16 +9,27 @@
     placeholder="yellow"
   />
 </div>
-<div>
-  <label for="radio-pack">Ch0ose the font style: </label>
-  <div id="radio-pack">
-    <input type="radio" id="italic" name="options" />
-    <label for="italic">Italic</label>
-    <input type="radio" id="oblique" name="options" />
-    <label for="oblique">Oblique</label>
-    <input type="radio" id="normal" name="options" />
-    <label for="normal">Normal</label>
-  </div>
+
+<div id="radio-pack">
+  <label for="radio-pack">Choose the font style: </label>
+  <input
+    type="radio"
+    id="italic"
+    value="italic"
+    name="font-style-options"
+    [(ngModel)]="highlightFontStyle"
+  />
+  <label for="italic">Italic</label>
+
+  <input
+    type="radio"
+    id="normal"
+    value="normal"
+    name="font-style-options"
+    checked
+    [(ngModel)]="highlightFontStyle"
+  />
+  <label for="normal">Normal</label>
 </div>
 
 <hr />
@@ -30,7 +41,7 @@
   <span
     appHighlightMarker
     directiveColor="{{ highlightColor }}"
-    directiveColor="{{ highlightColor }}"
+    directiveFontStyle="{{ highlightFontStyle }}"
   >
     highlighted
   </span>

@@ -6,11 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-play.component.scss'],
 })
 export class MyPlayComponent {
-  highlightColor = 'lightblue';
-  highlightFontStyle = 'inherit';
+  highlightColor = 'yellow';
+  highlightFontStyle = 'normal';
 
   inputHighlightColor(inputColor: string) {
-    console.log('Inside the input function');
     this.highlightColor = inputColor;
+  }
+
+  pickHighlightFontStyle(inputFontStyle: string) {
+    this.highlightFontStyle = inputFontStyle;
   }
 }
