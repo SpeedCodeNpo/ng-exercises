@@ -1,0 +1,22 @@
+<h2>Practice creating a custom Structural Directive</h2>
+<div>
+  <p>Click button to duplicate the div box:</p>
+  <button>DUPLICATE</button>
+</div>
+<div>
+  <div
+    class="little-box"
+    *appTimes="
+      5;
+      index as myIndex;
+      first as myFirst;
+      let myMiddle = middle;
+      last as myLast
+    "
+  >
+    <p>{{ myIndex }}</p>
+    <p *ngIf="myFirst">First</p>
+    <p *ngIf="myMiddle">Middle</p>
+    <p *ngIf="myLast">Last</p>
+  </div>
+</div>
