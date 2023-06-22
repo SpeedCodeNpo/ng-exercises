@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { MultiplierDirective } from './core/directives/multiplier.directive';
 import { MyPageComponent } from './features/my-page/my-page.component';
-import { MultiplierDirective } from './core/directives/duplicat.directive';
+
+
 
 @NgModule({
   declarations: [AppComponent, MyPageComponent, MultiplierDirective],
