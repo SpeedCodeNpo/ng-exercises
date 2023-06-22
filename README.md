@@ -1,20 +1,20 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230621-1245
+Starter version for assignment: card-20230622-1243
 
 ### Practice goals :
 
-- Practice custom attribute directives with multiple inputs.
+- Practice custom structural directives with multiple inputs.
 
 ## Links
 - 
 ### GitHub project starter link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230621-1245-q
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230622-1243-q
 -
 - Stackblitz starter project link:
 -
 ### GitHub project solution link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230621-1245-s
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230622-1243-s
 
 - Stackblitz solution project link:
 - 
