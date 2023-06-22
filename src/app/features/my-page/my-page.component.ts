@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-page.component.scss'],
 })
 export class MyPageComponent {
-  divQuantity = 1;
+  divQuantity = 3;
 }
