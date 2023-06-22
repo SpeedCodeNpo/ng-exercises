@@ -1,9 +1,9 @@
 import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 @Directive({
-  selector: '[appTimes]',
+  selector: '[myMultiplier]',
 })
-export class TimesDirective {
+export class MultiplierDirective {
   constructor(
     private viewContainer: ViewContainerRef,
     private templateRef: TemplateRef<any>
