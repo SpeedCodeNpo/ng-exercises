@@ -15,6 +15,8 @@ export class TimesDirective {
     let statusLast = false;
     let statusMiddle = false;
 
+    this.viewContainer.clear();
+
     for (let i = 0; i < times; i++) {
       //console.log('Hello');
       switch (i) {
@@ -23,7 +25,7 @@ export class TimesDirective {
           statusMiddle = false;
           statusLast = false;
           break;
-        case times:
+        case times - 1:
           statusFirst = false;
           statusMiddle = false;
           statusLast = true;
@@ -33,6 +35,7 @@ export class TimesDirective {
           statusMiddle = true;
           statusLast = false;
       }
+
       this.viewContainer.createEmbeddedView(this.templateRef, {
         index: i,
         first: statusFirst,

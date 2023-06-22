@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './my-page.component.html',
   styleUrls: ['./my-page.component.scss'],
 })
-export class MyPageComponent {}
+export class MyPageComponent {
+  divQuantity = 1;
+}

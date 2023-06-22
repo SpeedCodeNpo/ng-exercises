@@ -1,20 +1,20 @@
 <h2>Practice creating a custom Structural Directive</h2>
 <div>
-  <p>Click button to duplicate the div box:</p>
-  <button>DUPLICATE</button>
+  <p>Type in the number of div boxes you want:</p>
+  <input type="text" [(ngModel)]="divQuantity" />
 </div>
 <div>
   <div
     class="little-box"
     *appTimes="
-      5;
+      divQuantity;
       index as myIndex;
       first as myFirst;
       let myMiddle = middle;
       last as myLast
     "
   >
-    <p>{{ myIndex }}</p>
+    <p>{{ myIndex + 1 }}</p>
     <p *ngIf="myFirst">First</p>
     <p *ngIf="myMiddle">Middle</p>
     <p *ngIf="myLast">Last</p>
