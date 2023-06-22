@@ -10,7 +10,7 @@ Starter version for assignment: card-20230622-1243
 - 
 ### GitHub project starter link:
    https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230622-1243-q
--
+
 - Stackblitz starter project link:
 -
 ### GitHub project solution link:
@@ -29,33 +29,27 @@ Starter version for assignment: card-20230622-1243
 
 ### Assignment spec :
 - The user has an input field to enter a number:
-- - An input box to type in the color.
-- - A radio button to pick one of these font-style values:
-- - - normal: The default font style.
-- - - italic: The text is italicized.
-- 
-- A sentence is displayed with a section of it highlited.
-- The default highlight values are:
-- - color "yellow"
-- - font-style is "normal"
-- 
-- Use a custom attribute directive to inplemnet this feature. 
-
+- The page reacts to the number to display div boxes in a column.
+- In each div box there are:
+    - A number showing the div box serial order number
+    - Text tags identifying the div box as either the first, middle or last.
+    - Any div-box that is not first or last is tagged as "middle".
+ 
+- Use a custom structural directive to create the div-boxes, to number them and to tag them.
 
 ### Screenshot of page :
-- This is how the page looks before user interaction:
-- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/05545d93-077d-4d02-a4f8-b10346b7258d)
+- This is how the page looks before user interaction, by default number is "3":
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/05545d93-077d-4d02-a4f8-b10346b7258d)
 
--
+
 - Screenshot after user typed "2" to create only 2 div ellements:
-- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/fa6ef230-cf57-4e15-a21a-0eb356000fb6)
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/fa6ef230-cf57-4e15-a21a-0eb356000fb6)
 
 
 ### Assignment instructions :
 
-- A <p> paragraph sentence is displayed with a section defined by <span>.
-- The <span> neeeds to be controlled by a custom attribute directive whose values are dynamically set
-  by the color & font-style controls.
+- Create UI as shown in screen snapshots.
+- 
 
 
 ### User experience :
