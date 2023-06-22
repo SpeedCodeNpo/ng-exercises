@@ -49,11 +49,9 @@ Starter version for assignment: card-20230622-1243
 ### Assignment instructions :
 
 - Create UI as shown in screen snapshots.
-- 
+- Create a directive name myMultiplier with these features:
+  - It will receive a number as input and create that amount of copies of it's TemplateRef.
+  - It will export these 4 values: 'index' number and 3 booleans : 'first' , 'middle' & 'last'.
 
-
-### User experience :
-- See screenshots above.
-  
 ### Hint :
-- For dynamic changes that react instantly to the user input use the ngOnChanges() lifecycle hook.
+- Use '@Input( ..... ) set render( .... ) {....}' in the decorator to get the input number value.
