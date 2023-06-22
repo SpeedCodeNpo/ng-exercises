@@ -44,11 +44,11 @@ Starter version for assignment: card-20230622-1243
 
 ### Screenshot of page :
 - This is how the page looks before user interaction:
-- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/47ffeb3c-f394-4ceb-809b-a3bcc5c8e00c)
+- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/05545d93-077d-4d02-a4f8-b10346b7258d)
 
 -
 - Screenshot after user typed "2" to create only 2 div ellements:
-- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/be930255-8c3e-4cad-bf64-ed81912bc026)
+- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/fa6ef230-cf57-4e15-a21a-0eb356000fb6)
 
 
 ### Assignment instructions :
