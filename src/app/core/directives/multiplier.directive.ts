@@ -9,7 +9,7 @@ export class MultiplierDirective {
     private templateRef: TemplateRef<any>
   ) {}
 
-  @Input('appTimes') set render(times: number) {
+  @Input('myMultiplier') set render(times: number) {
     this.viewContainer.clear;
     let statusFirst = false;
     let statusLast = false;
