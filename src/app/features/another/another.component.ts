@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AnotherComponent {
   ngOnDestroy() {
-    console.log('Inside app-another: ngOnDestroy is activated.');
+    console.log('=== === [another.component] ngOnDestroy was triggered .');
   }
 }

@@ -1,8 +1,26 @@
-<!-- <p>{{ parentMessage }}</p> -->
-<p>ngOnChanges = {{ isNgOnChanges }}</p>
-<p>ngOnInit = {{ isNgOnInit }}</p>
-<p>ngDoCheck = {{ isNgDoCheck }}</p>
-<p>ngOnDestroy = {{ isNgOnDestroy }}</p>
+<div class="component-border">
+  <h3>This is home.component</h3>
+  <p>{{ incomingMessage }}</p>
+  <p [ngClass]="{ highlite: isNgOnChanges }">
+    ngOnChanges = {{ isNgOnChanges }}
+  </p>
+  <p [ngClass]="{ highlite: isNgOnInit }">ngOnInit = {{ isNgOnInit }}</p>
+  <p [ngClass]="{ highlite: isNgDoCheck }">
+    ngDoCheck = {{ isNgDoCheck }} Counter: {{ ngDoCheckCounter }}
+  </p>
+  <p [ngClass]="{ highlite: isNgOnDestroy }">
+    ngOnDestroy = {{ isNgOnDestroy }}
+  </p>
 
-<button (click)="toggleDestroyFlag()">TRIGGER DESTROY</button>
-<app-another *ngIf="isDestroyActive"></app-another>
+  <div>
+    <p>Test 'ngDoCheck' by typing into the input-box :</p>
+    <input
+      type="text"
+      [(ngModel)]="anyInput"
+      placeholder="type something here"
+    />
+  </div>
+
+  <button (click)="toggleDestroyFlag()">DESTROY COMPONENT 2</button>
+  <app-another *ngIf="isDestroyActive"></app-another>
+</div>

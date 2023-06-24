@@ -6,29 +6,39 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  // @Input() parentMessage = '';
-  isDestroyActive = false;
+  @Input() incomingMessage = '';
+  anyInput = '';
+
+  isDestroyActive = true;
 
   isNgOnChanges = false;
   isNgOnInit = false;
   isNgDoCheck = false;
   isNgOnDestroy = false;
+  ngDoCheckCounter = 0;
 
   ngOnChanges() {
-    console.log('Activated: ngOnChanges');
+    console.log(
+      'ngOnChanges : Was triggered, this means that before the display is rendered, it received data-bound input.'
+    );
     this.isNgOnChanges = true;
   }
   ngOnInit() {
-    console.log('Activated: ngOnInit');
+    console.log(
+      'ngOnInit : Was triggered , this means that ANgular finished rendering the display with the data-bound properties and set the components input propeties. '
+    );
     this.isNgOnInit = true;
   }
   ngDoCheck() {
-    console.log('ngDoCheck : Change was detected ');
+    console.log(
+      'ngDoCheck : Was triggered, this happens every tme any change happens.'
+    );
     this.isNgDoCheck = true;
+    this.ngDoCheckCounter++;
   }
 
   ngOnDestroy() {
-    console.log('ngOnDestroy');
+    console.log('=== === [home.component] ngOnDestroy was triggered.');
     this.isNgOnDestroy = true;
   }
 
