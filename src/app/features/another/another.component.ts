@@ -3,8 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-another',
   templateUrl: './another.component.html',
-  styleUrls: ['./another.component.scss']
+  styleUrls: ['./another.component.scss'],
 })
 export class AnotherComponent {
-
+  ngOnDestroy() {
+    console.log('Inside app-another: ngOnDestroy is activated.');
+  }
 }

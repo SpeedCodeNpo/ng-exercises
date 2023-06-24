@@ -28,14 +28,15 @@ export class HomeComponent {
   }
 
   ngOnDestroy() {
-    console.log('Activated: ngOnDestroy');
+    console.log('ngOnDestroy');
     this.isNgOnDestroy = true;
   }
 
   toggleDestroyFlag() {
     this.isDestroyActive = !this.isDestroyActive;
+    // this.ngOnDestroy();
     console.log(
-      `Toggled isDestroyActive, it's new value is now = ${this.isDestroyActive}`
+      `isDestroyActive updated, it's new value is now = ${this.isDestroyActive}`
     );
   }
 }
