@@ -3,3 +3,6 @@
 <p>ngOnInit = {{ isNgOnInit }}</p>
 <p>ngDoCheck = {{ isNgDoCheck }}</p>
 <p>ngOnDestroy = {{ isNgOnDestroy }}</p>
+
+<button (click)="toggleDestroyFlag()">TRIGGER DESTROY</button>
+<app-another *ngIf="isDestroyActive"></app-another>

@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class HomeComponent {
   // @Input() parentMessage = '';
-  myTest = 'Hello';
+  isDestroyActive = false;
 
   isNgOnChanges = false;
   isNgOnInit = false;
@@ -23,12 +23,19 @@ export class HomeComponent {
     this.isNgOnInit = true;
   }
   ngDoCheck() {
-    console.log('Activated: ngDoCheck');
+    console.log('ngDoCheck : Change was detected ');
     this.isNgDoCheck = true;
   }
 
   ngOnDestroy() {
     console.log('Activated: ngOnDestroy');
     this.isNgOnDestroy = true;
+  }
+
+  toggleDestroyFlag() {
+    this.isDestroyActive = !this.isDestroyActive;
+    console.log(
+      `Toggled isDestroyActive, it's new value is now = ${this.isDestroyActive}`
+    );
   }
 }
