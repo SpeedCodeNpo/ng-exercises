@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './comp1.component.html',
   styleUrls: ['./comp1.component.scss'],
 })
-export class HomeComponent {
+export class Comp1Component {
   @Input() incomingMessage = '';
   anyInput = '';
 
