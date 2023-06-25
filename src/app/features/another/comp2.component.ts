@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-another',
-  templateUrl: './another.component.html',
-  styleUrls: ['./another.component.scss'],
+  selector: 'app-component2',
+  templateUrl: './comp2.component.html',
+  styleUrls: ['./comp2.component.scss'],
 })
 export class AnotherComponent {
   ngOnDestroy() {
