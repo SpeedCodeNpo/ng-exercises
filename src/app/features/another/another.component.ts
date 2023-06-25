@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AnotherComponent {
   ngOnDestroy() {
-    console.log('=== === [another.component] ngOnDestroy was triggered .');
+    console.log('=== === I am component-2, my ngOnDestroy() was triggered .');
   }
 }

@@ -1,5 +1,5 @@
 <div class="component-border">
-  <h3>This is home.component</h3>
+  <h3>This is component-1</h3>
   <p>{{ incomingMessage }}</p>
   <p [ngClass]="{ highlite: isNgOnChanges }">
     ngOnChanges = {{ isNgOnChanges }}
@@ -20,7 +20,10 @@
       placeholder="type something here"
     />
   </div>
-
+  <p>
+    Clicking the destroy component-2 button you trigger 'ngOnDestroy' on
+    component-2, view the console-log to see that it was triggered.
+  </p>
   <button (click)="toggleDestroyFlag()">DESTROY COMPONENT 2</button>
   <app-another *ngIf="isDestroyActive"></app-another>
 </div>

@@ -6,17 +6,12 @@
   <!--          To activate this Demo first comment-in the above 2 lines (the button and app-home)-->
   <!--          then comment-out the line below.  -->
 
-  <p>
-    Clicking the destroy component-1 button you trigger 'ngOnDestroy' on
-    component-2 and then component-1.
-  </p>
-  <button (click)="destroyComp1()">DESTROY COMPONENT 1</button>
-  <app-home *ngIf="isDestroyComp1"></app-home>
+  <app-home></app-home>
 
-  <!-- Demo 2 : Triggering the NgOnChanges -->
+  <!-- Demo 2 : Triggering the NgOnChanges of component 1-->
   <!--          We do this by invoking the <app-home> comp with data being sent to it.  -->
   <!--          To activate this Demo first comment-in the above 2 lines (the button and app-home)-->
   <!--          then comment-out the line below.  -->
 
-  <!-- <app-home *ngIf="isDestroyComp1" [incomingMessage]="messageToHome"></app-home> -->
+  <!-- <app-home [incomingMessage]="messageToHome"></app-home> -->
 </div>
