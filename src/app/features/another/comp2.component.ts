@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './comp2.component.html',
   styleUrls: ['./comp2.component.scss'],
 })
-export class AnotherComponent {
+export class Comp2Component {
   ngOnDestroy() {
     console.log('=== === I am component-2, my ngOnDestroy() was triggered .');
   }
