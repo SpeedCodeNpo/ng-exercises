@@ -1,11 +1,12 @@
 ## Ng Exercises
 
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230623-1548
+Solution version for assignment: card-20230623-1548
 
 ### Practice goals :
 
-- Practice lifecycle hooks.
+- Practice the 'ngOn...' lifecycle hooks.
+- FYI: This does not include the 'ngAfter...' lifecycle hooks.
 
 ## Links
 
@@ -27,42 +28,51 @@ https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230623-1548-s
 
 ### Assignment title :
 
-- Create a custom structural directive for an element group generator.
+- Create a lifecycle hook demo app.
 
 ### What it trains you to do :
 
-- To create your custom structural directive.
-- To implement an input to the directive.
-- To implement multiple exported values from the directive.
+- To implement and understand these four lifecycle hooks:
+  - ngOnChanges
+  - ngOnInit
+  - ngDoCheck
+  - ngOnDestroy
 
 ### Assignment spec :
 
-- The user has an input field to enter a number:
-- The page reacts to the number to display div boxes in a column.
-- In each div box there are:
-
-  - A number showing the div box serial order number
-  - Text tags identifying the div box as either the first, middle or last.
-  - Any div-box that is not first or last is tagged as "middle".
-
-- Use a custom structural directive to create the div-boxes, to number them and to tag them.
+- The page displays components as box frames, on inside the other as they are in the component tree.
+- The component names are: app.component , component-1 & component-2.
+- App.component can be run in two demo modes,
+  - You will need to edit it's template html to run each demo seperatly.
+  - Demo-1 invokes component-1 without sending a value to component-1, this means that the ngOnChanges wont be triggered.
+  - Demo-2 invokes component-1 whit a value for component-1, this will trigger ngOnChange.
+- Component-1 displays :
+  -  Values showing the state of each of the component's four lifecycle hooks.
+  -  Highlites any lifecycle-hook text whose value is true.
+  -  Displays an input box, every charcter typed in it will increment the ngDoCheck counter and display its value.
+  -  Displays a button named: DESTROY COMPONENT 2.
+    -  Clicking on that button destroys component-1's child compoonent.
+    -  In the chrome dev tools see the console logged values,
+    -  you should see that component-2 logged message is that onNgDestroy was triggered
+   
+- Component-2 displays :
+- This componenet only displays text, it's main use is for seeing that onNgDestroy is triggered.
 
 ### Screenshot of page :
 
-- This is how the page looks before user interaction, by default number is "3":
+- This is how the page looks before user interaction, it starts with ngOnChanges being activated twice:
 
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/05545d93-077d-4d02-a4f8-b10346b7258d)
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/f4255d00-c68d-42e8-8457-8f169806a50c)
 
-- Screenshot after user typed "2" to create only 2 div ellements:
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/fa6ef230-cf57-4e15-a21a-0eb356000fb6)
+- Screenshot after user typed "123" and clicked the 'DESTROY COMPONENT 2':
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a693a9c5-8e07-471f-8c6c-50ef06cb3849)
+
 
 ### Assignment instructions :
 
 - Create UI as shown in screen snapshots.
-- Create a directive name myMultiplier with these features:
-  - It will receive a number as input and create that amount of copies of it's TemplateRef.
-  - It will export these 4 values: 'index' number and 3 booleans : 'first' , 'middle' & 'last'.
+- In the app.component.html template create two variations for using the component1 tag :
+  - The first one is calling the tag as is without any added directives.
+  - The second variation is passing a value from app.component to component-1, this triggers 'ngOnChanges'.
+- The rest of the instructions are described above 'Assignment Spec' section.
 
-### Hint :
-
-- Use '@Input( ..... ) set render( .... ) {....}' in the decorator to get the input number value.
