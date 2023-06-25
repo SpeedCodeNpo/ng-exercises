@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { AnotherComponent } from './features/another/comp2.component';
+import { Comp2Component } from './features/another/comp2.component';
 import { Comp1Component } from './features/comp1/comp1.component';
 
 @NgModule({
-  declarations: [AppComponent, Comp1Component, AnotherComponent],
+  declarations: [AppComponent, Comp1Component, Comp2Component],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
