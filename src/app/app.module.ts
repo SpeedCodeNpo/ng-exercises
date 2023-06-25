@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AnotherComponent } from './features/another/another.component';
-import { HomeComponent } from './features/comp1/comp1.component';
+import { Comp1Component } from './features/comp1/comp1.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AnotherComponent],
+  declarations: [AppComponent, Comp1Component, AnotherComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
