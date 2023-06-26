@@ -8,7 +8,11 @@ import { Component, signal } from '@angular/core';
 export class Comp1Component {
   count = signal<number>(0);
 
-  updateCount() {
+  consoleLogCount() {
+    console.log(`The signal 'count' value is : ${this.count()}`);
+  }
+
+  resetCount() {
     this.count.set(4);
   }
 
