@@ -1,26 +1,29 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230622-1243
+Starter version for assignment: card-20230626-1039
 
 ### Practice goals :
 
-- Practice custom structural directives with multiple exported values.
+- Practice Angular signals which includes:
+  - signal update & mutate
+  - computed-signal
+  - how to run a side-effect triggered by a signal change
 
 ## Links
 - 
 ### GitHub project starter link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230622-1243-q
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230626-1039-q
 
 - Stackblitz starter project link:
 -
 ### GitHub project solution link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230622-1243-s
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230626-1039-s
 
 - Stackblitz solution project link:
 - 
 
 ### Assignment title :
-- Create a custom structural directive for an element group generator.
+- xxxxxxxxxxxx.
 
 ### What it trains you to do :
 - To create your custom structural directive.
