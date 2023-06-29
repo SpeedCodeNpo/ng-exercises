@@ -6,14 +6,15 @@ import { Component, signal } from '@angular/core';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  count = signal<number>(0);
+  initialCount = 0;
+  count = signal<number>(this.initialCount);
 
   consoleLogCount() {
     console.log(`The signal 'count' value is : ${this.count()}`);
   }
 
   resetCount() {
-    this.count.set(4);
+    this.count.set(this.initialCount);
   }
 
   incrementCount() {

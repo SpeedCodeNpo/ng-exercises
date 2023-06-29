@@ -1,8 +1,20 @@
-<p>comp1 works!</p>
+<h2>Play with Angular signal</h2>
 <h1>Count : {{ count() }}</h1>
 
 <button (click)="consoleLogCount()">Console Log</button>
-<button (click)="resetCount()">Reset</button>
-<button (click)="incrementCount()">Increment</button>
-
-
+<hr />
+<div>
+  <button (click)="resetCount()">SET signal to {{ initialCount }}</button>
+  <label for="inputInitialCount"> Pick new initial value for signal : </label>
+  <input
+    type="text"
+    id="inputInitialCount"
+    [(ngModel)]="initialCount"
+    placeholder="initialCount"
+  />
+</div>
+<hr />
+<div>
+  <p>Click to update the signal with a +1 increment :</p>
+  <button (click)="incrementCount()">UPDATE signal {{ count() }} (+1)</button>
+</div>
