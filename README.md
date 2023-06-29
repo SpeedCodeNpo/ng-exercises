@@ -5,6 +5,7 @@ Solution version for assignment: card-20230626-1039
 ### Practice goals :
 
 - Practice Angular signals which includes:
+  - signal initialize and set
   - signal update & mutate
   - computed-signal
   - how to run a side-effect triggered by a signal change
