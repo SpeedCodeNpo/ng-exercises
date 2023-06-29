@@ -1,7 +1,7 @@
 <h2>Play with Angular signal</h2>
 <h1>Count : {{ count() }}</h1>
 
-<button (click)="consoleLogCount()">Console Log</button>
+<button (click)="consoleLogCount()">GET and display in console Log</button>
 <hr />
 <div>
   <button (click)="resetCount()">SET signal to {{ initialCount }}</button>
@@ -10,11 +10,31 @@
     type="text"
     id="inputInitialCount"
     [(ngModel)]="initialCount"
-    placeholder="initialCount"
+    placeholder="{{ initialCount }}"
   />
 </div>
 <hr />
 <div>
   <p>Click to update the signal with a +1 increment :</p>
   <button (click)="incrementCount()">UPDATE signal {{ count() }} (+1)</button>
+</div>
+<hr />
+<div>
+  <p>Example of signal mutate, click to mutate content of the user object:</p>
+  <p>The property and values of the user are :</p>
+  <ul>
+    <li>Name : {{ userInfo().name }}</li>
+    <li>Age : {{ userInfo().age }}</li>
+    <li>Email : {{ userInfo().email }}</li>
+  </ul>
+  <p>Test the signal mutate by typing in a new user name :</p>
+
+  <input
+    class="long-input"
+    type="text"
+    [(ngModel)]="username"
+    placeholder="{{ userInfo().name }}"
+  />
+
+  <button (click)="renameUser()">MUTATE signal</button>
 </div>
