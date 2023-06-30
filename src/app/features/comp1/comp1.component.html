@@ -1,25 +1,39 @@
 <h2>Play with Angular signal</h2>
 <h1>Count : {{ count() }}</h1>
 
-<button (click)="consoleLogCount()">GET and display in console Log</button>
+<!-- ---------------------------------- -->
 <hr />
 <div>
+  <h3>signal GET</h3>
+  <button (click)="consoleLogCount()">
+    GET count value & display in console
+  </button>
+</div>
+<!-- ---------------------------------- -->
+<hr />
+<div>
+  <h3>signal SET</h3>
   <button (click)="resetCount()">SET signal to {{ initialCount }}</button>
   <label for="inputInitialCount"> Pick new initial value for signal : </label>
   <input
     type="text"
     id="inputInitialCount"
+    class="short-input"
     [(ngModel)]="initialCount"
     placeholder="{{ initialCount }}"
   />
 </div>
+<!-- ---------------------------------- -->
 <hr />
 <div>
+  <h3>signal UPDATE</h3>
   <p>Click to update the signal with a +1 increment :</p>
   <button (click)="incrementCount()">UPDATE signal {{ count() }} (+1)</button>
 </div>
+<!-- ---------------------------------- -->
 <hr />
 <div>
+  <h3>signal MUTATE</h3>
   <p>Example of signal mutate, click to mutate content of the user object:</p>
   <p>The property and values of the user are :</p>
   <ul>
@@ -35,6 +49,38 @@
     [(ngModel)]="username"
     placeholder="{{ userInfo().name }}"
   />
+  <button (click)="mutateUsername()">MUTATE userInfo().name</button>
 
-  <button (click)="renameUser()">MUTATE signal</button>
+  <div>
+    <input
+      class="short-input"
+      type="text"
+      [(ngModel)]="userage"
+      placeholder="{{ userInfo().age }}"
+    />
+    <button (click)="mutateUserage()">MUTATE userInfo().age</button>
+  </div>
+</div>
+<!-- ---------------------------------- -->
+<hr />
+<div>
+  <h3>signal COMPUTE</h3>
+  <p>
+    When either one of the signals ( count() or userInfo().age ) is changed,
+    then the 'tokens' compute is activated, tokens = age * count.
+  </p>
+
+  <p>So there is no button to click, just see the result :</p>
+  <h1>Tokens : {{ tokens() }}</h1>
+</div>
+<!-- ---------------------------------- -->
+<hr />
+<div>
+  <h3>signal EFFECT</h3>
+  <p>There are two effects defined in the component's constructor.</p>
+  <p>One is for the count() and the other for userInfo()</p>
+  <p>
+    When either one changes it triggers a console log for that specific one.
+  </p>
+  <p>Open the console to see the logs.</p>
 </div>

@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, effect, signal } from '@angular/core';
 
 @Component({
   selector: 'app-comp1',
@@ -6,18 +6,40 @@ import { Component, signal } from '@angular/core';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  initialCount = 0;
+  constructor() {
+    effect(() =>
+      console.log(
+        `effect triggered for userInfo() signal change. \n New value is :   ${JSON.stringify(
+          this.userInfo()
+        )}`
+      )
+    );
+    effect(() =>
+      console.log(
+        `effect triggered for count() signal change.\n New value is : ${this.count()}`
+      )
+    );
+  }
+
+  initialCount = 1;
   count = signal<number>(this.initialCount);
 
+  //The tokens signal will be updated when both these things happen:
+  //   (1) Any time it is read
+  //   AND
+  //   (2) either userInfo.age OR count signals are updated
+  tokens = computed(() => this.userInfo().age * this.count());
+
+  //FYI: If the default value of the ngModel property 'username' ia anything but
+  //an empty string, then in the <input> tag in the html template the placeholder value will be ignored and the ngModel value of 'userbname' will be displpayed in the input box.
+  username = 'Danny';
+  userage = 25;
+
   userInfo = signal({
-    name: 'Danny',
-    age: 27,
+    name: this.username,
+    age: this.userage,
     email: 'my@email.com',
   });
-
-  //FYI: If the default value of the ngModel property 'username' ia anythoing but
-  //an empty string, then in the <input> tag in the html template the placeholder value will be ignored and the ngModel value of 'userbname' will be displpayed in the input box.
-  username = '';
 
   consoleLogCount() {
     //In signal, the GET is activated by caliing the property name with () parenthesis.
@@ -37,7 +59,10 @@ export class Comp1Component {
     });
   }
 
-  renameUser() {
+  mutateUsername() {
     this.userInfo.mutate((v) => (v.name = this.username));
+  }
+  mutateUserage() {
+    this.userInfo.mutate((v) => (v.age = this.userage));
   }
 }
