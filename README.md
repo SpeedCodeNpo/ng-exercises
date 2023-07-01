@@ -49,20 +49,15 @@ Solution version for assignment: card-20230626-1039
 
 
 ### Screenshot of page sections 1 - 3:
-- This is how the page looks before user interaction, by default number is "3":
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/05545d93-077d-4d02-a4f8-b10346b7258d)
+- This is how the page looks for first 3 sections before user interaction:
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/590cb8c9-7723-49ce-a309-1e90affabc5a)
 
-
-- Screenshot after user typed "2" to create only 2 div ellements:
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/fa6ef230-cf57-4e15-a21a-0eb356000fb6)
+### Screenshot of page sections 4 - 6:
+- This is how the page looks for the rest of the sections before user interaction:
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/4c90c1a7-a039-417b-9bff-07d0c577fbc7)
 
 
 ### Assignment instructions :
 
 - Create UI as shown in screen snapshots.
-- Create a directive name myMultiplier with these features:
-  - It will receive a number as input and create that amount of copies of it's TemplateRef.
-  - It will export these 4 values: 'index' number and 3 booleans : 'first' , 'middle' & 'last'.
-
-### Hint :
-- Use '@Input( ..... ) set render( .... ) {....}' in the decorator to get the input number value.
+- Create a component for the page (dont use the app.component fr the page)
