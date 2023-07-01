@@ -5,8 +5,11 @@
 <hr />
 <div>
   <h3>signal GET</h3>
+  <p>
+    To demo the GET functionality of the 'count()' signal it is console logged.
+  </p>
   <button (click)="consoleLogCount()">
-    GET count value & display in console
+    GET count() & display in console.log
   </button>
 </div>
 <!-- ---------------------------------- -->
@@ -70,15 +73,17 @@
     then the 'tokens' compute is activated, tokens = age * count.
   </p>
 
-  <p>So there is no button to click, just see the result :</p>
-  <h1>Tokens : {{ tokens() }}</h1>
+  <p>
+    So there is no button, just see this result : 'tokens' =
+    {{ tokens() }}
+  </p>
 </div>
 <!-- ---------------------------------- -->
 <hr />
 <div>
   <h3>signal EFFECT</h3>
   <p>There are two effects defined in the component's constructor.</p>
-  <p>One is for the count() and the other for userInfo()</p>
+  <p>One is for the count() and the other for userInfo().</p>
   <p>
     When either one changes it triggers a console log for that specific one.
   </p>

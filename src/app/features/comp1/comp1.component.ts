@@ -16,7 +16,7 @@ export class Comp1Component {
     );
     effect(() =>
       console.log(
-        `effect triggered for count() signal change.\n New value is : ${this.count()}`
+        `effect triggered for tokens() computed-signal change.\n New value is : ${this.tokens()}`
       )
     );
   }

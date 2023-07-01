@@ -5,10 +5,12 @@ Solution version for assignment: card-20230626-1039
 ### Practice goals :
 
 - Practice Angular signals which includes:
-  - signal initialize and set
-  - signal update & mutate
-  - computed-signal
-  - how to run a side-effect triggered by a signal change
+  - signal initialize a value
+  - signal get it's value
+  - signal set a new value
+  - signal update to new value from existing value
+  - create a computed signal
+  - create an async effect signal
 
 ## Links
 - 
@@ -24,24 +26,29 @@ Solution version for assignment: card-20230626-1039
 - 
 
 ### Assignment title :
-- xxxxxxxxxxxx.
-
-### What it trains you to do :
-- To create your custom structural directive.
-- To implement an input to the directive.
-- To implement multiple exported values from the directive.
+- Play with Angular signal
 
 ### Assignment spec :
-- The user has an input field to enter a number:
-- The page reacts to the number to display div boxes in a column.
-- In each div box there are:
-    - A number showing the div box serial order number
-    - Text tags identifying the div box as either the first, middle or last.
-    - Any div-box that is not first or last is tagged as "middle".
- 
-- Use a custom structural directive to create the div-boxes, to number them and to tag them.
+- The UI is divided into sections that demonstrate all functinality of signals.
+- There are 6 sections :
+  - The first 3 sections focus on a signal named 'count()'. These sections are :
+    - (1) Demo the GET functionality
+    - (2) Demo the SET functionality :
+        - Here the user has an input box to pick a new value and a button to activate SET.
+    - (3) Demo the UPDATE functionality :
+        - Here the user has a button that increments the existing value by 1.
+  - The 4th section demonstrates the MUTATE functionality on an object :
+    - (4) The object is a user-info object, the UI enables to change property values of the username and user age.
+  - The 5th section demonstartes a 'computed' signal :
+    - The computed signal is named tokens.
+    - It is calculated as user age * the count() value.
+    - So if any one of them changes then the tokens gets a new value automatically.
+  - The 6th section demonstrates an 'effect' signal :
+    - Two effect signals are to be defined in the component constructor.
+    - Each one is a console.log, one for the 'count()' signal and the other for the tokens() computed-signal.
 
-### Screenshot of page :
+
+### Screenshot of page sections 1 - 3:
 - This is how the page looks before user interaction, by default number is "3":
   - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/05545d93-077d-4d02-a4f8-b10346b7258d)
 
