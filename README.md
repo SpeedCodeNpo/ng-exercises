@@ -54,7 +54,8 @@ Solution version for assignment: card-20230626-1039
 
 ### Screenshot of page sections 4 - 6:
 - This is how the page looks for the rest of the sections before user interaction:
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/4c90c1a7-a039-417b-9bff-07d0c577fbc7)
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/94510b6e-ee1e-4175-ac02-93e84068d022)
+
 
 
 ### Assignment instructions :
