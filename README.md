@@ -1,26 +1,25 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Solution version for assignment: card-20230626-1039
+Solution version for assignment: card-202307-1743
 
 ### Practice goals :
 
-- Practice Angular signals which includes:
-  - signal initialize a value
-  - signal get it's value
-  - signal set a new value
-  - signal update to new value from existing value
-  - create a computed signal
-  - create an async effect signal
+- Practice Angular local storage module which includes:
+  - Set a key : value
+  - Get a key : value
+  - Remove a key : value
+  - Clear the storage
+  - Encrypt / Decrypt using  Web Crypto Storage https://www.npmjs.com/package/@webcrypto/storage
 
 ## Links
 - 
 ### GitHub project starter link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230626-1039-q
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202307-1743-q
 
 - Stackblitz starter project link:
 -
 ### GitHub project solution link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230626-1039-s
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202307-1743-s
 
 - Stackblitz solution project link:
 
@@ -49,12 +48,11 @@ Solution version for assignment: card-20230626-1039
 
 ### Screenshot of page sections 1 - 3:
 - This is how the page looks for first 3 sections before user interaction:
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/590cb8c9-7723-49ce-a309-1e90affabc5a)
-
+  - 
+  
 ### Screenshot of page sections 4 - 6:
 - This is how the page looks for the rest of the sections before user interaction:
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/94510b6e-ee1e-4175-ac02-93e84068d022)
-
+  - 
 
 
 ### Assignment instructions :
