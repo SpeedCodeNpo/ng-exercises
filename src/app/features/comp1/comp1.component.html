@@ -9,19 +9,19 @@
 </div>
 
 <div>
-  <button>Save using .set(key,value)</button>
+  <button>Save using .setItem(key,value)</button>
 </div>
 <hr />
 <div>
   <p>To see what is stored can see console or click button</p>
-  <button>Get using .get(key)</button>
+  <button>Get using .getItem(key)</button>
   <!-- Here add a loop to print all key-values in a table -->
 </div>
 <hr />
 <div>
   <label for="key-remove">What key do you want to remove ? </label>
   <input id="key-remove" type="text" [(ngModel)]="keyName" />
-  <button>Remove key '{{ keyName }} using .remove(key)</button>
+  <button>Remove key '{{ keyName }} using .removeItem(key)</button>
 </div>
 <hr />
 <div>
