@@ -4,6 +4,22 @@
   <input id="key-input" type="text" [(ngModel)]="keyName" />
 </div>
 <div>
-  <label for="value-input">Give a value to the key : </label>
+  <label for="value-input">Give the key a value : </label>
   <input id="value-input" type="text" [(ngModel)]="keyValue" />
 </div>
+
+<div>
+  <button>Save using .set(key,value)</button>
+</div>
+<hr />
+<div>
+  <p>To see what is stored can see console or click button</p>
+  <button>Get using .get(key)</button>
+</div>
+<hr />
+<div>
+  <label for="key-remove">What key do you want to remove ? </label>
+  <input id="key-remove" type="text" [(ngModel)]="keyName" />
+  <button>Remove key '{{ keyName }} using .remove(key)</button>
+</div>
+<hr />
