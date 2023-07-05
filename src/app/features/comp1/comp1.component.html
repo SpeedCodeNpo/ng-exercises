@@ -1,57 +1,60 @@
-<p>comp1 works!</p>
+<!-- ==================================== -->
+<hr />
+<h3>Saving to LocalStorage</h3>
 <div>
   <label for="key-input">Give a name to the key : </label>
-  <input id="key-input" type="text" [(ngModel)]="keyName" />
+  <input id="key-input" type="text" [(ngModel)]="requestedKeyName" />
 </div>
 <div>
   <label for="value-input">Give the key a value : </label>
-  <input id="value-input" type="text" [(ngModel)]="keyValue" />
+  <input id="value-input" type="text" [(ngModel)]="requestedKeyValue" />
 </div>
 
 <div>
   <button (click)="setInLocalStorage()">Save using .setItem(key,value)</button>
 </div>
+<!-- ==================================== -->
 <hr />
+<h3>Getting from LocalStorage</h3>
 <div>
-  <p>
-    To see what is content stored in local storage click button or use browser
-    dev tools
-  </p>
-  <button
-    (click)="getStorageContent()"
-    [disabled]="storageContentList.length === 0"
-  >
-    Get using .getItem(key)
-  </button>
-  <!-- Here add a loop to print all key-values in a table -->
-
-  <ng-container *ngIf="storageContentList.length !== 0; else idCaseNoStorage">
+  <ng-container *ngIf="numberOfKeysInStorage !== 0; else idCaseNoStorage">
     <div>
-      <p>The following table shows the stored key-values</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Key</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of storageContentList">
-            <td>{{ item | json }}</td>
-          </tr>
-        </tbody>
-      </table>
+      <p>
+        The number of keys currently in local storage is :
+        {{ numberOfKeysInStorage }}
+      </p>
+      <p>
+        To see the key names and their values in local storage use browser dev
+        tools.
+      </p>
     </div>
+    <div>
+      <p>Type key name then click button to see its value.</p>
+      <label for="key-remove">Key name : </label>
+      <input id="key-remove" type="text" [(ngModel)]="requestedKeyName" />
+      <button
+        (click)="getValueOfKey()"
+        [disabled]="numberOfKeysInStorage === 0"
+      >
+        Get value Using .getItem({{ requestedKeyName }})
+      </button>
+    </div>
+    <h3>
+      The value of key '{{ requestedKeyName }}' = '{{ requestedKeyValue }}'
+    </h3>
   </ng-container>
 </div>
 <ng-template #idCaseNoStorage><h3>Storage is empty</h3></ng-template>
+
+<!-- ==================================== -->
 <hr />
+<h3>Removing single key-value from LocalStorage</h3>
 <div>
-  <label for="key-remove">What key do you want to remove ? </label>
-  <input id="key-remove" type="text" [(ngModel)]="keyName" />
-  <button>Remove key '{{ keyName }} using .removeItem(key)</button>
+  <button (click)="removeKeyValue()">Remove this key using .removeItem({{ requestedKeyName }})</button>
 </div>
+<!-- ==================================== -->
 <hr />
+<h3>Clearing all key-values from LocalStorage</h3>
 <div>
   <p>Click button to clear whole local storage :</p>
   <button (click)="clearAllLocalStorage()">
