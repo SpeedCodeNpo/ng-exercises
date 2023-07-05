@@ -13,8 +13,11 @@
 </div>
 <hr />
 <div>
-  <p>To see what is stored can see console or click button</p>
-  <button>Get using .getItem(key)</button>
+  <p>
+    To see what is content stored in local storage click button or use browser
+    dev tools
+  </p>
+  <button (click)="getStorageContent()">Get using .getItem(key)</button>
   <!-- Here add a loop to print all key-values in a table -->
   <div>
     <p>The following table shows the stored key-values</p>
