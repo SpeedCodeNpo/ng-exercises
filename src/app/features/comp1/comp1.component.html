@@ -9,13 +9,29 @@
 </div>
 
 <div>
-  <button>Save using .setItem(key,value)</button>
+  <button (click)="setInLocalStorage()">Save using .setItem(key,value)</button>
 </div>
 <hr />
 <div>
   <p>To see what is stored can see console or click button</p>
   <button>Get using .getItem(key)</button>
   <!-- Here add a loop to print all key-values in a table -->
+  <div>
+    <p>The following table shows the stored key-values</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hello</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 <hr />
 <div>
