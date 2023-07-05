@@ -15,6 +15,7 @@ export class Comp1Component {
     const valueToSet = this.keyValue ? this.keyValue : 'noKeyValue';
 
     localStorage.setItem(nameToSet, valueToSet);
+    this.storageContentList.push({ nameToSet, valueToSet });
   }
 
   getStorageContent() {
@@ -34,8 +35,18 @@ export class Comp1Component {
       console.log('+ ');
     }
 
+    if (this.storageContentList.length === 0) {
+      console.log('-------- empty');
+    }
     for (let item of this.storageContentList) {
       console.log('+ ' + JSON.stringify(item));
     }
+  }
+
+  clearAllLocalStorage() {
+    localStorage.clear();
+    this.keyName = '';
+    this.keyValue = '';
+    this.storageContentList = [];
   }
 }

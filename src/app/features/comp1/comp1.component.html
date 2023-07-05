@@ -17,25 +17,34 @@
     To see what is content stored in local storage click button or use browser
     dev tools
   </p>
-  <button (click)="getStorageContent()">Get using .getItem(key)</button>
+  <button
+    (click)="getStorageContent()"
+    [disabled]="storageContentList.length === 0"
+  >
+    Get using .getItem(key)
+  </button>
   <!-- Here add a loop to print all key-values in a table -->
-  <div>
-    <p>The following table shows the stored key-values</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Key</th>
-          <th>Value</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Hello</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+  <ng-container *ngIf="storageContentList.length !== 0; else idCaseNoStorage">
+    <div>
+      <p>The following table shows the stored key-values</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of storageContentList">
+            <td>{{ item | json }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </ng-container>
 </div>
+<ng-template #idCaseNoStorage><h3>Storage is empty</h3></ng-template>
 <hr />
 <div>
   <label for="key-remove">What key do you want to remove ? </label>
@@ -45,5 +54,7 @@
 <hr />
 <div>
   <p>Click button to clear whole local storage :</p>
-  <button>Clear local storage using .clear()</button>
+  <button (click)="clearAllLocalStorage()">
+    Clear local storage using .clear()
+  </button>
 </div>
