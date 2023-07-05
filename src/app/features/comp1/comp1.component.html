@@ -1,3 +1,6 @@
+<button (click)="storeCrypto()">Encrypt</button>
+<button (click)="decryptCrypto()">Decrypt</button>
+
 <!-- ==================================== -->
 <hr />
 <h3>Saving to LocalStorage</h3>
@@ -50,7 +53,9 @@
 <hr />
 <h3>Removing single key-value from LocalStorage</h3>
 <div>
-  <button (click)="removeKeyValue()">Remove this key using .removeItem({{ requestedKeyName }})</button>
+  <button (click)="removeKeyValue()">
+    Remove this key using .removeItem({{ requestedKeyName }})
+  </button>
 </div>
 <!-- ==================================== -->
 <hr />

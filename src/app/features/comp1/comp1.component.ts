@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CryptoStorage } from '@webcrypto/storage';
 
 @Component({
   selector: 'app-comp1',
@@ -10,6 +11,22 @@ export class Comp1Component {
   requestedKeyValue = '';
   //storageContentList: {}[] = [];
   numberOfKeysInStorage = Object.keys(localStorage).length;
+
+  cryptoStore = new CryptoStorage('my crypto key');
+
+  async storeCrypto() {
+    // Secure store your data locally fully encrypted
+    const originalValue = 'any data value';
+    await this.cryptoStore.set('data key', originalValue);
+    console.log('data was encrypted');
+    // Look at the browser dev tools from IndexedDb,
+    // you will not be able to read the data key or value.
+  }
+  async decryptCrypto() {
+    // Then, retrieve your original data decrypted again:
+    const decryptedValue = await this.cryptoStore.get('data key');
+    console.log('The decrypted value is "' + decryptedValue + '"');
+  }
 
   setInLocalStorage() {
     const nameToSet = this.requestedKeyName
