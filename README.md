@@ -27,8 +27,8 @@ Solution version for assignment: card-202307-1743
 - Play with Angular signal
 
 ### Assignment spec :
-- The UI is divided into sections that demonstrate all functinality of signals.
-- There are 6 sections :
+- The UI is divided into sections that demonstrate all functinality of Local Storage API.
+- There are 4 sections :
   - The first 3 sections focus on a signal named 'count()'. These sections are :
     - (1) Demo the GET functionality
     - (2) Demo the SET functionality :
@@ -46,13 +46,12 @@ Solution version for assignment: card-202307-1743
     - Each one is a console.log, one for the 'count()' signal and the other for the tokens() computed-signal.
 
 
-### Screenshot of page sections 1 - 3:
-- This is how the page looks for first 3 sections before user interaction:
-  - 
+### Screenshot of the page before user input :
+ - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/1587bc2d-27d6-40a9-ba1b-cc7c83c31cef)
   
-### Screenshot of page sections 4 - 6:
+### Screenshot of page after adding one key-value :
 - This is how the page looks for the rest of the sections before user interaction:
-  - 
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/930ce926-f6f2-4dad-87db-cc2cf1ebf816)
 
 
 ### Assignment instructions :
