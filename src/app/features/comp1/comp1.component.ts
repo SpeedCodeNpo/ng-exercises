@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CryptoStorage } from '@webcrypto/storage';
 
 @Component({
   selector: 'app-comp1',

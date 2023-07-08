@@ -1,6 +1,6 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Solution version for assignment: card-202307-1743
+Solution version for assignment: card-20230704-1743
 
 ### Practice goals :
 
@@ -14,12 +14,12 @@ Solution version for assignment: card-202307-1743
 ## Links
 - 
 ### GitHub project starter link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202307-1743-q
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230704-1743-q
 
 - Stackblitz starter project link:
 -
 ### GitHub project solution link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202307-1743-s
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230704-1743-s
 
 - Stackblitz solution project link:
 
