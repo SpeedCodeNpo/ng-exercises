@@ -1,6 +1,6 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Instruction version for assignment: card-202307-1743
+Instructions version for assignment: card-20230704-1743
 
 ### Practice goals :
 
@@ -14,48 +14,45 @@ Instruction version for assignment: card-202307-1743
 ## Links
 - 
 ### GitHub project starter link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202307-1743-q
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230704-1743-q
 
 - Stackblitz starter project link:
 -
 ### GitHub project solution link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-202307-1743-s
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230704-1743-s
 
 - Stackblitz solution project link:
 
 ### Assignment title :
-- Play with Angular signal
+- Demo all LocalStorage methods
 
 ### Assignment spec :
-- The UI is divided into sections that demonstrate all functinality of signals.
-- There are 6 sections :
-  - The first 3 sections focus on a signal named 'count()'. These sections are :
-    - (1) Demo the GET functionality
-    - (2) Demo the SET functionality :
-        - Here the user has an input box to pick a new value and a button to activate SET.
-    - (3) Demo the UPDATE functionality :
-        - Here the user has a button that increments the existing value by 1.
-  - The 4th section demonstrates the MUTATE functionality on an object :
-    - (4) The object is a user-info object, the UI enables to change property values of the username and user age.
-  - The 5th section demonstartes a 'computed' signal :
-    - The computed signal is named tokens.
-    - It is calculated as user age * the count() value.
-    - So if any one of them changes then the tokens gets a new value automatically.
-  - The 6th section demonstrates an 'effect' signal :
-    - Two effect signals are to be defined in the component constructor.
-    - Each one is a console.log, one for the 'count()' signal and the other for the tokens() computed-signal.
+- The UI is divided into sections that demonstrate all functinality of Local Storage API.
+- There are 4 sections :
+  - (1) Demo .setItem storing functionality
+        - User enters a key name and a value for that key.
+        - Then clicks the ""Save .." button.
+        - The key & its value will be saved to LocalStorage.
+        - User can view Local Storage contents in the browser inspector, "applicatin" tab.
+  -
+  - (2) Demo the .getItem fetching functionality :
+        - Here the user enters a key name and clicks button to see it's value.
+  -        
+  - (3) Demo the .removeItem functionality :
+        - Here the user just clicks thebutton and the key given in section (2) will be removed from storage.
+        
+  - (4) Demo the full removal of all Local Storage key-value pairs.
+        - User just clicks the button and all LocalStorage content is removed.
 
-
-### Screenshot of page sections 1 - 3:
-- This is how the page looks for first 3 sections before user interaction:
-  - 
+### Screenshot of the page before user input :
+ - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/1587bc2d-27d6-40a9-ba1b-cc7c83c31cef)
   
-### Screenshot of page sections 4 - 6:
+### Screenshot of page after adding one key-value :
 - This is how the page looks for the rest of the sections before user interaction:
-  - 
+  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/930ce926-f6f2-4dad-87db-cc2cf1ebf816)
 
 
 ### Assignment instructions :
 
 - Create UI as shown in screen snapshots.
-- Create a component for the page (dont use the app.component fr the page)
+- Create a component named "features" for the page (dont use the app.component fr the page).
