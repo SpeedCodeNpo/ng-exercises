@@ -1,25 +1,22 @@
 ## Ng Exercises
 Welcome to Speed Code Exercises
-Instructions version for assignment: card-20230704-1743
+Instructions version for assignment: card-20230710-2144
 
 ### Practice goals :
 
-- Practice Angular local storage module which includes:
-  - Set a key : value
-  - Get a key : value
-  - Remove a key : value
-  - Clear the storage
-  - Encrypt / Decrypt using  Web Crypto Storage https://www.npmjs.com/package/@webcrypto/storage
+- Practice Atomic Design pattern using Angular:
+  - Create an atomic component
+  - Host the atomic component in another component.
 
 ## Links
 - 
 ### GitHub project starter link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230704-1743-q
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230710-2144-q
 
 - Stackblitz starter project link:
 -
 ### GitHub project solution link:
-   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230704-1743-s
+   https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230710-2144-s
 
 - Stackblitz solution project link:
 
