@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-atom-button',
+  selector: 'atom-button',
   templateUrl: './atom-button.component.html',
-  styleUrls: ['./atom-button.component.scss']
+  styleUrls: ['./atom-button.component.scss'],
 })
-export class AtomButtonComponent {
-
-}
+export class AtomButtonComponent {}
