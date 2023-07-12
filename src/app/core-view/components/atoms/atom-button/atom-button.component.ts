@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./atom-button.component.scss'],
 })
 export class AtomButtonComponent {
-  @Input() text = 'Button';
+  @Input() atomButtonText = 'Atom Button';
+  @Input() atomButtonColor = 'light-gray';
+  @Input() atomButtonDisabled = true;
 }
