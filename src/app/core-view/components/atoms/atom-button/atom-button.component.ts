@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./atom-button.component.scss'],
 })
 export class AtomButtonComponent {
-  @Input() text!: string;
+  @Input() text = 'Button';
 }
