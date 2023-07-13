@@ -14,42 +14,36 @@ Instructions version for assignment: card-20230710-2144
    https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230710-2144-q
 
 - Stackblitz starter project link:
--
+
 ### GitHub project solution link:
    https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230710-2144-s
 
 - Stackblitz solution project link:
 
 ### Assignment title :
-- Demo all LocalStorage methods
+- Implement atomic design with an atom component
 
 ### Assignment spec :
-- The UI is divided into sections that demonstrate all functinality of Local Storage API.
-- There are 4 sections :
-  - (1) Demo .setItem storing functionality
-        - User enters a key name and a value for that key.
-        - Then clicks the ""Save .." button.
-        - The key & its value will be saved to LocalStorage.
-        - User can view Local Storage contents in the browser inspector, "applicatin" tab.
-  -
-  - (2) Demo the .getItem fetching functionality :
-        - Here the user enters a key name and clicks button to see it's value.
-  -        
-  - (3) Demo the .removeItem functionality :
-        - Here the user just clicks thebutton and the key given in section (2) will be removed from storage.
-        
-  - (4) Demo the full removal of all Local Storage key-value pairs.
-        - User just clicks the button and all LocalStorage content is removed.
+- The UI displays a button, when clicked logs message to console.log .
+- The implementation needs to follow the following giodelines:
+      - Use 2 components to implement this assignment.
+            - One component is the atom component (a button)
+            - The second component is the host component using the atom button
+            - The host component needs to be located in a 'features' folder.
+- Details on the atom-component
+      - It needs to be accessable via a 'core-view' module.
+      - It is to be named 'atom-button', located in an 'atoms' folder.
+      - The path to the atom-button component is : app/core-view/components/atoms/atom-button
+      - It needs to expose 3 attributes whom have default values : 
+            - atomButtonText (default is "Atom Button")
+            - atomButtonColor (default is "light-gray")
+            - atomButtonDisabled (default is true)
+- The host component needs to define values for these 3 attributes as follows:
+            - atomButtonText value to define is "Hello".
+            - atomButtonColor value to define is "LightGreen".
+            - atomButtonDisabled value to define is false.
+
 
 ### Screenshot of the page before user input :
- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/1587bc2d-27d6-40a9-ba1b-cc7c83c31cef)
-  
-### Screenshot of page after adding one key-value :
-- This is how the page looks for the rest of the sections before user interaction:
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/930ce926-f6f2-4dad-87db-cc2cf1ebf816)
+ - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e8e959ba-ffd6-4a8b-93cb-f46b1798d57d)
 
-
-### Assignment instructions :
-
-- Create UI as shown in screen snapshots.
-- Create a component named "features" for the page (dont use the app.component fr the page).
