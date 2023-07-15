@@ -26,33 +26,26 @@ Solution version for assignment: card-20230714-1757
 
 ### Assignment spec :
 - The UI displays a 3 layer grouping of components, one inside the other.
+- FYI : The styling are already included in the src/styles.scss file.
 - The components are dispplayed as div with border and text inside, see included image below :
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/15f9a6ab-ecc9-472b-8b45-8023ee4f89cb)
 
-  - (1) Demo .setItem storing functionality
-        - User enters a key name and a value for that key.
-        - Then clicks the ""Save .." button.
-        - The key & its value will be saved to LocalStorage.
-        - User can view Local Storage contents in the browser inspector, "applicatin" tab.
-  -
-  - (2) Demo the .getItem fetching functionality :
-        - Here the user enters a key name and clicks button to see it's value.
-  -        
-  - (3) Demo the .removeItem functionality :
-        - Here the user just clicks thebutton and the key given in section (2) will be removed from storage.
-        
-  - (4) Demo the full removal of all Local Storage key-value pairs.
-        - User just clicks the button and all LocalStorage content is removed.
-
-### Screenshot of the page before user input :
- - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/1587bc2d-27d6-40a9-ba1b-cc7c83c31cef)
+  - (1) Layer 1
+        - This is a regular component named 'Comp1Component'.
+        - It displays a header and text as shown in attached image.
+        - It calls uses a standalone component named 'MyStandaloneComponent'.
   
-### Screenshot of page after adding one key-value :
-- This is how the page looks for the rest of the sections before user interaction:
-  - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/930ce926-f6f2-4dad-87db-cc2cf1ebf816)
+  - (2) Layer 2 :
+        - This is a standalone component named 'MyStandaloneComponent'.
+        - It displays a header and text as shown in attached image.
+        - It calls a component named  'Comp2Component' from a module named 'Module2'
+          
+  - (3) Layer 3 :
+        - This is a component from a module named 'Modle2'
+        - It displays a header and text as shown in attached image.
 
 
 ### Assignment instructions :
 
-- Create UI as shown in screen snapshots.
+- Create UI as shown in screen snapshot.
 - Create a component named "features" for the page (dont use the app.component fr the page).
