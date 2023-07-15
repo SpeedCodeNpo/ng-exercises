@@ -5,8 +5,9 @@ Solution version for assignment: card-20230714-1757
 ### Practice goals :
 
 - Practice basic standalone component, includes:
-  - Use CLI to create a standalone component.
-  - Use another regular component to invoke this component.
+  - Use CLI to create a standalone (SA) component.
+  - Make a regular component use this SA component.
+  - Have the SA component use a regular component.
 
 ## Links
 - 
@@ -21,11 +22,12 @@ Solution version for assignment: card-20230714-1757
 - Stackblitz solution project link:
 
 ### Assignment title :
-- Demo all LocalStorage methods
+- Practice standalone components
 
 ### Assignment spec :
-- The UI is divided into sections that demonstrate all functinality of Local Storage API.
-- There are 4 sections :
+- The UI displays a 3 layer grouping of components, one inside the other.
+- The components are dispplayed as div with border and text inside, see included image below :
+- 
   - (1) Demo .setItem storing functionality
         - User enters a key name and a value for that key.
         - Then clicks the ""Save .." button.
