@@ -27,7 +27,8 @@ Solution version for assignment: card-20230714-1757
 ### Assignment spec :
 - The UI displays a 3 layer grouping of components, one inside the other.
 - The components are dispplayed as div with border and text inside, see included image below :
-- 
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/15f9a6ab-ecc9-472b-8b45-8023ee4f89cb)
+
   - (1) Demo .setItem storing functionality
         - User enters a key name and a value for that key.
         - Then clicks the ""Save .." button.
