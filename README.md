@@ -5,9 +5,9 @@ Instructions version for assignment: card-20230717-2303
 
 ### Practice goals :
 
-- Practice Atomic Design pattern using Angular:
-  - Create an atomic component
-  - Host the atomic component in another component.
+- Practice Routing:
+  - xxxxxx
+  - xxxxxx
 
 ## Links
 
