@@ -5,9 +5,19 @@ Instructions version for assignment: card-20230717-2303
 
 ### Practice goals :
 
-- Practice Routing:
-  - xxxxxx
-  - xxxxxx
+- Practice these Routing skills:
+  - Manually add routing to an existing app
+  - Passing info using routes
+  - Wildcard routes and 404 page (navigation attempt to a page that doesnt exist)
+  - Setting up redirects
+  - Nesting routes, relative to 'non-root' component.
+  - Setting the page title.
+  - Using relative paths (relative to current URL segment)
+  - Accessing query parameters and fragments
+  - Lazy loading pages
+  - Guards to prevent unautho3protect routes
+  - Link parameters array
+  - LocationStrategy and browser URL styles
 
 ## Links
 
