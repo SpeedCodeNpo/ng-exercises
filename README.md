@@ -1,7 +1,7 @@
 ## Ng Exercises
 
 Welcome to Speed Code Exercises
-Instructions version for assignment: card-20230717-2303
+Solution version for assignment: card-20230717-2303
 
 ### Practice goals :
 
