@@ -3,18 +3,23 @@
 Welcome to Speed Code Exercises
 Solution version for assignment: card-20230717-2303
 
+### Assignment title :
+
+- Implement basic routing
+
 ### Practice goals :
 
 - Practice these Routing skills:
   - Manually add routing to an existing app
-  - Create simple routing to home and 2 more components
-  ------------
-  - Passing info using routes
+  - Create simple routing from home-page and 2 more components
+  - Using Route Parameter (passing info using routes).
   - Wildcard routes and 404 page (navigation attempt to a page that doesnt exist)
+  ***
   - Setting up redirects
   - Nesting routes, relative to 'non-root' component.
   - Setting the page title.
   - Using relative paths (relative to current URL segment)
+  ***
   - Accessing query parameters and fragments
   - Lazy loading pages
   - Guards to prevent unautho3protect routes
@@ -37,16 +42,21 @@ https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230717-2303-s
 
 - Stackblitz solution project link:
 
-### Assignment title :
-
-- Implement atomic design with an atom component
-
 ### Assignment spec :
 
 ### Manually add routing to an existing app
-  - In the index.html add   <base href="/"> 
-  - Create an AppRoutingModule 
-  - Import the AppRouteModule into AppModule
+
+- In the index.html add <base href="/">
+- Create an AppRoutingModule
+- Import the AppRouteModule into AppModule
+
+### Create routing from home-page to 2 more components
+- Create 3 components in a 'pages' folder : home, comp1 & comp2.
+- Have the app comp call the home comp.
+- In the home comp create 2 <a> tags one for each of the 2 components.
+
+### Send params using Route Parameter
+- Inside comp1 create a route url that passes the word "Hello" to comp2.
 
 ### Screenshot of the page before user input :
 

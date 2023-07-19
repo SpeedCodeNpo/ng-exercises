@@ -1,3 +1,25 @@
 <div>
   <p>home works!</p>
+  <nav>
+    <ul>
+      <li>
+        <a
+          routerLink="/comp1"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >First Component</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/comp2"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Second Component</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <!-- The routed views render in the <router-outlet>-->
+  <router-outlet></router-outlet>
 </div>
