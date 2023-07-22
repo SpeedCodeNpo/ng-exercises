@@ -13,8 +13,8 @@ Solution version for assignment: card-20230717-2303
   - Manually add routing to an existing app
   - Create simple routing from home-page and 2 more components
   - Using Route Parameter (passing info using routes).
-  - Wildcard routes and 404 page (navigation attempt to a page that doesnt exist)
   ***
+  - Wildcard routes and 404 page (navigation attempt to a page that doesnt exist)
   - Setting up redirects
   - Nesting routes, relative to 'non-root' component.
   - Setting the page title.
