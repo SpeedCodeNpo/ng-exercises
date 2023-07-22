@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,8 +8,10 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   router = inject(Router);
+  theMessage = '';
 
-  onSelect(message: string) {
+  onSelect() {
+    const message = this.theMessage;
     this.router.navigate(['/comp2', message]);
   }
 }

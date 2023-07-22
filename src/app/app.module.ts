@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, NgModel } from '@angular/forms';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -9,8 +11,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { Comp2DetailsComponent } from './pages/comp2-details/comp2-details.component';
 
 @NgModule({
-  declarations: [AppComponent, Comp1Component, Comp2Component, HomeComponent, Comp2DetailsComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    Comp1Component,
+    Comp2Component,
+    HomeComponent,
+    Comp2DetailsComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

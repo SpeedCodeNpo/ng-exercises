@@ -5,7 +5,7 @@
       <li>
         <a
           routerLink="/comp1"
-          routerLinkActive="active"
+          routerLinkActive="activeFlag"
           ariaCurrentWhenActive="page"
           >First Component</a
         >
@@ -13,15 +13,18 @@
       <li>
         <a
           routerLink="/comp2"
-          routerLinkActive="active"
+          routerLinkActive="activeFlag"
           ariaCurrentWhenActive="page"
           >Second Component</a
         >
       </li>
       <li>
-        <button (click)="onSelect('234')">Button</button>
+        <input type="text" [(ngModel)]="theMessage" />
+        <button (click)="onSelect()">Button</button>
       </li>
     </ul>
   </nav>
   <!-- The routed views render in the <router-outlet>-->
 </div>
+<!-- comment-in the router-outlet for task-2 of this exercise -->
+<!-- <router-outlet></router-outlet> -->
