@@ -65,25 +65,31 @@ https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230717-2303-s
 
 ### Screenshot of initial page before user interaction :
 
-- - This page is displayed in both implementations (task-1 & task-2) :
 
-### -----
+***
 
 ### There are 2 tasks in this assignment for UX :
 
 This exrecise has two tasks:
+- Task-1 : Routed components are displayed inside home page.
+- Task-2 : Routed components are displayed on their own page.
+- 
+- Regardless of if task-1 or task-2, the initial page isplayed is the same :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/2a07ee72-4e19-4077-bcc0-2cd1a8528c7c)
 
-### task-1 : Have the routed components displayed on the same page (home):
 
-          (1) When click on link then the link text uses the ".activeFlag" css
-              class to highlight the current active route chosen.
-          (2) The component will be displayed on the same page, it replaces
-               the previous component that was displayed (1 or 2).
+### Task-1 : Have the link highlited with current route and display the component on the same page (home):
+    (1) When click on link then the link text uses the ".activeFlag" css
+        class to highlight the current active route chosen.
+    (2) The component will be displayed on the same page, it replaces
+        the previous component that was displayed (1 or 2).
 
-### Screenshot of the page before user input :
+### Screenshot for illustration :
+- In this screnshot this is the result of user clicking "First Component" :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/d42fefd0-aaa3-4002-aa5b-50673d1a7f5a)
 
-### -----
 
+***
 ### task-2 : Have the routed components display their own page.
 
           (1) When click on link then the home page disapers and the component (1 or 2)
