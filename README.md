@@ -56,8 +56,23 @@ Solution version for assignment: card-20230717-2303
 
 ***
 
-### Component 1 & 2 behavior :
-- 
+### Component 1 & 2 specification :
+- Both components have same spec, just their names are different.
+- Only 2 elments are displayed:
+  (1) A text : "This is comp1 component" (or comp2 if it is component 2).
+  (2) A link back to the home page.
+#### Screenshot of result of activating route to "First Component" :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/c928c514-2d55-44cf-aefc-e0d39bd78d92)
+
+
+### "Component2-details" specification :
+- This has 3 elments :
+  (1) A text : "This is comp1 component" (or comp2 if it is component 2).
+  (2) A text : "The message is : " and the message typed in the input box in home component.
+  (3) A link back to the home page.
+    
+#### Screenshot of "Component2-details" component and how to interact with it:
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/920bbdc3-a2fd-43f2-978f-69c645b47c75)
 
 ### There are 2 tasks in this assignment for UX :
 
