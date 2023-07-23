@@ -5,7 +5,7 @@ Solution version for assignment: card-20230717-2303
 
 ## Assignment title : Implement basic routing
 
-## Assignment Links
+### Assignment Links
 
 (1) Project starter:
   - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230717-2303-q
@@ -24,21 +24,7 @@ Solution version for assignment: card-20230717-2303
   - Implement in two UX styles :
     - (1) Display the routed components on the home page.
     - (2) Display the routed components in their own page.
-  ***
-  ### More Angular routing for further training
-  - Here is a list of more Angular routing features to be practiced in other assignments:
-    - Guards to protect routes
-    - Wildcard routes and 404 page (navigation attempt to a page that doesnt exist)
-    - Setting the page title.
-  - -----------------
-    - Setting up redirects
-    - Nesting routes, relative to 'non-root' component.
-    - Using relative paths (relative to current URL segment)
-  - -----------------
-    - Accessing query parameters and fragments
-    - Lazy loading pages
-    - Link parameters array
-    - LocationStrategy and browser URL styles
+
 ***      
 ## Assignment spec :
 
