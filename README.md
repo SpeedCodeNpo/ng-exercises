@@ -62,6 +62,8 @@ Solution version for assignment: card-20230717-2303
   (1) A text : "This is comp1 component" (or comp2 if it is component 2).
   (2) A link back to the home page.
 #### Screenshot of result of activating route to "First Component" :
+- Notice that the active linked is highliaghted, use the "routerLinkActive" property set to value of the the ".activeFlag" CSS
+  class defined in the global app css file.
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/c928c514-2d55-44cf-aefc-e0d39bd78d92)
 
 
@@ -74,47 +76,21 @@ Solution version for assignment: card-20230717-2303
 #### Screenshot of "Component2-details" component and how to interact with it:
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/920bbdc3-a2fd-43f2-978f-69c645b47c75)
 
-### There are 2 tasks in this assignment for UX :
+### Implement this assignment in two UX flavours:
 
-This exrecise has two tasks:
+This exrecise is implemented as two tasks, each creates a different UX experience with same components.
 - Task-1 : Routed components are displayed inside home page.
+           This is the default task, first implement this UX style. See screenshots above.
 - Task-2 : Routed components are displayed on their own page.
-- 
-
-#### Task-1 : Have the link highlited with current route and display the component on the same page (home):
-    (1) When click on link then the link text uses the ".activeFlag" css
-        class to highlight the current active route chosen.
-    (2) The component will be displayed on the same page, it replaces
-        the previous component that was displayed (1 or 2).
-
-Screenshot for illustration :
-- In this screnshot this is the result of user clicking "First Component" :
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/d42fefd0-aaa3-4002-aa5b-50673d1a7f5a)
-
-
-
-***
-#### task-2 : Have the routed components display their own page.
-
-          (1) When click on link then the home page disapers and the component (1 or 2)
-              are displayed on their own page.
-          (2) The page displayed needs to have a link back to the home page.
+           This is done by changing the location of the <router-outlet> from app to home component.
 
 ***
 
 ### Manually add routing to an existing app
-
-- In the index.html add <base href="/">
-- Create an AppRoutingModule
-- Import the AppRouteModule into AppModule
-
-### Create routing from home-page to 2 more components
-
-- Create 3 components in a 'pages' folder : home, comp1 & comp2.
-- Have the app comp call the home comp.
-- In the home comp create 2 <a> tags one for each of the 2 components.
-
-### Send params using Route Parameter
-
-- xxxx
+- The starter project for this assignment nedds to be updated to include Routing.
+- This means that the CLI will not auto-create a project with routing, you wireup the routing manually.
+- Here are the steps to do that: 
+  (1) In the index.html add <base href="/">
+  (2) Create an AppRoutingModule
+  (3) Import the AppRouteModule into AppModule
 
