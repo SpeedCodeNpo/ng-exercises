@@ -18,22 +18,15 @@ Starter version for assignment: card-20230804-1821
 ### Assignment goals :
 
 - Practice these RxJs reactive skills:
-  - Create a "bear bones" Observable, Observer & Subscription.
-  - Manage a full Subscription Lifecycle
+  - Create a "bare-bones" Observable, Observer & Subscription.
   - Synchronous & asynchronous Observable
-  - Teardown & Error
+  - Manage a full Subscription Lifecycle (Teardown ,  Error , Complete & Unsubscribe)
 
 ***      
 ## Assignment spec :
 
 ### User experience UX:
-- The default home page is displayed with a div border wrapping each component.
-- The home component has 3 options:
-  (1) A link routing to component one.
-  (2) A link routing to component two.
-  (3) An input box + button.
-      - User types a message in the inpiut box and when clicks on the button then
-         they are routed to a comp-2-details component that displays the message.
+- 
   
 #### Screenshot of initial page before user interaction :
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/2a07ee72-4e19-4077-bcc0-2cd1a8528c7c)
@@ -60,17 +53,5 @@ Starter version for assignment: card-20230804-1821
 #### Screenshot of "Component2-details" component and how to interact with it:
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/920bbdc3-a2fd-43f2-978f-69c645b47c75)
 
-### Implement this assignment in two UX flavours:
 
-This exrecise is implemented as two tasks, each creates a different UX experience with same components.
-- Task-1 : Routed components are displayed inside home page.
-           This is the default task, first implement this UX style. See screenshots above.
-- Task-2 : Routed components are displayed on their own page.
-           This is done by changing the location of the <router-outlet> from app to home component.
-
-***
-
-### Manually add routing to an existing app
-- The starter project for this assignment nedds to be updated to include Routing.
-- This means that the CLI will not auto-create a project with routing, you wireup the routing manually.
 
