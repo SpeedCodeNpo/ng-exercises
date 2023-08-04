@@ -1,18 +1,18 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230717-2303
+Starter version for assignment: card-20230804-1821
 
-## Assignment title : Implement basic routing
+## Assignment title : Practice basic Observables RxJs
 
 ### Assignment Links
 
 (1) Project starter:
-  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230717-2303-q
+  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230804-1821-q
   - Stackblitz link: 
 
 (2) Project solution:
-  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230717-2303-s
+  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230804-1821-s
   - Stackblitz link: 
 
 ### Assignment goals :
