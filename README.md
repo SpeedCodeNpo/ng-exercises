@@ -17,13 +17,11 @@ Starter version for assignment: card-20230804-1821
 
 ### Assignment goals :
 
-- Practice these Routing skills:
-  - Manually add routing to an existing app
-  - Create simple routing from home-page to 2 more components
-  - Pass data from one component to another using route parameters.
-  - Implement in two UX styles :
-    - (1) Display the routed components on the home page.
-    - (2) Display the routed components in their own page.
+- Practice these RxJs reactive skills:
+  - Create a "bear bones" Observable, Observer & Subscription.
+  - Manage a full Subscription Lifecycle
+  - Synchronous & asynchronous Observable
+  - Teardown & Error
 
 ***      
 ## Assignment spec :
