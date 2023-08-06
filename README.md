@@ -17,10 +17,10 @@ Starter version for assignment: card-20230804-1821
 
 ### Assignment goals :
 
-- Practice these RxJs reactive skills:
-  - Create a "bare-bones" Observable, Observer & Subscription.
-  - Synchronous & asynchronous Observable
-  - Manage a full Subscription Lifecycle (Teardown ,  Error , Complete & Unsubscribe)
+- Practice RxJs by building a "bare-bones" Observable:
+  - Observer with Synchronous & Asynchronous emissions.
+  - Subscription with Observer as argument.
+  - A full Subscription lifecycle (Complete, Error, Unsubscribe & Teardown )
 
 ***      
 ## Assignment spec :
@@ -33,8 +33,8 @@ Starter version for assignment: card-20230804-1821
 
 ***
 
-### Component 1 & 2 specification :
-- Both components have same spec, just their names are different.
+### Component 1 specification :
+- Create a "bare-bones" Observable, Observer & Subscription
 - Only 2 elments are displayed:
   (1) A text : "This is comp1 component" (or comp2 if it is component 2).
   (2) A link back to the home page.
