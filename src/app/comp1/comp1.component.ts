@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Observer, TeardownLogic } from 'rxjs';
 
 @Component({
   selector: 'app-comp1',
@@ -8,12 +8,22 @@ import { Observable } from 'rxjs';
 })
 export class Comp1Component {
   ngOnInit() {
-    const doNothingObservable$ = new Observable((a) => {
-      console.log('Executed doNothingObservable$');
-    });
+    const myObservable$ = new Observable(this.mySubscribeFunction);
 
-    console.log('Before subscribing');
-    const doNothingSubscriptio = doNothingObservable$.subscribe();
-    console.log('After  subscribing');
+    myObservable$.subscribe(this.myObserver);
+  } //ngOnInit
+
+  mySubscribeFunction(someObserver: Observer<number>) {
+    console.log('Executing the mySubscribeFunction()');
+    someObserver.next(1);
+    someObserver.error(new Error(`Testing error emission.`));
+    return () => {
+      console.log('Return teardown try');
+    };
   }
+
+  myObserver = {
+    next: (value: number) => console.log(`The emission value is ${value}`),
+    error: (myError: Error) => console.log(`Error received is ${myError}`),
+  };
 }
