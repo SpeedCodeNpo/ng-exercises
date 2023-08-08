@@ -9,14 +9,15 @@ import { Observable, Observer, TeardownLogic } from 'rxjs';
 export class Comp1Component {
   isActivateComplete: boolean = false;
 
-  mySubscribeFunction(someObserver: Observer<number>) {
+  mySubscribeFunction(
+    someObserver: Observer<number>,
+    actiavteComplete: boolean
+  ) {
     console.log('Executing the mySubscribeFunction()');
     someObserver.next(1);
 
-    console.log(
-      `Value of this.isActivateComplete is : "${this.isActivateComplete}"`
-    );
-    if (this.isActivateComplete) {
+    console.log(`Value of this.isActivateComplete is : "${actiavteComplete}"`);
+    if (actiavteComplete) {
       someObserver.complete();
     } else {
       someObserver.error(new Error(`Ending subscription with an error.`));
@@ -35,9 +36,11 @@ export class Comp1Component {
   };
 
   ngOnInit() {
-    // const myObservable$ = new Observable(this.mySubscribeFunction);
+    const myObservable$ = new Observable(
+      this.mySubscribeFunction(this.myObserver, this.isActivateComplete)
+    );
 
-    // myObservable$.subscribe(this.myObserver);
-    this.mySubscribeFunction(this.myObserver);
+    myObservable$.subscribe();
+    //this.mySubscribeFunction(this.myObserver);
   } //ngOnInit
 }
