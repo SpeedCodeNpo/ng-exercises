@@ -7,25 +7,37 @@ import { Observable, Observer, TeardownLogic } from 'rxjs';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  ngOnInit() {
-    const myObservable$ = new Observable(this.mySubscribeFunction);
-
-    myObservable$.subscribe(this.myObserver);
-  } //ngOnInit
+  isActivateComplete: boolean = false;
 
   mySubscribeFunction(someObserver: Observer<number>) {
     console.log('Executing the mySubscribeFunction()');
     someObserver.next(1);
-    someObserver.complete();
-    someObserver.error(new Error(`Testing error emission.`));
+
+    console.log(
+      `Value of this.isActivateComplete is : "${this.isActivateComplete}"`
+    );
+    if (this.isActivateComplete) {
+      someObserver.complete();
+    } else {
+      someObserver.error(new Error(`Ending subscription with an error.`));
+    }
+
     return () => {
-      console.log('Return teardown try');
+      console.log('Executing the teardown.');
     };
   }
 
   myObserver = {
-    next: (value: number) => console.log(`The emission value is ${value}`),
+    next: (value: number) => console.log(`Value of the emission is "${value}"`),
     complete: () => console.log(`Triggered a COMPLETE.`),
-    error: (myError: Error) => console.log(`Error received is ${myError}`),
+    error: (myError: Error) =>
+      console.log(`Triggered an error, the message is : "${myError}"`),
   };
+
+  ngOnInit() {
+    // const myObservable$ = new Observable(this.mySubscribeFunction);
+
+    // myObservable$.subscribe(this.myObserver);
+    this.mySubscribeFunction(this.myObserver);
+  } //ngOnInit
 }
