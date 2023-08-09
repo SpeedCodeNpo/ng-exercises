@@ -8,7 +8,7 @@ import { Observable, Observer } from 'rxjs';
 })
 export class Comp1Component {
   asyncEmissionTimeMillisec = 2000;
-  isNeverEnding: boolean = true;
+  isNeverEnding: boolean = false;
   isActivateComplete: boolean = true;
 
   ////////////////////////////

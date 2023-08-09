@@ -1,32 +1,54 @@
 <div>
-  <h2>Vanilla Observable</h2>
-  <p>This app demonstrates raw use of Observables & subscription.</p>
+  <h2>Observable Demo</h2>
+  <p>This app demonstrates raw use of an Observable & subscribing to it.</p>
+  <hr />
+  <h3>App description</h3>
   <p>The subscription function does the following things :</p>
   <ul>
     <li>Emits a syncronous value, this means it immediatly emmits.</li>
     <li>
-      Emits an asyncronous value, this means it waits some time before it
-      emmits, while the runtime continues in its flow until ERROR or COMPLETE or
-      'unsubscribe'.
+      Emits two asyncronous value, these are emitting after a time interval.
     </li>
-    <li>It either ends with a COMPLETE or an ERROR</li>
     <li>
-      In all cases it runs a teardown functin (just a message to console log)
+      Depending on values set in code, the Observable might end with a COMPLETE
+      , an ERROR or not end.
+    </li>
+    <li>
+      In case it has no ending (no COMPLETE or ERROR emitted) then the only way
+      to stop a subscription is to unsubscribe.
+    </li>
+    <li>
+      In all cases (whether it ends with a COMPLETE, ERROR or by unsubscribe)
+      the Observable's Teardown function is executed (it will console.log a
+      teardown message).
     </li>
   </ul>
   <hr />
+  <h3>Controlling the app</h3>
   <p>You control the async wait time and also how the subscription ends.</p>
   <p>The variables whose values you control are:</p>
   <ul>
     <li>
-      Timeout for the asynchronous (it' sthe 2nd) emission
-      asyncEmissionTimeMillisec = {{ asyncEmissionTimeMillisec }} milsec.
+      asyncEmissionTimeMillisec = {{ asyncEmissionTimeMillisec }} milsec , this
+      is the timeout for the first async emission. The 2nd async emission is 3
+      times that value = {{ 3 * asyncEmissionTimeMillisec }}
     </li>
-    <li *ngIf="isActivateComplete; else activateError">
-      Value of isActivateComplete = true so ENDING USING COMPLETE
+    <br />
+    <li>
+      isNeverEnding == {{ isNeverEnding }} , this means that the Observable wont
+      end, if subscribed then the only way to free the subscription is using
+      unsubscribe.
+    </li>
+    <br />
+    <li *ngIf="isActivateComplete && !isNeverEnding; else activateError">
+      isActivateComplete = true , this means ending the Observable using
+      'COMPLETE' function.
     </li>
     <ng-template #activateError>
-      <li>Value of isActivateComplete = false so ENDING USING ERROR</li>
+      <li *ngIf="!isNeverEnding">
+        isActivateComplete = false , this means ending the Observable using
+        'ERROR' function.
+      </li>
     </ng-template>
   </ul>
   <hr />
