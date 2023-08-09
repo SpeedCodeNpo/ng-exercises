@@ -7,9 +7,9 @@ import { Observable, Observer } from 'rxjs';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  isActivateComplete: boolean = true;
-  isNeverEnding: boolean = true;
   asyncEmissionTimeMillisec = 2000;
+  isNeverEnding: boolean = true;
+  isActivateComplete: boolean = true;
 
   ////////////////////////////
 
