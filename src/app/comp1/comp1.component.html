@@ -6,7 +6,8 @@
     <li>Emits a syncronous value, this means it immediatly emmits.</li>
     <li>
       Emits an asyncronous value, this means it waits some time before it
-      emmits, while the runtime continues in its flow.
+      emmits, while the runtime continues in its flow until ERROR or COMPLETE or
+      'unsubscribe'.
     </li>
     <li>It either ends with a COMPLETE or an ERROR</li>
     <li>
