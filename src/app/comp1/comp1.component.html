@@ -1,4 +1,33 @@
 <div>
   <h2>Vanilla Observable</h2>
-  
+  <p>This app demonstrates raw use of Observables & subscription.</p>
+  <p>The subscription function does the following things :</p>
+  <ul>
+    <li>Emits a syncronous value, this means it immediatly emmits.</li>
+    <li>
+      Emits an asyncronous value, this means it waits some time before it
+      emmits, while the runtime continues in its flow.
+    </li>
+    <li>It either ends with a COMPLETE or an ERROR</li>
+    <li>
+      In all cases it runs a teardown functin (just a message to console log)
+    </li>
+  </ul>
+  <hr />
+  <p>You control the async wait time and also how the subscription ends.</p>
+  <p>The variables whose values you control are:</p>
+  <ul>
+    <li>
+      Timeout for the asynchronous (it' sthe 2nd) emission
+      asyncEmissionTimeMillisec = {{ asyncEmissionTimeMillisec }} milsec.
+    </li>
+    <li *ngIf="isActivateComplete; else activateError">
+      Value of isActivateComplete = true so ENDING USING COMPLETE
+    </li>
+    <ng-template #activateError>
+      <li>Value of isActivateComplete = false so ENDING USING ERROR</li>
+    </ng-template>
+  </ul>
+  <hr />
+  <p>The runtime results are displayed in the Dev Tools console.</p>
 </div>

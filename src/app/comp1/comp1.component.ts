@@ -8,13 +8,18 @@ import { Observable, Observer, TeardownLogic } from 'rxjs';
 })
 export class Comp1Component {
   isActivateComplete: boolean = false;
+  asyncEmissionTimeMillisec = 2000;
 
   mySubscribeFunction(
     someObserver: Observer<number>,
-    actiavteComplete: boolean
+    actiavteComplete: boolean,
+    emissionTimeout: number
   ) {
     console.log('Executing the mySubscribeFunction()');
     someObserver.next(1);
+
+    setTimeout(() => someObserver.next(2), emissionTimeout);
+    setTimeout(() => someObserver.next(3), 2 * emissionTimeout);
 
     console.log(`Value of this.isActivateComplete is : "${actiavteComplete}"`);
     if (actiavteComplete) {
@@ -36,11 +41,24 @@ export class Comp1Component {
   };
 
   ngOnInit() {
+    console.log(
+      '===== ngOnInit : Creating a new Observable instance : myObservable$, this will already activate it.'
+    );
     const myObservable$ = new Observable(
-      this.mySubscribeFunction(this.myObserver, this.isActivateComplete)
+      this.mySubscribeFunction(
+        this.myObserver,
+        this.isActivateComplete,
+        this.asyncEmissionTimeMillisec
+      )
     );
 
-    myObservable$.subscribe();
+    // console.log(
+    //   '===== ngOnInit : Subscribing to myObservable$, creating variable mySubscription.'
+    // );
+    // const mySubscription = myObservable$.subscribe();
+
+    // mySubscription.unsubscribe();
+    // console.log('===== ngOnInit : Unsubscribed from mySubscription.');
     //this.mySubscribeFunction(this.myObserver);
   } //ngOnInit
 }
