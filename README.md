@@ -18,6 +18,14 @@ Starter version for assignment: card-20230804-1821
 ### Assignment goals :
 
 - Practice RxJs by building a "bare-bones" Observable:
+- Create Observable
+- Next & Complete & Error
+- Synchronous
+- Asynchronous
+- Teardown
+- Subscribe + Observer object
+- Unsubscribe with timer
+
   - Observer with Synchronous & Asynchronous emissions.
   - Subscription with Observer as argument.
   - A full Subscription lifecycle (Complete, Error, Unsubscribe & Teardown )
