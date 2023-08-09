@@ -41,13 +41,16 @@ export class Comp1Component {
   };
 
   myObserver2 = {
-    next: (value: number) => console.log(`Observer2: Value of the emission is "${value}"`),
+    next: (value: number) =>
+      console.log(`Observer2: Value of the emission is "${value}"`),
     complete: () => console.log(`Observer2: Triggered a COMPLETE.`),
     error: (myError: Error) =>
-      console.log(`Observer2: Triggered an error, the message is : "${myError}"`),
+      console.log(
+        `Observer2: Triggered an error, the message is : "${myError}"`
+      ),
   };
 
-////////////////////////////
+  ////////////////////////////
 
   ngOnInit() {
     console.log(
@@ -61,15 +64,13 @@ export class Comp1Component {
       )
     );
 
-
     const myObservable2$ = new Observable(
       this.mySubscribeFunction(
-        this.myObserver1,
+        this.myObserver2,
         this.isActivateComplete,
         this.asyncEmissionTimeMillisec
       )
     );
-
 
     // console.log(
     //   '===== ngOnInit : Subscribing to myObservable$, creating variable mySubscription.'
