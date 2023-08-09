@@ -24,7 +24,16 @@ Starter version for assignment: card-20230804-1821
 
 ***      
 ## Assignment spec :
-
+===== ngOnInit : Creating a new Observable instance : myObservable$.
+===== ngOnInit : BEFORE subscribing to myObservable$, creating variable mySubscription.
+myObservable$: Executing the creation of myObservable$
+Observer1: Value of the emission is "1"
+===== ngOnInit : AFTER subscribing to myObservable$.
+Observer1: Value of the emission is "2"
+Observer1: Value of the emission is "3"
+===== ngOnInit : Triggering unsubscribe from mySubscription.
+myObservable$: Executing the teardown.
+===== ngOnInit : AFTER Unsubscribed from mySubscription.
 ### User experience UX:
 - 
   
