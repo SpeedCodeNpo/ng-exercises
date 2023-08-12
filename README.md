@@ -1,36 +1,35 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230804-1821
+Starter version for assignment: card-20230812-2135
 
-## Assignment title : Practice basic Observables RxJs
+## Assignment title : Practice RxJs Creation Operators
 
 ### Assignment Links
 (1) Project starter:
-  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230804-1821-q
+  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230812-2135-q
   - Stackblitz link: 
 
 (2) Project solution:
-  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230804-1821-s
+  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230812-2135-s
   - Stackblitz link: 
 
 ### Assignment goals :
-- Practice using RxJs vanilla:
-    - Create an Observable with :
-      - Next , Complete & Error functions.
-      - Synchronous Emissions.
-      - Asynchronous Emissions.
-      - Teardown function.
-    - Then practice on subscription:
-      - Subscribe with an Observer object
-      - Unsubscribe using a setTimeout
+- Practice these RxJs creation operators:
+    - for : Emmits all arguments of the 'of' operator, then completes.
+    - from : Emitted values are items in an array, a Promise, Iterable or Class.
+    - fromEvent : Creates an Observable from various event sources.
+    - timer : Completes after set time.
+    - interval : Never ends, emits recurringly every time inteval set.
 
 ## Interaction with app:
 - The app will have a page displaying text info only, just explaining what is going on.
     - The text content is included in the starter branch for this assignment.
     - There is no input via the UI.
-- The app output is to the DevTools console, so you need to open it to see the output console logs.
-- The interaction is by editing values in the source code component class variables.
+    - The output is console log to the browser's DevTools.
+    - The interaction is by editing values in the source code.
+
+================================================================
 
 ## App features:
 - The app creates an Observable whose actions are controlled by 3 global variables.
