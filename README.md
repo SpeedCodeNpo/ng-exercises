@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230812-2135
+Solution version for assignment: card-20230812-2135
 
 ## Assignment title : Practice RxJs Creation Operators
 
