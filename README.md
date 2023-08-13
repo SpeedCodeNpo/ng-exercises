@@ -19,8 +19,6 @@ Solution version for assignment: card-20230812-2135
     - for : Emmits all arguments of the 'of' operator, then completes.
     - from : Emitted values are items in an array, a Promise, Iterable or Class.
     - fromEvent : Creates an Observable from various event sources.
-    - timer : Completes after set time.
-    - interval : Never ends, emits recurringly every time inteval set.
 
 ## Interaction with app:
 - The app will have a page displaying text info only, just explaining what is going on.

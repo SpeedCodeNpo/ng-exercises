@@ -48,32 +48,4 @@
     Unsubscribe
   </button>
   <br />
-
-  <hr />
-
-  <label
-    >Emit using the 'timer' which is set to
-    {{ timerLengthMilisec / 1000 }} seconds :</label
-  >
-  <button
-    (click)="onClickSetTimer()"
-    [disabled]="isTimerActive"
-    [class.test-disabled]="isTimerActive"
-  >
-    Start Timer
-  </button>
-  <h3 *ngIf="isTimerActive">
-    Started, will complete in
-    {{ timerLengthMilisec / 1000 }} seconds.
-  </h3>
-
-  <hr />
-  <label>Emit using the 'interval' creation operator :</label>
-  <button (click)="onClickSetInterval()">
-    interval {{ intervalTimeMilisec / 1000 }} seconds
-  </button>
-  <h3 *ngIf="isIntervalActive">
-    Current count is : {{ intervalCounter }} will end after
-    {{ timerLengthMilisec / 1000 }} seconds.
-  </h3>
 </div>
