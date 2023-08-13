@@ -2,9 +2,6 @@
   <h2>RxJs Creation Operators Demo</h2>
   <p>This app demonstrates use of 5 creation operators :</p>
   <ul>
-    <li>for : Emmits all arguments of the 'of' operator, then completes.</li>
-    <li>from : Emits values from an Iterable, Promise or Class.</li>
-    <li>fromEvent : Creates an Observable from various event sources.</li>
     <li>timer : Completes after set time.</li>
     <li>interval : Never ends, emits recurringly every time inteval set.</li>
   </ul>
@@ -17,39 +14,6 @@
 
   <hr />
   <h3>App Controls</h3>
-  <label>Emit using the 'of' creation operator :</label>
-  <button (click)="onClickOf()">of</button>
-  <p>View results in browser DevTools.</p>
-  <hr />
-
-  <label>Emit using the 'from' creation operator :</label>
-  <button (click)="onClickFrom()">from</button>
-  <p>View results in browser DevTools.</p>
-  <hr />
-
-  <label>Subscribe to the 'fromEvent' Observable :</label>
-  <button (click)="onClickFromEvent()">fromEvent</button>
-  <br />
-  <label>Click to emit a button event :</label>
-  <button
-    id="trigger"
-    class="test-button"
-    [class.test-disabled]="!isSubscribedToEvent"
-  >
-    Emit Button Event
-  </button>
-  <br />
-  <label>Unsubscribe from the 'fromEvent' Observable :</label>
-  <button
-    (click)="onClickUnsubscribeFromEvent()"
-    [disabled]="!isSubscribedToEvent"
-    [class.test-disabled]="!isSubscribedToEvent"
-  >
-    Unsubscribe
-  </button>
-  <br />
-
-  <hr />
 
   <label
     >Emit using the 'timer' which is set to
