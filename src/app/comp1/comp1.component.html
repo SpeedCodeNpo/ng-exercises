@@ -22,12 +22,21 @@
   <br />
 
   <label>Emit using the 'from' creation operator :</label>
-  <button>from</button>
+  <button (click)="onClickFrom()">from</button>
   <br />
 
-  <label>Emit using the 'fromEvent' creation operator :</label>
+  <hr />
+  <label>Subscribe to the 'fromEvent' Observable :</label>
   <button>fromEvent</button>
   <br />
+  <label>Click to emit a button event :</label>
+  <button id="trigger" class="test-button">Emit Button Event</button>
+  <br />  
+  <label>Unsubscribe from the 'fromEvent' Observable :</label>
+  <button>fromEvent</button>
+  <br />
+
+  <hr />
 
   <label>Emit using the 'timer' creation operator :</label>
   <button>timer</button>
