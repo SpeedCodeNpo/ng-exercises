@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { from, fromEvent, of } from 'rxjs';
+import { Observable, Subscription, from, fromEvent, of } from 'rxjs';
 
 @Component({
   selector: 'app-comp1',
@@ -21,10 +21,14 @@ export class Comp1Component {
   myFromObservable$ = from(['One', 'Two', 'Three']);
 
   //----------------------------------------
-  // Setting values for the "from" Observable
+  // Setting values for the "fromEvent" Observable
   //----------------------------------------
-  // triggerButton = document.querySelector('button#trigger');
-  // myFromEventObservable$ = fromEvent<MouseEvent>(this.triggerButton, 'click');
+  isSubscribedToEvent = false;
+  myFromEventSubscription = new Subscription();
+
+  //=============================================
+  // Functions
+  //=============================================
 
   //----------------------------------------
   // Defining the function for clicking on the "of" button
@@ -56,19 +60,34 @@ export class Comp1Component {
   //----------------------------------------
   onClickFromEvent() {
     // Subscribe to the 'fromEvent' Observable (HOT Observable)
-    console.log('Before subscribing to the "fromEvent" Observable');
+    const myEventButton = document.querySelector('#trigger');
 
-    console.log('AFTER subscribing to the "fromEvent" Observable');
+    if (myEventButton) {
+      const myFromEventObservable$ = fromEvent(myEventButton, 'click');
+      if (!this.isSubscribedToEvent) {
+        console.log('Before subscribing to the "fromEvent" Observable');
+        this.myFromEventSubscription = myFromEventObservable$.subscribe(
+          (event) => console.log('Button clicked!')
+        );
+        this.isSubscribedToEvent = true;
+        console.log('AFTER subscribing to the "fromEvent" Observable');
+      } else {
+        console.log('Already subscribed to fromEvent Observable.');
+      } //if isSubscribedToEvent
+    } else {
+      console.log('this.myEventButton is false');
+    } //if this.myEventButton
+  } //onClickFromEvent
 
-    // Unsubscribed from the 'fromEvent' Observable
-    // We must unsubscribe because it is a HOT Observable that never completes by itself.
-  }
-
-  ngOnInit() {
-    const button = document.querySelector('#myButton');
-    if (button) {
-      const observable = fromEvent(button, 'click');
-      observable.subscribe((event) => console.log('Button clicked!'));
+  onClickUnsubscribeFromEvent() {
+    if (this.isSubscribedToEvent) {
+      this.myFromEventSubscription.unsubscribe();
+      this.isSubscribedToEvent = false;
+      console.log('Unsubscribed from the "fromEvent" Observable');
+    } else {
+      console.log('Nothing to unsubscribe.');
     }
-  }
+  } //onClickUnsubscribeFromEvent
+
+  ngOnInit() {}
 }

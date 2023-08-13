@@ -27,13 +27,25 @@
 
   <hr />
   <label>Subscribe to the 'fromEvent' Observable :</label>
-  <button>fromEvent</button>
+  <button (click)="onClickFromEvent()">fromEvent</button>
   <br />
   <label>Click to emit a button event :</label>
-  <button id="trigger" class="test-button">Emit Button Event</button>
+  <button
+    id="trigger"
+    class="test-button"
+    [class.test-disabled]="!isSubscribedToEvent"
+  >
+    Emit Button Event
+  </button>
   <br />
   <label>Unsubscribe from the 'fromEvent' Observable :</label>
-  <button>Unsubscribe</button>
+  <button
+    (click)="onClickUnsubscribeFromEvent()"
+    [disabled]="!isSubscribedToEvent"
+    [class.test-disabled]="!isSubscribedToEvent"
+  >
+    Unsubscribe
+  </button>
   <br />
 
   <hr />
