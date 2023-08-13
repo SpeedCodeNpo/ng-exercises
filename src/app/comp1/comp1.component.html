@@ -50,10 +50,25 @@
 
   <hr />
 
-  <label>Emit using the 'timer' creation operator :</label>
-  <button>timer</button>
-  <br />
+  <label
+    >Emit using the 'timer' which is set to
+    {{ timerLengthMilisec / 1000 }} seconds :</label
+  >
+  <button
+    (click)="onClickSetTimer()"
+    [disabled]="isTimerActive"
+    [class.test-disabled]="isTimerActive"
+  >
+    Start Timer
+  </button>
+  <h3 *ngIf="isTimerActive">
+    Started, will complete in
+    {{ timerLengthMilisec / 1000 }} seconds.
+  </h3>
 
+  <hr />
+  <h3>Current count is : {{ timerCounter }}</h3>
+  <p>Interval between counts is {{ timerCounter }}</p>
   <label>Emit using the 'interval' creation operator :</label>
   <button>interval</button>
   <br />

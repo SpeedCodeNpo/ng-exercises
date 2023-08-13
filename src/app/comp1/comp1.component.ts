@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable, Subscription, from, fromEvent, of } from 'rxjs';
+import { Observable, Subscription, from, fromEvent, of, timer } from 'rxjs';
 
 @Component({
   selector: 'app-comp1',
@@ -25,6 +25,13 @@ export class Comp1Component {
   //----------------------------------------
   isSubscribedToEvent = false;
   myFromEventSubscription = new Subscription();
+
+  //----------------------------------------
+  // Setting values for the "timer" Observable
+  //----------------------------------------
+  timerLengthMilisec = 5000;
+  timerCounter = 0;
+  isTimerActive = false;
 
   //=============================================
   // Functions
@@ -89,5 +96,23 @@ export class Comp1Component {
     }
   } //onClickUnsubscribeFromEvent
 
-  ngOnInit() {}
-}
+  //----------------------------------------
+  // Defining the function for clicking on "Set Timer" button
+  //----------------------------------------
+
+  onClickSetTimer() {
+    if (!this.isTimerActive) {
+      this.isTimerActive = true;
+      console.log(
+        `Started counter, wait ${this.timerLengthMilisec / 1000} seconds ...`
+      );
+      const myTimerObservable$ = timer(this.timerLengthMilisec);
+      myTimerObservable$.subscribe({
+        complete: () => {
+          console.log('Completed !');
+          this.isTimerActive = false;
+        },
+      });
+    }
+  }
+} //end comp1
