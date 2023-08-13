@@ -19,13 +19,14 @@
   <h3>App Controls</h3>
   <label>Emit using the 'of' creation operator :</label>
   <button (click)="onClickOf()">of</button>
-  <br />
+  <p>View results in browser DevTools.</p>
+  <hr />
 
   <label>Emit using the 'from' creation operator :</label>
   <button (click)="onClickFrom()">from</button>
-  <br />
-
+  <p>View results in browser DevTools.</p>
   <hr />
+
   <label>Subscribe to the 'fromEvent' Observable :</label>
   <button (click)="onClickFromEvent()">fromEvent</button>
   <br />
@@ -67,12 +68,12 @@
   </h3>
 
   <hr />
-  <h3>Current count is : {{ timerCounter }}</h3>
-  <p>Interval between counts is {{ timerCounter }}</p>
   <label>Emit using the 'interval' creation operator :</label>
-  <button>interval</button>
-  <br />
-
-  <hr />
-  <p>View results of each button click in the Dev Tools console.</p>
+  <button (click)="onClickSetInterval()">
+    interval {{ intervalTimeMilisec / 1000 }} seconds
+  </button>
+  <h3 *ngIf="isIntervalActive">
+    Current count is : {{ intervalCounter }} will end after
+    {{ timerLengthMilisec / 1000 }} seconds.
+  </h3>
 </div>
