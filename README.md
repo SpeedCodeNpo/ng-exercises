@@ -63,3 +63,4 @@ Starter version for assignment: card-20230812-2135
  
   
 #### Screenshot of initial page before user interaction :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/3603dfaf-3000-4e0d-b904-5b4b0c60a24e)
