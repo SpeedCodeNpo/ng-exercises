@@ -1,56 +1,49 @@
 <div>
-  <h2>Observable Demo</h2>
-  <p>This app demonstrates raw use of an Observable & subscribing to it.</p>
+  <h2>RxJs of, from & fromEvent operators</h2>
+  <p>This app demonstrates use of 3 creation operators :</p>
+  <ul>
+    <li>of : Emmits all arguments of the 'of' operator, then completes.</li>
+    <li>from : Emits values from an Iterable, Promise or Class.</li>
+    <li>fromEvent : Creates an Observable from various event sources.</li>
+  </ul>
   <hr />
   <h3>App description</h3>
-  <p>The subscription function does the following things :</p>
-  <ul>
-    <li>Emits a syncronous value, this means it immediatly emmits.</li>
-    <li>
-      Emits two asyncronous value, these are emitting after a time interval.
-    </li>
-    <li>
-      Depending on values set in code, the Observable might end with a COMPLETE
-      , an ERROR or not end.
-    </li>
-    <li>
-      In case it has no ending (no COMPLETE or ERROR emitted) then the only way
-      to stop a subscription is to unsubscribe.
-    </li>
-    <li>
-      In all cases (whether it ends with a COMPLETE, ERROR or by unsubscribe)
-      the Observable's Teardown function is executed (it will console.log a
-      teardown message).
-    </li>
-  </ul>
+  <p>Each creation operator creates an Observable.</p>
+  <p>Each of these , when subscribed to, will emit its values.</p>
+  <p>The user will trigger each subscription with a different button.</p>
+  <p>The output will be displayed in the dev-tools browser console.</p>
+
   <hr />
-  <h3>Controlling the app</h3>
-  <p>You control the async wait time and also how the subscription ends.</p>
-  <p>The variables whose values you control are:</p>
-  <ul>
-    <li>
-      asyncEmissionTimeMillisec = {{ asyncEmissionTimeMillisec }} milsec , this
-      is the timeout for the first async emission. The 2nd async emission is 3
-      times that value = {{ 3 * asyncEmissionTimeMillisec }}
-    </li>
-    <br />
-    <li>
-      isNeverEnding == {{ isNeverEnding }} , this means that the Observable wont
-      end, if subscribed then the only way to free the subscription is using
-      unsubscribe.
-    </li>
-    <br />
-    <li *ngIf="isActivateComplete && !isNeverEnding; else activateError">
-      isActivateComplete = true , this means ending the Observable using
-      'COMPLETE' function.
-    </li>
-    <ng-template #activateError>
-      <li *ngIf="!isNeverEnding">
-        isActivateComplete = false , this means ending the Observable using
-        'ERROR' function.
-      </li>
-    </ng-template>
-  </ul>
+  <h3>App Controls</h3>
+  <label>Emit using the 'of' creation operator :</label>
+  <button (click)="onClickOf()">of</button>
+  <p>View results in browser DevTools.</p>
   <hr />
-  <p>The runtime results are displayed in the Dev Tools console.</p>
+
+  <label>Emit using the 'from' creation operator :</label>
+  <button (click)="onClickFrom()">from</button>
+  <p>View results in browser DevTools.</p>
+  <hr />
+
+  <label>Subscribe to the 'fromEvent' Observable :</label>
+  <button (click)="onClickFromEvent()">fromEvent</button>
+  <br />
+  <label>Click to emit a button event :</label>
+  <button
+    id="trigger"
+    class="test-button"
+    [class.test-disabled]="!isSubscribedToEvent"
+  >
+    Emit Button Event
+  </button>
+  <br />
+  <label>Unsubscribe from the 'fromEvent' Observable :</label>
+  <button
+    (click)="onClickUnsubscribeFromEvent()"
+    [disabled]="!isSubscribedToEvent"
+    [class.test-disabled]="!isSubscribedToEvent"
+  >
+    Unsubscribe
+  </button>
+  <br />
 </div>
