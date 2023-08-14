@@ -19,6 +19,14 @@ Solution version for assignment: card-20230813-2241
     - timer : Completes after set time.
     - interval : Never ends, emits recurringly every time inteval set.
 
+
+#### Screenshot of initial page before user interaction :
+
+
+#### Screenshot of page after activating timer and interval :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/32e9a037-4fcd-4e88-b34a-13cb42673819)
+
+
 ================================================================
 ## Interaction with app:
 - The app will xxxx
