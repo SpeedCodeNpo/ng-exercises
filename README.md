@@ -20,58 +20,46 @@ Starter version for assignment: card-20230812-2135
     - from : Emitted values are items in an array, a Promise, Iterable or Class.
     - fromEvent : Creates an Observable from various event sources.
 
+## Premade code in starter branch
+- The starter branch has pre-made code so you can focus your practice on the relavent skills.
+- The included code :
+  - The styles.scss file already has the styles needed for the app.
+    - A component named 'comp1' has been created with some default content in these files:
+    - html : The html templated is populated with the text & has been linked where needed to variabls in the TS file.
+    - comp1 component ts file :
+      - It has class variables with default values and empty functions.
+
 ## Interaction with app:
-- The app will have a page displaying text info only, just explaining what is going on.
-    - The text content is included in the starter branch for this assignment.
-    - There is no input via the UI.
-    - The output is console log to the browser's DevTools.
-    - The interaction is by editing values in the source code.
+- The app will have a page displaying 2 sections with general info and then 3 sections, each for a different creation operator.
+- Here are the details of the 3 creation operator sections:
+  - The 'of' operator: 
+    - In this section you click the 'of' button to subscribe to an Observable created by the 'of' operator.
+  - The output is displayed in the broser console.
+  ------------------------------------------
+  - The 'from' operator: 
+    - In this section you click the 'from' button to subscribe to an Observable created by the 'from' operator.
+    - The output is displayed in the broser console.
+------------------------------------------
+  - The 'fromEvent' operator: 
+    - In this section you click the 'fromEvent' button to subscribe to an Observable created by 'fromEvent'.
+    - The Observable listens to mouse button clicks.
+    - Per each click a console log displays that a click was emitted.
+    - This is a HOT observable, it will never end unless you unsubscribe.
+    - Program the 'Unsubscribe' button to unsubscribe from this Observable.
+    - After unsubscribing the button click will not respond.
 
 ================================================================
 
 ## App features:
-- The app creates an Observable whose actions are controlled by 3 global variables.
-    - **asyncEmissionTimeMillisec** : Is the time interval for the first asynchronous emission.
-    - **isNeverEnding**             : This boolean when true will disable the Observble from ending (complete & error)
-                                       so the only way a subscription can disconnect is by unsubscribing.
-    - **isActivateComplete**        : This boolean when true will stop the Observable from emitting by activating the 'complete'                          
-                                      function otherwise it will activate the 'error' function.
-
-- When subscribed to the Observable it will :
-    - Emmit a synchronous value 
-    - Then emiit 2 asynchronous values with time intervals :
-        - The first time interval is equal to the value of 'asyncEmissionTimeMillisec'.
-        - The second interval is triple that time ( 3 * asyncEmissionTimeMillisec).
-    - In case isNeverEnding === false the Observable will emit either a 'complete' or 'error' depending 
-         on value of 'isActivateComplete' (if it is true or false accordingly).
-       - When a 'complete' or 'error' are emitted the Teardown function (the 'return' in the Observable) 
-         will be activated (It just console logs a message).
-    - But when isNeverEnding === true then the Observable will not emmit neither a 'complete' or an'error'
-      this means that the subscription will stay alive until the unsubscribe is called.
-
-- The subscription is activated with a setTimeout.
-    - The value of the timeout is a multiplier of 'asyncEmissionTimeMillisec'.
-    - So you can change the value to cause a subscription to end before the async emiisions are released
-      or you can have the subscription end after the first one is released or after both are released.
-    - This feature demonstrates the affect of the unsubscribe with async emissions.
-
-## An example console log of scenario where the unsubscribe timeout is 4 * asyncEmissionTimeMillisec :
-===== ngOnInit : Creating a new Observable instance : myObservable$.
-===== ngOnInit : BEFORE subscribing to myObservable$, creating variable mySubscription.
-myObservable$: Executing the creation of myObservable$
-Observer1: Value of the emission is "1"
-===== ngOnInit : AFTER subscribing to myObservable$.
-Observer1: Value of the emission is "2"
-Observer1: Value of the emission is "3"
-===== ngOnInit : Triggering unsubscribe from mySubscription.
-myObservable$: Executing the teardown.
-===== ngOnInit : AFTER Unsubscribed from mySubscription.
+- The 'of' button : Will only display the output in the console.log, no effects of button or anything else.
+---
+- The 'from' button : Will only display the output in the console.log, no effects of button or anything else.
+---
+- The 'fromEvent' button : 
+  - By default only the 'fromEvent' button will be enabled, the other two buttons are disabled.
+  - When activated the other two buttons are enabled.
+  - The blue button triggers a click event which is indicated in the browser custom log.
+  - The unsubscribe button will disconnect the subscription.
+ 
   
 #### Screenshot of initial page before user interaction :
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/4f447580-dcc8-4a58-b47c-f75c3859bdd9)
-
-## Included in the starter branch :
-- A component named 'comp1' has already been created for you.
-- It's template file already has the needed content.
-- Since controlling the app behavior is via the source code, there is no interaction with the home page.
-- Use 'comp1' as your assignment component, define the Observable in Comp1 component.
