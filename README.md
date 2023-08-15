@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230815-2153
+Solution version for assignment: card-20230815-2153
 
 ## Assignment title : Practice RxJs Subject and BehaviorSubject
 
@@ -16,8 +16,8 @@ Starter version for assignment: card-20230815-2153
 
 ### Assignment goals :
 - Practice these RxJs creation operators:
-    - timer : Completes after set time.
-    - interval : Never ends, emits recurringly every time inteval set.
+    - Subject : Creates a Subject Observable to multicast simultaneously to all of it's observers / subscribers.
+    - BehaviorSubject : .
 
 ## App display:
 - The app displays 3 sections :
