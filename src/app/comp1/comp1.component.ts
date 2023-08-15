@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import {
-  Observable,
   Subscription,
-  from,
-  fromEvent,
   interval,
-  of,
   timer,
 } from 'rxjs';
 

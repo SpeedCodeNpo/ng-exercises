@@ -19,6 +19,32 @@ Solution version for assignment: card-20230813-2241
     - timer : Completes after set time.
     - interval : Never ends, emits recurringly every time inteval set.
 
+## App display:
+- The app displays 3 sections :
+  - An info section, it's content is already included in the starter version.
+  - A timer section, it activates an RxJs timer Observable subscription.
+  - An interval section, it activates an RxJs interval Observable subscription.
+
+## Interaction with app:
+  - Clicking the "Start Timer" button 
+
+## Included in the starter branch :
+- A component named 'comp1' has already been created for you.
+- It's template file already has the needed content.
+- The typescript class component file has these presets: 
+  - For the timer demo section these class properties: 
+    - timerLengthMilisec : Defines the timer length in millisec.
+    - isTimerActive : Flags state of timer
+
+  - For the interval demo section these class properties: 
+    - intervalTimeMilisec : The pause time between each interval emittion
+    - intervalCounter : Starting value of the counter
+    - isIntervalActive : Flags state of timer
+
+  - The component class file also includes two empty functions :
+    - onClickSetTimer()
+    - onClickSetInterval()
+
 
 #### Screenshot of initial page before user interaction :
 
@@ -28,8 +54,7 @@ Solution version for assignment: card-20230813-2241
 
 
 ================================================================
-## Interaction with app:
-- The app will xxxx
+
 
 
 ## App features:
@@ -58,23 +83,3 @@ Solution version for assignment: card-20230813-2241
       or you can have the subscription end after the first one is released or after both are released.
     - This feature demonstrates the affect of the unsubscribe with async emissions.
 
-## An example console log of scenario where the unsubscribe timeout is 4 * asyncEmissionTimeMillisec :
-===== ngOnInit : Creating a new Observable instance : myObservable$.
-===== ngOnInit : BEFORE subscribing to myObservable$, creating variable mySubscription.
-myObservable$: Executing the creation of myObservable$
-Observer1: Value of the emission is "1"
-===== ngOnInit : AFTER subscribing to myObservable$.
-Observer1: Value of the emission is "2"
-Observer1: Value of the emission is "3"
-===== ngOnInit : Triggering unsubscribe from mySubscription.
-myObservable$: Executing the teardown.
-===== ngOnInit : AFTER Unsubscribed from mySubscription.
-  
-#### Screenshot of initial page before user interaction :
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/4f447580-dcc8-4a58-b47c-f75c3859bdd9)
-
-## Included in the starter branch :
-- A component named 'comp1' has already been created for you.
-- It's template file already has the needed content.
-- Since controlling the app behavior is via the source code, there is no interaction with the home page.
-- Use 'comp1' as your assignment component, define the Observable in Comp1 component.
