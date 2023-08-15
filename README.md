@@ -47,6 +47,7 @@ Solution version for assignment: card-20230813-2241
 
 
 #### Screenshot of initial page before user interaction :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/8ced1406-3ede-4ab2-9c89-e845c6e22d37)
 
 
 #### Screenshot of page after activating timer and interval :
