@@ -26,7 +26,19 @@ Solution version for assignment: card-20230813-2241
   - An interval section, it activates an RxJs interval Observable subscription.
 
 ## Interaction with app:
-  - Clicking the "Start Timer" button 
+  - Clicking the "Start Timer" button will display an 'h3' message 
+      - The message is :  "Started, will complete in x seconds"
+      - x i the value of the timer time.
+      - When the timer completes the message is hidden.
+
+  - Clicking the "interval x seconds" : 
+      - The value of 'x' in the button text is the interval time.
+      - When clicked an 'h3' message is displayed with this message :
+        - "Current count is : x will end after y seconds."
+        - 'x' is the value of the counter.
+        - 'y' is the same value used by the timer in section 2.
+      - When the timer completes the message is hidden and the counter resets.
+
 
 ## Included in the starter branch :
 - A component named 'comp1' has already been created for you.

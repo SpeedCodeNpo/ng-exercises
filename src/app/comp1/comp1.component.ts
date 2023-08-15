@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-import {
-  Subscription,
-  interval,
-  timer,
-} from 'rxjs';
+import { Subscription, interval, timer } from 'rxjs';
 
 @Component({
   selector: 'app-comp1',
@@ -61,6 +57,7 @@ export class Comp1Component {
           this.intervalCounter++;
           if (this.intervalCounter > this.timerLengthMilisec / 1000) {
             this.isIntervalActive = false;
+            this.intervalCounter = 0;
             myIntervalSubscription.unsubscribe();
           } //if this.intervalCounter > limit
         },
