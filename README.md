@@ -1,17 +1,17 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230813-2241
+Starter version for assignment: card-20230815-2153
 
-## Assignment title : Practice RxJs Creation Operators
+## Assignment title : Practice RxJs Subject and BehaviorSubject
 
 ### Assignment Links
 (1) Project starter:
-  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230813-2241-q
+  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230815-2153-q
   - Stackblitz link: 
 
 (2) Project solution:
-  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230813-2241-s
+  - GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230815-2153-s
   - Stackblitz link: 
 
 ### Assignment goals :
