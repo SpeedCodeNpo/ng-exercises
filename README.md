@@ -65,34 +65,3 @@ Solution version for assignment: card-20230813-2241
 #### Screenshot of page after activating timer and interval :
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/32e9a037-4fcd-4e88-b34a-13cb42673819)
 
-
-================================================================
-
-
-
-## App features:
-- The app creates an Observable whose actions are controlled by 3 global variables.
-    - **asyncEmissionTimeMillisec** : Is the time interval for the first asynchronous emission.
-    - **isNeverEnding**             : This boolean when true will disable the Observble from ending (complete & error)
-                                       so the only way a subscription can disconnect is by unsubscribing.
-    - **isActivateComplete**        : This boolean when true will stop the Observable from emitting by activating the 'complete'                          
-                                      function otherwise it will activate the 'error' function.
-
-- When subscribed to the Observable it will :
-    - Emmit a synchronous value 
-    - Then emiit 2 asynchronous values with time intervals :
-        - The first time interval is equal to the value of 'asyncEmissionTimeMillisec'.
-        - The second interval is triple that time ( 3 * asyncEmissionTimeMillisec).
-    - In case isNeverEnding === false the Observable will emit either a 'complete' or 'error' depending 
-         on value of 'isActivateComplete' (if it is true or false accordingly).
-       - When a 'complete' or 'error' are emitted the Teardown function (the 'return' in the Observable) 
-         will be activated (It just console logs a message).
-    - But when isNeverEnding === true then the Observable will not emmit neither a 'complete' or an'error'
-      this means that the subscription will stay alive until the unsubscribe is called.
-
-- The subscription is activated with a setTimeout.
-    - The value of the timeout is a multiplier of 'asyncEmissionTimeMillisec'.
-    - So you can change the value to cause a subscription to end before the async emiisions are released
-      or you can have the subscription end after the first one is released or after both are released.
-    - This feature demonstrates the affect of the unsubscribe with async emissions.
-
