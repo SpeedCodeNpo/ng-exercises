@@ -16,11 +16,25 @@
   >
     Subscribe-1
   </button>
-  <h3 *ngIf="isTimerActive">
-    Started, will complete in
-    {{ timerLengthMilisec / 1000 }} seconds.
+  <h3 *ngIf="isSubscribe1Active" #unsubscribe1>
+    Counter for subscribe-1 : {{ subscribe1Value }}
   </h3>
+  <ng-template #unsubscribe1>
+    <p>Hello</p>
+  </ng-template>
 
+  <hr />
+  <label>Activate subscribe-2 : </label>
+  <button
+    (click)="onClickSubscribe2()"
+    [disabled]="isSubscribe2Active"
+    [class.test-disabled]="isSubscribe2Active"
+  >
+    Subscribe-2
+  </button>
+  <h3 *ngIf="isSubscribe1Active">
+    Counter for subscribe-2 : {{ subscribe2Value }}
+  </h3>
   <hr />
   <h3>Behaviors Subject Observable</h3>
 

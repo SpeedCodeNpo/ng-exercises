@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Subject, from, interval } from 'rxjs';
+import { Subject, Subscriber, Subscription, from, interval } from 'rxjs';
 
 @Component({
   selector: 'app-comp1',
@@ -13,12 +13,18 @@ export class Comp1Component {
   // emitedData = [1,2,3,4,5,6];
   // emittingObservable$ = from(this.emitedData);
   mySubject$ = new Subject();
-  intervalEmiter$ = interval(1000); //every 1 second
-  intervalEmiterSubscribe$ = this.intervalEmiter$.subscribe((intervalCount) => {
-    this.mySubject$.next(intervalCount);
-  });
+  intervalEmiter$ = interval(2000); //milisecs
+  intervalEmiterSubscribe$ = this.intervalEmiter$.subscribe(
+    (intervalCount: number) => {
+      this.mySubject$.next(intervalCount);
+    }
+  );
 
+  mySubscribe1 = new Subscription();
   isSubscribe1Active = false;
+  isSubscribe2Active = false;
+  subscribe1Value = 0;
+  subscribe2Value = 0;
 
   //-----------
   timerLengthMilisec = 5000;
@@ -40,11 +46,22 @@ export class Comp1Component {
 
   onClickSubscribe1() {
     this.isSubscribe1Active = true;
-    const mySubscribe1 = this.mySubject$.subscribe((value) => {
-      console.log('Counter :', value);
+    this.mySubscribe1 = this.mySubject$.subscribe((value) => {
+      this.subscribe1Value = value as number;
     });
-  } // onClickSetTimer
+  } // onClickSubscribe1
 
+  onClickUnsubscribe1() {
+    this.isSubscribe1Active = false;
+    this.mySubscribe1.unsubscribe();
+  } // onClickSubscribe1
+
+  onClickSubscribe2() {
+    this.isSubscribe2Active = true;
+    const mySubscribe1 = this.mySubject$.subscribe((value) => {
+      this.subscribe2Value = value as number;
+    });
+  } // onClickSubscribe2
   //----------------------------------------
   // Defining the function for clicking on "Set Timer" button
   //----------------------------------------
