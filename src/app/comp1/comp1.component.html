@@ -1,22 +1,18 @@
 <div>
-  <h2>RxJs 'timer' & 'interval' creation operators</h2>
-  <p>This app demonstrates use of 2 creation operators :</p>
-  <ul>
-    <li>timer : Completes after set time.</li>
-    <li>interval : Never ends, emits recurringly every time inteval set.</li>
-  </ul>
+  <h2>RxJs 'Subject' & 'BehaviorSubject' exercise.</h2>
 
   <hr />
-  <h3>App Controls</h3>
+  <h3>Subject Observable</h3>
 
-  <label
+  <!-- <label
     >Emit using the 'timer' which is set to
     {{ timerLengthMilisec / 1000 }} seconds :</label
-  >
+  > -->
+  <label>Activate subscribe-1 : </label>
   <button
-    (click)="onClickSetTimer()"
-    [disabled]="isTimerActive"
-    [class.test-disabled]="isTimerActive"
+    (click)="onClickSubscribe1()"
+    [disabled]="isSubscribe1Active"
+    [class.test-disabled]="isSubscribe1Active"
   >
     Start Timer
   </button>
@@ -26,6 +22,8 @@
   </h3>
 
   <hr />
+  <h3>Behaviors Subject Observable</h3>
+
   <label>Emit using the 'interval' creation operator :</label>
   <button (click)="onClickSetInterval()">
     interval {{ intervalTimeMilisec / 1000 }} seconds
