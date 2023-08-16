@@ -1,11 +1,20 @@
 <div>
   <h2>RxJs 'Subject' & 'BehaviorSubject' exercise.</h2>
-
+  <p>
+    The difference you will see between Subject & BehaviorSubject is that
+    Subject subscription starts at the default value "{{
+      UNSUBSCRIBED_START_VALUE
+    }}"" but the BehaviorSubject starts from the last emitted count.
+  </p>
+  <p>
+    To change between Subject & BehaviorSubject comment & uncomment the two
+    sections of code that set the value of 'mySubject$'.
+  </p>
   <hr />
-  <h3>Subject Observable : {{ subjectValue }}</h3>
+  <h3>Subject Observable counter: {{ subjectValue }}</h3>
 
   <button (click)="onClickSubjectUnsubscribe()" [disabled]="!isSubjectActive">
-    Unsubscribe from Subject
+    Unsubscribe from Subject/BehaviorSubject
   </button>
   <p *ngIf="!isSubjectActive">
     The Subject has stopped emiting. The last value it emitted was

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import {
   BehaviorSubject,
   Subject,
-  Subscriber,
   Subscription,
   interval,
 } from 'rxjs';
