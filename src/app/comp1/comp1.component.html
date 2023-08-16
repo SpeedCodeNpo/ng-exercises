@@ -1,37 +1,70 @@
 <div>
-  <h2>RxJs 'timer' & 'interval' creation operators</h2>
-  <p>This app demonstrates use of 2 creation operators :</p>
-  <ul>
-    <li>timer : Completes after set time.</li>
-    <li>interval : Never ends, emits recurringly every time inteval set.</li>
-  </ul>
-
+  <h2>RxJs 'Subject' & 'BehaviorSubject' exercise.</h2>
+  <p>
+    The difference you will see between Subject & BehaviorSubject is that
+    Subject subscription starts at the default value "{{
+      UNSUBSCRIBED_START_VALUE
+    }}"" but the BehaviorSubject starts from the last emitted count.
+  </p>
+  <p>
+    To change between Subject & BehaviorSubject comment & uncomment the two
+    sections of code that set the value of 'mySubject$'.
+  </p>
   <hr />
-  <h3>App Controls</h3>
+  <h3>Subject / BehaviorSubject counter: {{ subjectValue }}</h3>
 
-  <label
+  <button (click)="onClickSubjectUnsubscribe()" [disabled]="!isSubjectActive">
+    Unsubscribe from Subject/BehaviorSubject
+  </button>
+  <p *ngIf="!isSubjectActive">
+    The Subject has stopped emiting. The last value it emitted was
+    {{ subjectValue }}. It wont emit anymore so all active subscribers are stuck
+    at this value.
+  </p>
+  <hr />
+  <!-- <label
     >Emit using the 'timer' which is set to
     {{ timerLengthMilisec / 1000 }} seconds :</label
-  >
+  > -->
+  <label>Activate subscribe-1 : </label>
   <button
-    (click)="onClickSetTimer()"
-    [disabled]="isTimerActive"
-    [class.test-disabled]="isTimerActive"
+    (click)="onClickSubscribe1()"
+    [disabled]="isSubscribe1Active"
+    [class.test-disabled]="isSubscribe1Active"
   >
-    Start Timer
+  Activate Subscribe-1
   </button>
-  <h3 *ngIf="isTimerActive">
-    Started, will complete in
-    {{ timerLengthMilisec / 1000 }} seconds.
+  <h3 *ngIf="isSubscribe1Active; then unsubscribe1">
+    Counter for subscribe-1 : {{ subscribe1Value }}
   </h3>
+  <ng-template #unsubscribe1>
+    <h3>Counter for subscribe-1 : {{ subscribe1Value }}</h3>
+    <button (click)="onClickUnsubscribe1()">Unsubscribe</button>
+    <p *ngIf="!isSubjectActive">
+      The Subject / BehaviorSubject has stopped emiting. The last value it
+      emitted was
+      {{ subjectValue }}.
+    </p>
+  </ng-template>
+
+  <!-- ==================================   -->
+  <!-- ===SUBSCRIBE-2 ===================   -->
+  <!-- ==================================   -->
 
   <hr />
-  <label>Emit using the 'interval' creation operator :</label>
-  <button (click)="onClickSetInterval()">
-    interval {{ intervalTimeMilisec / 1000 }} seconds
+  <label>Activate subscribe-2 : </label>
+  <button
+    (click)="onClickSubscribe2()"
+    [disabled]="isSubscribe2Active"
+    [class.test-disabled]="isSubscribe2Active"
+  >
+  Activate Subscribe-2
   </button>
-  <h3 *ngIf="isIntervalActive">
-    Current count is : {{ intervalCounter }} will end after
-    {{ timerLengthMilisec / 1000 }} seconds.
+  <h3 *ngIf="isSubscribe2Active; then unsubscribe2">
+    Counter for subscribe-2 : {{ subscribe2Value }}
   </h3>
+  <ng-template #unsubscribe2>
+    <h3>Counter for subscribe-2 : {{ subscribe2Value }}</h3>
+    <button (click)="onClickUnsubscribe2()">Unsubscribe</button>
+  </ng-template>
 </div>
