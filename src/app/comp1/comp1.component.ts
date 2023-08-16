@@ -6,7 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  asyncEmissionTimeMillisec = 2000;
-  isNeverEnding: boolean = false;
-  isActivateComplete: boolean = true;
-}
+  //----------------------------------------
+  // Setting values for the "timer" Observable
+  //----------------------------------------
+  timerLengthMilisec = 5000;
+  isTimerActive = false;
+
+  //----------------------------------------
+  // Setting values for the "interval" Observable
+  //----------------------------------------
+  intervalTimeMilisec = 1000;
+  intervalCounter = 0;
+  isIntervalActive = false;
+
+  //=============================================
+  // Functions
+  //=============================================
+
+  //----------------------------------------
+  // Defining the function for clicking on "Set Timer" button
+  //----------------------------------------
+
+  onClickSetTimer() {} // onClickSetTimer
+
+  //----------------------------------------
+  // Defining the function for clicking on "Set Timer" button
+  //----------------------------------------
+  onClickSetInterval() {} //onClickSetInterval
+} //end comp1
