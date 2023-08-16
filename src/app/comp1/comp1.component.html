@@ -16,11 +16,12 @@
   >
     Subscribe-1
   </button>
-  <h3 *ngIf="isSubscribe1Active" #unsubscribe1>
+  <h3 *ngIf="isSubscribe1Active; then unsubscribe1">
     Counter for subscribe-1 : {{ subscribe1Value }}
   </h3>
   <ng-template #unsubscribe1>
-    <p>Hello</p>
+    <h3>Counter for subscribe-1 : {{ subscribe1Value }}</h3>
+    <button (click)="onClickUnsubscribe1()">Unsubscribe</button>
   </ng-template>
 
   <hr />

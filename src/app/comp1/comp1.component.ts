@@ -48,12 +48,14 @@ export class Comp1Component {
     this.isSubscribe1Active = true;
     this.mySubscribe1 = this.mySubject$.subscribe((value) => {
       this.subscribe1Value = value as number;
+      console.log('Subscribe-1 counter : ', value);
     });
   } // onClickSubscribe1
 
   onClickUnsubscribe1() {
     this.isSubscribe1Active = false;
     this.mySubscribe1.unsubscribe();
+    this.intervalEmiterSubscribe$.unsubscribe();
   } // onClickSubscribe1
 
   onClickSubscribe2() {
