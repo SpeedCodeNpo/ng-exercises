@@ -32,7 +32,7 @@
     [disabled]="isSubscribe1Active"
     [class.test-disabled]="isSubscribe1Active"
   >
-    Subscribe-1
+  Activate Subscribe-1
   </button>
   <h3 *ngIf="isSubscribe1Active; then unsubscribe1">
     Counter for subscribe-1 : {{ subscribe1Value }}
@@ -41,9 +41,9 @@
     <h3>Counter for subscribe-1 : {{ subscribe1Value }}</h3>
     <button (click)="onClickUnsubscribe1()">Unsubscribe</button>
     <p *ngIf="!isSubjectActive">
-      The Subject has stopped emiting. The last value it emitted was
-      {{ subjectValue }}. If subscribe-1 value is 0 then it unsubscribed before
-      the Subject was unsubscribed.
+      The Subject / BehaviorSubject has stopped emiting. The last value it
+      emitted was
+      {{ subjectValue }}.
     </p>
   </ng-template>
 
@@ -58,7 +58,7 @@
     [disabled]="isSubscribe2Active"
     [class.test-disabled]="isSubscribe2Active"
   >
-    Subscribe-2
+  Activate Subscribe-2
   </button>
   <h3 *ngIf="isSubscribe2Active; then unsubscribe2">
     Counter for subscribe-2 : {{ subscribe2Value }}
