@@ -17,7 +17,7 @@ Solution version for assignment: card-20230815-2153
 ### Assignment goals :
 - Practice these RxJs creation operators:
     - Subject : Creates a Subject Observable to multicast simultaneously to all of it's observers / subscribers.
-    - BehaviorSubject : .
+    - BehaviorSubject : Similar to Subject, the only difference is that the subscriber immediatly gets the last value emitted.
 
 ## App display:
 - The app displays 3 sections :
