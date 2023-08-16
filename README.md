@@ -20,10 +20,13 @@ Solution version for assignment: card-20230815-2153
     - BehaviorSubject : Similar to Subject, the only difference is that the subscriber immediatly gets the last value emitted.
 
 ## App display:
-- The app displays 3 sections :
+- The app displays 4 sections :
   - An info section, it's content is already included in the starter version.
-  - A timer section, it activates an RxJs timer Observable subscription.
-  - An interval section, it activates an RxJs interval Observable subscription.
+  - A Subject / BehaviorSubject section.
+  - A section for controlling subscription-1.
+  - A section for controlling subscription-2.
+
+#### Screenshot of initial page before user interaction :
 
 ## Interaction with app:
   - Clicking the "Start Timer" button will display an 'h3' message 
@@ -56,10 +59,6 @@ Solution version for assignment: card-20230815-2153
   - The component class file also includes two empty functions :
     - onClickSetTimer()
     - onClickSetInterval()
-
-
-#### Screenshot of initial page before user interaction :
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/8ced1406-3ede-4ab2-9c89-e845c6e22d37)
 
 
 #### Screenshot of page after activating timer and interval :
