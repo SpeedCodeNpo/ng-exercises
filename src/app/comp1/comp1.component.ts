@@ -17,9 +17,8 @@ export class Comp1Component {
   //----------------------------------------
   // Setting values for the "Subject" Observable
   //----------------------------------------
-  // emitedData = [1,2,3,4,5,6];
-  // emittingObservable$ = from(this.emitedData);
-  mySubject$ = new BehaviorSubject(33);
+  //mySubject$ = new BehaviorSubject(33);//A value is mandatory so i chose an arbitrary value not used
+  mySubject$ = new Subject();
   intervalEmiter$ = interval(2000); //milisecs
   intervalEmiterSubscribe$ = this.intervalEmiter$.subscribe(
     (intervalCount: number) => {
