@@ -60,13 +60,4 @@
   </ng-template>
   <hr />
   <h3>Behaviors Subject Observable</h3>
-
-  <label>Emit using the 'interval' creation operator :</label>
-  <button (click)="onClickSetInterval()">
-    interval {{ intervalTimeMilisec / 1000 }} seconds
-  </button>
-  <h3 *ngIf="isIntervalActive">
-    Current count is : {{ intervalCounter }} will end after
-    {{ timerLengthMilisec / 1000 }} seconds.
-  </h3>
 </div>

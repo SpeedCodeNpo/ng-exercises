@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
-import { Subject, Subscriber, Subscription, from, interval } from 'rxjs';
+import {
+  BehaviorSubject,
+  Subject,
+  Subscriber,
+  Subscription,
+  from,
+  interval,
+} from 'rxjs';
 
 @Component({
   selector: 'app-comp1',
@@ -12,7 +19,7 @@ export class Comp1Component {
   //----------------------------------------
   // emitedData = [1,2,3,4,5,6];
   // emittingObservable$ = from(this.emitedData);
-  mySubject$ = new Subject();
+  mySubject$ = new BehaviorSubject(33);
   intervalEmiter$ = interval(2000); //milisecs
   intervalEmiterSubscribe$ = this.intervalEmiter$.subscribe(
     (intervalCount: number) => {
@@ -33,16 +40,6 @@ export class Comp1Component {
   UNSUBSCRIBED_START_VALUE = -1010; //Value to identify a counter in state of unsubscribed
   subscribe1Value = this.UNSUBSCRIBED_START_VALUE;
   subscribe2Value = this.UNSUBSCRIBED_START_VALUE;
-
-  //-----------
-  timerLengthMilisec = 5000;
-  isTimerActive = false;
-  //----------------------------------------
-  // Setting values for the "interval" Observable
-  //----------------------------------------
-  intervalTimeMilisec = 1000;
-  intervalCounter = 0;
-  isIntervalActive = false;
 
   //=============================================
   // Functions
