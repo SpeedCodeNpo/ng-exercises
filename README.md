@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230817-1642
+Solution version for assignment: card-20230817-1642
 
 ## Assignment title : Practice RxJs Subject and BehaviorSubject
 
