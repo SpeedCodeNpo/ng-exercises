@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Starter version for assignment: card-20230815-2153
+Starter version for assignment: card-20230817-1642
 
 ## Assignment title : Practice RxJs Subject and BehaviorSubject
 
@@ -9,17 +9,17 @@ Starter version for assignment: card-20230815-2153
 
 (1) Project starter:
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230815-2153-q
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230817-1642-q
 - Stackblitz link:
 
 (2) Project solution:
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230815-2153-s
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230817-1642-s
 - Stackblitz link:
 
 ### Assignment goals :
 
-- Practice these RxJs creation operators:
+- Practice RxJs http operator
   - Subject : Creates a Subject Observable to multicast simultaneously to all of it's observers / subscribers.
   - BehaviorSubject : Similar to Subject, the only difference is that the subscriber immediatly gets the last value emitted.
 
