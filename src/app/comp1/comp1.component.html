@@ -1,11 +1,9 @@
 <div>
   <h2>RxJs 'http' GET Observable</h2>
-  <p>Using robothash.org to get random images</p>
+  <p>Using randomuser.me API to get fake user data.</p>
   <img src="https://robohash.org/set_set3/4.43?size=150x150" />
   <hr />
-  <h3>GET image from</h3>
+  <h3>Getting a user</h3>
 
-  <button (click)="onClickSubjectUnsubscribe()" [disabled]="!isSubjectActive">
-    GENERATE IMAGE
-  </button>
+  <button (click)="onGenerateImage()" [disabled]="true">Get User</button>
 </div>
