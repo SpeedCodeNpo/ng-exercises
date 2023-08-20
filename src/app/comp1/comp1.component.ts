@@ -7,13 +7,15 @@ import { HttpService } from '../http-service/http-service.service';
   templateUrl: './comp1.component.html',
   styleUrls: ['./comp1.component.scss'],
 })
-export class Comp1Component implements OnInit{
+export class Comp1Component implements OnInit {
   httpService = inject(HttpService);
 
-  constructor () {
-    this.httpService.getImage().subscribe( response => {
-      console.log(response);
-    })
+  constructor() {
+    this.httpService.getUser().subscribe((response) => {
+      console.log(
+        `email is : "${response.results[0].email}"\n gender is : ${response.results[0].gender}`
+      );
+    });
   }
 
   //=============================================
@@ -21,13 +23,11 @@ export class Comp1Component implements OnInit{
   //=============================================
 
   /**
-   * Function to get the generated image
+   * Function to get user data
    */
-  onGenerateImage() {
-    
-  }
+  onClickGetUser() {}
 
-  ngOnInit () {
-    const myImage = this.httpService.getImage();
+  ngOnInit() {
+    // const myImage = this.httpService.getUser();
   }
 } //end comp1
