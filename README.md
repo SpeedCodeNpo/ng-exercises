@@ -25,13 +25,10 @@ Solution version for assignment: card-20230817-1642
 
 ## App display:
 
-- The app displays 4 sections :
-  - An info section, it's content is already included in the starter version.
-  - A Subject / BehaviorSubject section.
-  - A section for controlling subscription-1.
-  - A section for controlling subscription-2.
+- The app displays 
   #### Screenshot of initial page before user interaction :
-  ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/06967973-0c09-48e3-b7d7-6ca950fa13fb)
+  ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/8695af42-4a2d-412f-8e54-b3842446b72f)
+
 
 ## Interaction with app:
 
