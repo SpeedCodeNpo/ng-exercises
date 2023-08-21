@@ -20,8 +20,7 @@ Solution version for assignment: card-20230817-1642
 ### Assignment goals :
 
 - Practice RxJs http operator
-  - Subject : Creates a Subject Observable to multicast simultaneously to all of it's observers / subscribers.
-  - BehaviorSubject : Similar to Subject, the only difference is that the subscriber immediatly gets the last value emitted.
+  - 
 
 ## App display:
 
