@@ -34,15 +34,11 @@ Solution version for assignment: card-20230817-1642
 
 ### The Subject / BehaviorSubject section :
 
-- Whether The Subject / BehaviorSubject is activated can be controlled by editing the code.
-  - To switch between the two just uncomment the 'mySubject$' setting you want and comment-out the other.
-- When code runs the Subject / BehaviorSubject is subscribed to an interval Observable, default value is 2000 millisec.
-- The value of the interval is displayed in an h3-element.
-- To unsubscribe the Subject / BehaviorSubject click the "Unsubscribe from Subject/BehaviorSubject" button.
-  - This will stop the interval counter from receiving updates.
+-
 
-#### Screenshot of page after clicking "Unsubscribe from Subject/BehaviorSubject" :
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/33fd47bb-a771-4f85-bb66-175c89e9859b)
+#### Screenshot of page after clicking "Get User" button :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0af1b238-2681-484a-bf0a-47c7b82f644a)
+
 
 ### The section for controlling subscription-1 and 2 :
 
