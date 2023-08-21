@@ -8,5 +8,14 @@
   <!-- <img src="{{ pngFile }}" /> -->
   <!-- <img src="https://robohash.org/set_set3/4.43?size=150x150" /> -->
 
-  <button (click)="onClickGetUser()" [disabled]="true">Get User</button>
+  <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
+    Get User
+  </button>
+
+  <h3 *ngIf="isGetUserActive; else elseBlock">
+    The user is : {{ userFullName }}
+  </h3>
+  <ng-template #elseBlock>
+    <h4>Wait ...</h4>
+  </ng-template>
 </div>

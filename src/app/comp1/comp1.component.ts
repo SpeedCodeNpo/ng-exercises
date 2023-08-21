@@ -9,10 +9,11 @@ import { UserInterface } from '../interface/user';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component implements OnInit {
+  isGetUserActive = true;
+  userFullName = 'No User';
   userFound!: UserInterface | null;
   httpService = inject(HttpService);
-
-  constructor() {}
+  getUserSubscription = new Subscription();
 
   //=============================================
   // Functions
@@ -21,20 +22,17 @@ export class Comp1Component implements OnInit {
   /**
    * Function to get user data
    */
-  onClickGetUser() {}
-
-  ngOnInit() {
-    console.log('======== START ngOnInit  ==========');
-
+  onClickGetUser() {
     const myUser = this.httpService.getUser();
-    myUser.subscribe({
+    this.isGetUserActive = false;
+    this.getUserSubscription = myUser.subscribe({
       next: (response) => {
+        this.isGetUserActive = true;
         this.userFound = response;
-        console.log('...... GOT A USER  .....');
+        console.log(`...... GOT A USER  .....`);
         const firstUser = response.results[0];
-        console.log(
-          `>> email is : "${firstUser.email}"\n>> gender is : ${firstUser.gender}`
-        );
+        this.userFullName = `${firstUser.name.title} ${firstUser.name.first} ${firstUser.name.last}`;
+        console.log(`>> The user is : ${this.userFullName}`);
         return response;
       },
 
@@ -43,19 +41,13 @@ export class Comp1Component implements OnInit {
         this.userFound = null;
       },
     });
+  } //onClickGetUser
 
-    console.log(`..THEIR VALUE IS : ${myUser}`);
+  ngOnInit() {
+    console.log('======== START ngOnInit  ==========');
+  }
 
-    //   if (myUser !== null) {
-    //     console.log('======== GOT A USER ==========');
-    //     const firstUser = myUser.results[0];
-    //     console.log(
-    //       `email is : "${firstUser.email}"\n gender is : ${firstUser.gender}`
-    //     );
-    //     console.log('======== FINISHED CONSOLE LOG EMAIL & GENDER ==========');
-    //   } else {
-    //     console.log('======== GOT A NULL ==========');
-    //   }
-    // }
+  ngOnDestroy() {
+    this.getUserSubscription.unsubscribe();
   }
 } //end comp1
