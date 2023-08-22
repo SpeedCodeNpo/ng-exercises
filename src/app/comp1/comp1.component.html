@@ -1,70 +1,21 @@
 <div>
-  <h2>RxJs 'Subject' & 'BehaviorSubject' exercise.</h2>
+  <h2>RxJs 'http' GET Observable</h2>
   <p>
-    The difference you will see between Subject & BehaviorSubject is that
-    Subject subscription starts at the default value "{{
-      UNSUBSCRIBED_START_VALUE
-    }}"" but the BehaviorSubject starts from the last emitted count.
+    Using <a href="http://randomuser.me">randomuser.me</a> API to get fake user
+    data.
   </p>
-  <p>
-    To change between Subject & BehaviorSubject comment & uncomment the two
-    sections of code that set the value of 'mySubject$'.
-  </p>
-  <hr />
-  <h3>Subject / BehaviorSubject counter: {{ subjectValue }}</h3>
 
-  <button (click)="onClickSubjectUnsubscribe()" [disabled]="!isSubjectActive">
-    Unsubscribe from Subject/BehaviorSubject
-  </button>
-  <p *ngIf="!isSubjectActive">
-    The Subject has stopped emiting. The last value it emitted was
-    {{ subjectValue }}. It wont emit anymore so all active subscribers are stuck
-    at this value.
-  </p>
   <hr />
-  <!-- <label
-    >Emit using the 'timer' which is set to
-    {{ timerLengthMilisec / 1000 }} seconds :</label
-  > -->
-  <label>Activate subscribe-1 : </label>
-  <button
-    (click)="onClickSubscribe1()"
-    [disabled]="isSubscribe1Active"
-    [class.test-disabled]="isSubscribe1Active"
-  >
-  Activate Subscribe-1
+  <h3>Getting a user</h3>
+
+  <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
+    Get User
   </button>
-  <h3 *ngIf="isSubscribe1Active; then unsubscribe1">
-    Counter for subscribe-1 : {{ subscribe1Value }}
+
+  <h3 *ngIf="isGetUserActive; else elseBlock">
+    The user is : {{ userFullName }}
   </h3>
-  <ng-template #unsubscribe1>
-    <h3>Counter for subscribe-1 : {{ subscribe1Value }}</h3>
-    <button (click)="onClickUnsubscribe1()">Unsubscribe</button>
-    <p *ngIf="!isSubjectActive">
-      The Subject / BehaviorSubject has stopped emiting. The last value it
-      emitted was
-      {{ subjectValue }}.
-    </p>
-  </ng-template>
-
-  <!-- ==================================   -->
-  <!-- ===SUBSCRIBE-2 ===================   -->
-  <!-- ==================================   -->
-
-  <hr />
-  <label>Activate subscribe-2 : </label>
-  <button
-    (click)="onClickSubscribe2()"
-    [disabled]="isSubscribe2Active"
-    [class.test-disabled]="isSubscribe2Active"
-  >
-  Activate Subscribe-2
-  </button>
-  <h3 *ngIf="isSubscribe2Active; then unsubscribe2">
-    Counter for subscribe-2 : {{ subscribe2Value }}
-  </h3>
-  <ng-template #unsubscribe2>
-    <h3>Counter for subscribe-2 : {{ subscribe2Value }}</h3>
-    <button (click)="onClickUnsubscribe2()">Unsubscribe</button>
+  <ng-template #elseBlock>
+    <h4>Wait ...</h4>
   </ng-template>
 </div>
