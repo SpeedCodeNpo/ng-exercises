@@ -4,28 +4,9 @@ div {
   margin: 5px;
   padding: 5px;
 }
-.activeFlag {
-  box-shadow: inset 0 1px 0 0 #dcecfb;
-  background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
-  border: 1px solid #84bbf3;
-  color: #ffffff;
-  text-shadow: 0 1px 0 #528ecc;
-}
+
 button {
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
-}
-
-.test-button {
-  border-radius: 5px;
-  border-color: #4073f3fb;
-  color: white;
-  background-color: #76adf0fb;
-}
-
-.test-disabled {
-  border-radius: 5px lightgray;
-  color: darkgray;
-  background-color: white;
 }

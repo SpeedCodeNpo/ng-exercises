@@ -20,39 +20,36 @@ Solution version for assignment: card-20230817-1642
 ### Assignment goals :
 
 - Practice RxJs http operator
-  - 
+  - Create an shared http service
+  - Create an interface to model the incoming object
+  - Subscribe to the http RxJs Observable.
+  - Have the UI react to the pending http response.
+  - Unsubscribe from the observable.
 
 ## App display:
 
-- The app displays 
+- The app displays two sections:
+  (1) A header and a paragraph with link to the randomuser.me website.
+
   #### Screenshot of initial page before user interaction :
+
   ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/8695af42-4a2d-412f-8e54-b3842446b72f)
 
+  (2) This is the interaction section, it includes a header, button and another header.
 
 ## Interaction with app:
 
-### The Subject / BehaviorSubject section :
+In the interaction section the user interacts as follows: - When the use clicks the button :
 
--
+- The button stays disabled until the response arives. - The result headerdisplays "wait...".
+- When the response arrives the name of the random user is displayed and button is enabled again.
 
 #### Screenshot of page after clicking "Get User" button :
+
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0af1b238-2681-484a-bf0a-47c7b82f644a)
-
-
-### The section for controlling subscription-1 and 2 :
-
-- Clicking on the "Subscribe" button will trigger the following actions:
-  - An h3 tag appears displaying the value of the interval counter being emitted by the Subject / BehaviorSubject we subscribed to.
-    - In case that you used 'Subject' as Observable then you will first see the default value 'UNSUBSCRIBED_START_VALUE' and then the newly emitted interval value appears.
-    - In case that you used 'BehaviorSubject' as Observable then you will immediatly see the last interval value emitted by the 'BehaviorSubject' and then the newly emitted interval value will appear.
-  - A "Unsubscribe" button appears.
-    - When clicked it unsubscribes and resets the value of the subscribe counter to the default 'UNSUBSCRIBED_START_VALUE'.
-    - In case you unsubscribed from the "Subject / BehaviorSubject" then nothing is emitted, if you try the "Activate Subscribe-1" button then the default counter value apears with a message explaining why the values displayed are what they are.
-    #### Screenshot of page after clicking "Activate Subscribe-2" :
-    ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/c7b44905-cd79-4f2a-8aab-26413ce78750)
 
 ## Included in the starter branch :
 
-- A component named 'comp1' has already been created for you.
-- It's template file already has the needed content.
-- The typescript class component file has class variables & empty functions to support the template html file from not crashing.
+- A component named 'comp1' which already has the boiler plate needed.
+- The component's template file exists with the layout and directives.
+- The styles.css is also populated with classes needed.
