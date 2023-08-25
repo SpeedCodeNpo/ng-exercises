@@ -13,3 +13,14 @@ button {
   margin: 5px;
   padding: 5px;
 }
+
+.state-normal {
+  background-color: rgb(185, 220, 252);
+}
+.state-success {
+  background-color: rgb(110, 241, 132);
+}
+.state-warn {
+  background-color: red;
+  color: white;
+}
