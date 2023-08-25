@@ -1,21 +1,19 @@
 <div>
-  <h2>BEM convention with Sass CSS</h2>
-  <p>
-    Using <a href="http://randomuser.me">randomuser.me</a> API to get fake user
-    data.
-  </p>
+  <h2>Using CSS with BEM Block-Element-Modify naming convention</h2>
+  <p>The section below is styled with CSS using the BEM naming convention.</p>
+  <label for="button-one"
+    >Click button to toggle modifier for elment-three button</label
+  >
+  <button id="button-one">Toggle Element-three's Modifier</button>
 
   <hr />
-  <h3>Getting a user</h3>
+  <div>
+    <h3>I am a block named : 'my-block'.</h3>
+    <p>I am an element in the block, my name is 'element-one'</p>
+    <p>I am an element in the block, my name is 'element-two'</p>
 
-  <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
-    Get User
-  </button>
-
-  <h3 *ngIf="isGetUserActive; else elseBlock">
-    The user is : {{ userFullName }}
-  </h3>
-  <ng-template #elseBlock>
-    <h4>Wait ...</h4>
-  </ng-template>
+    <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
+      I am 'element-three'
+    </button>
+  </div>
 </div>
