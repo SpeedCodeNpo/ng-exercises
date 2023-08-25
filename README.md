@@ -1,20 +1,22 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Solution version for assignment: card-20230817-1642
+Solution version for assignment: card-20230823-2229
 
-## Assignment title : Practice RxJs Subject and BehaviorSubject
+## Assignment title :
+
+Practice BEM naming convention with CSS
 
 ### Assignment Links
 
 (1) Project starter:
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230817-1642-q
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230823-2229-q
 - Stackblitz link:
 
 (2) Project solution:
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230817-1642-s
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230823-2229-s
 - Stackblitz link:
 
 ### Assignment goals :
@@ -55,17 +57,18 @@ In the interaction section the user interacts as follows: - When the use clicks 
 - The styles.css is also populated with classes needed.
 
 ## Your task :
+
 - (1) Add an interface named 'UserInterface' to support the following object format:
   results: [
-    {
-      email: string;
-      gender: string;
-      name: {
-        title: string;
-        first: string;
-        last: string;
-      };
-    }
+  {
+  email: string;
+  gender: string;
+  name: {
+  title: string;
+  first: string;
+  last: string;
+  };
+  }
   ];
 
 - (2) Add a service named 'HttpService' with a method 'getUser()' that uses the 'https://randomuser.me/api/' API to return an object of type 'UserInterface'.
