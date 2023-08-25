@@ -1,26 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
-div {
+.app-frame {
   border: 2px solid black;
   margin: 5px;
   padding: 5px;
 }
 
-.radio-group {
-  border: 2px solid transparent;
+.app-frame__radio-group {
+  padding: 4px;
+  color: blueviolet;
 }
-button {
+
+.app-frame__paragraph {
+  text-align: center;
+  color: black;
+}
+
+.app-frame__paragraph--normal {
+  font-weight: normal;
+}
+
+.app-frame__paragraph--bold {
+  font-weight: bold;
+}
+
+.button {
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
 }
 
-.state-normal {
+.button--state-normal {
   background-color: rgb(185, 220, 252);
 }
-.state-success {
+.button--state-success {
   background-color: rgb(110, 241, 132);
 }
-.state-warn {
+.button--state-warn {
   background-color: red;
   color: white;
 }
