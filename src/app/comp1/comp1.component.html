@@ -8,7 +8,7 @@
       id="option1"
       name="radio-group"
       value="option1"
-      ngModel="selectedOption"
+      [(ngModel)]="selectedStyle"
       checked
     />
     <label for="option1">Style='state-normal'</label>
@@ -19,7 +19,7 @@
       id="option2"
       name="radio-group"
       value="option2"
-      ngModel="selectedOption"
+      [(ngModel)]="selectedStyle"
     />
     <label for="option2">Style='state-success'</label>
     <br />
@@ -29,7 +29,7 @@
       id="option3"
       name="radio-group"
       value="option3"
-      ngModel="selectedOption"
+      [(ngModel)]="selectedStyle"
     />
     <label for="option3">Style='state-warning'</label>
   </div>
@@ -43,5 +43,6 @@
     <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
       I am 'element-three'
     </button>
+    <p>Selected style = {{ selectedStyle }}</p>
   </div>
 </div>
