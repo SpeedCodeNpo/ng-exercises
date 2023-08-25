@@ -7,8 +7,8 @@
       type="radio"
       id="option1"
       name="radio-group"
-      value="option1"
-      [(ngModel)]="selectedStyle"
+      value="state-normal"
+      [(ngModel)]="selectedModifiedStyle"
       checked
     />
     <label for="option1">Style='state-normal'</label>
@@ -18,8 +18,8 @@
       type="radio"
       id="option2"
       name="radio-group"
-      value="option2"
-      [(ngModel)]="selectedStyle"
+      value="state-success"
+      [(ngModel)]="selectedModifiedStyle"
     />
     <label for="option2">Style='state-success'</label>
     <br />
@@ -28,10 +28,10 @@
       type="radio"
       id="option3"
       name="radio-group"
-      value="option3"
-      [(ngModel)]="selectedStyle"
+      value="state-warn"
+      [(ngModel)]="selectedModifiedStyle"
     />
-    <label for="option3">Style='state-warning'</label>
+    <label for="option3">Style='state-warn'</label>
   </div>
 
   <hr />
@@ -40,9 +40,9 @@
     <p>I am an element in the block, my name is 'element-one'</p>
     <p>I am an element in the block, my name is 'element-two'</p>
 
-    <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
+    <button [ngClass]="{ 'myStyle': selectedModifiedStyle }">
       I am 'element-three'
     </button>
-    <p>Selected style = {{ selectedStyle }}</p>
+    <p>Selected style = "{{ selectedModifiedStyle }}"</p>
   </div>
 </div>
