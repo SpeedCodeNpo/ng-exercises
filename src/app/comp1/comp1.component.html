@@ -1,10 +1,38 @@
 <div>
   <h2>Using CSS with BEM Block-Element-Modify naming convention</h2>
   <p>The section below is styled with CSS using the BEM naming convention.</p>
-  <label for="button-one"
-    >Click button to toggle modifier for elment-three button</label
-  >
-  <button id="button-one">Toggle Element-three's Modifier</button>
+  <label for="radio-group">Pick a modifier for 'elment-three' button : </label>
+  <div class="radio-group">
+    <input
+      type="radio"
+      id="option1"
+      name="radio-group"
+      value="option1"
+      ngModel="selectedOption"
+      checked
+    />
+    <label for="option1">Style='state-normal'</label>
+    <br />
+
+    <input
+      type="radio"
+      id="option2"
+      name="radio-group"
+      value="option2"
+      ngModel="selectedOption"
+    />
+    <label for="option2">Style='state-success'</label>
+    <br />
+
+    <input
+      type="radio"
+      id="option3"
+      name="radio-group"
+      value="option3"
+      ngModel="selectedOption"
+    />
+    <label for="option3">Style='state-warning'</label>
+  </div>
 
   <hr />
   <div>
