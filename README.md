@@ -5,7 +5,7 @@ Solution version for assignment: card-20230823-2229
 
 ## Assignment title :
 
-Practice BEM naming convention with CSS
+Practice BEM naming convention with Sass CSS
 
 ### Assignment Links
 
@@ -21,17 +21,18 @@ Practice BEM naming convention with CSS
 
 ### Assignment goals :
 
-- Practice RxJs http operator
-  - Create an shared http service
-  - Create an interface to model the incoming object
-  - Subscribe to the http RxJs Observable.
-  - Have the UI react to the pending http response.
-  - Unsubscribe from the observable.
+- Practice using BEM naming convention in Sass CSS
+  - In SCSS file create two BEM blocks.
+  - The first have an elment and a modifier for the elment.
+  - The second block is a button with a modifier (no elment).
 
-## App display:
+## App UX:
 
 - The app displays two sections:
-  (1) A header and a paragraph with link to the randomuser.me website.
+  (1) The first section describes the app and has radio-button controls to switch the button modifiers in the second section.
+      - Each pick of a radio button changes the color style of the button.
+
+  (2) The second section is the one that the BEM Sass file affects.
 
   #### Screenshot of initial page before user interaction :
 
