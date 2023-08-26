@@ -26,37 +26,33 @@ Practice BEM naming convention with Sass CSS
   - The first have an elment and a modifier for the elment.
   - The second block is a button with a modifier (no elment).
 
-## App UX:
+## App design:
 
 - The app displays two sections:
-  (1) The first section describes the app and has radio-button controls to switch the button modifiers in the second section.
-      - Each pick of a radio button changes the color style of the button.
-
-  (2) The second section is the one that the BEM Sass file affects.
+  (1) The top section describes the app and has radio-button controls that affect the bottom section.
+  (2) The bottom section is the one that the BEM Sass file affects.
 
   #### Screenshot of initial page before user interaction :
 
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/585eabf4-8a03-4c7c-80a4-418df41c5985)
 
-RED:
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e510d7c2-b568-4ffc-8664-00547e5765b6)
-
-Green:
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e2fa3a94-97a3-43bb-8b6f-7f3822e46ca7)
-
-
-  (2) This is the interaction section, it includes a header, button and another header.
 
 ## Interaction with app:
 
-In the interaction section the user interacts as follows: - When the use clicks the button :
+In the interaction section the user interacts as follows: 
+  - By clicking the different radio button options the color of the button in the bottom section changes.
+  - The three radio-button options are:
+    - normal  : The button in defualt colors.
+    - success : The button turns green.
+    - warn    : The button turns red.
 
-- The button stays disabled until the response arives. - The result headerdisplays "wait...".
-- When the response arrives the name of the random user is displayed and button is enabled again.
+#### Screenshot of page after picking the success option :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e2fa3a94-97a3-43bb-8b6f-7f3822e46ca7)
 
-#### Screenshot of page after clicking "Get User" button :
 
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0af1b238-2681-484a-bf0a-47c7b82f644a)
+#### Screenshot of page after picking the warn option :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e510d7c2-b568-4ffc-8664-00547e5765b6)
+
 
 ## Included in the starter branch :
 
