@@ -1,34 +1,36 @@
-.app-frame {
+.my-block {
   border: 2px solid black;
   margin: 5px;
   padding: 5px;
 }
 
-.app-frame__radio-group {
+.my-block__radio-group {
   padding: 4px;
   color: blueviolet;
 }
 
-.app-frame__paragraph {
+.my-block__element-one {
   text-align: center;
   color: black;
 }
 
-.app-frame__paragraph--normal {
+.my-block__element-one--normal {
   font-weight: normal;
 }
 
-.app-frame__paragraph--bold {
+.my-block__element-one--bold {
   font-weight: bold;
 }
 
+// Here '.button' is cosidered a BEM block
 .button {
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
 }
 
-.button--state-normal {
+// Notice we use the double underscore (__) to indicates an element in BEM CSS naming convention, while the hyphen (-) indicates a modifier. However, in the case of btn__normal, the normal part is not an element. It is a modifier of the btn block.
+.button__normal {
   background-color: rgb(185, 220, 252);
 }
 .button--state-success {
