@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Solution version for assignment: card-20230823-2229
+Starter version for assignment: card-20230823-2229
 
 ## Assignment title :
 
