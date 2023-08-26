@@ -1,25 +1,22 @@
 .my-block {
-  border: 2px solid black;
+  border: 2px solid rgb(77, 51, 224);
   margin: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 
-.my-block__radio-group {
+.my-block__header {
   padding: 4px;
-  color: blueviolet;
+  color: rgb(77, 51, 224);
 }
 
 .my-block__element-one {
   text-align: center;
-  color: black;
-}
-
-.my-block__element-one--normal {
+  color: rgb(8, 124, 60);
   font-weight: normal;
 }
-
 .my-block__element-one--bold {
   font-weight: bold;
+  color: black;
 }
 
 // Here '.button-basic' is defined as a BEM block
@@ -31,7 +28,7 @@
 
 // We can use modifiers on blocks and elments.
 // Here we use modifiers on the button-basic block.
-// There is no element. 
+// There is no element.
 .button-basic--state-normal {
   background-color: rgb(185, 220, 252);
 }

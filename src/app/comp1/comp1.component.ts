@@ -6,7 +6,7 @@ import { Component, Input, OnInit, inject } from '@angular/core';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  selectedModifiedStyle = 'button-basic--state-normal'; //Other options : state-success and state-warn
+  selectedModifiedStyle = 'button-basic button-basic--state-normal'; //Other options : state-success and state-warn
 
   //=============================================
   // Functions
