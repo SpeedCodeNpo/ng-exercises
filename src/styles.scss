@@ -1,4 +1,7 @@
-.my-block {
+// The my-blocl BEM block wraps the whole example section of our page
+// NOtice that I add double-underscore suffix to a block name.
+// This makes the block name stand out as a specific name for BEM block.
+.my-block__ {
   border: 2px solid rgb(77, 51, 224);
   margin: 5px;
   padding: 10px;
@@ -20,7 +23,7 @@
 }
 
 // Here '.button-basic' is defined as a BEM block
-.button-basic {
+.button-basic__ {
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
