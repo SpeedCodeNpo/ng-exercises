@@ -36,7 +36,14 @@ Practice BEM naming convention with Sass CSS
 
   #### Screenshot of initial page before user interaction :
 
-  ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/8695af42-4a2d-412f-8e54-b3842446b72f)
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/585eabf4-8a03-4c7c-80a4-418df41c5985)
+
+RED:
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e510d7c2-b568-4ffc-8664-00547e5765b6)
+
+Green:
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/e2fa3a94-97a3-43bb-8b6f-7f3822e46ca7)
+
 
   (2) This is the interaction section, it includes a header, button and another header.
 
