@@ -1,3 +1,6 @@
+// This file exists to show how BEM is used in a CSS file.
+// There is another file in this folder named comp1.component.scss it shows using BEM in Sass CSS file.
+
 // The my-blocl BEM block wraps the whole example section of our page
 // NOtice that I add double-underscore suffix to a block name.
 // This makes the block name stand out as a specific name for BEM block.

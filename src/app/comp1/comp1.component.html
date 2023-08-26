@@ -5,42 +5,42 @@
     The section below is styled with CSS using the
     <a href="https://getbem.com/naming/">BEM</a> naming convention.
   </p>
-  <label for="radio-group">Pick a modifier for 'elment-three' button : </label>
+  <label for="radio-group">Pick a modifier for 'btn-basic__' button : </label>
   <div class="radio-group">
     <input
       type="radio"
       id="option1"
       name="radio-group"
-      value="button-basic__ button-basic__--state-normal"
+      value="btn-basic__ btn-basic__--state-normal"
       [(ngModel)]="selectedModifiedStyle"
     />
-    <label for="option1">Style='state-normal'</label>
+    <label for="option1">Modifier = '--state-normal'</label>
     <br />
 
     <input
       type="radio"
       id="option2"
       name="radio-group"
-      value="button-basic__ button-basic__--state-success"
+      value="btn-basic__ btn-basic__--state-success"
       [(ngModel)]="selectedModifiedStyle"
     />
-    <label for="option2">Style='state-success'</label>
+    <label for="option2">Modifier = '--state-success'</label>
     <br />
 
     <input
       type="radio"
       id="option3"
       name="radio-group"
-      value="button-basic__ button-basic__--state-warn"
+      value="btn-basic__ btn-basic__--state-warn"
       [(ngModel)]="selectedModifiedStyle"
     />
-    <label for="option3">Style='state-warn'</label>
+    <label for="option3">Modifier = '--state-warn'</label>
   </div>
 
   <hr />
   <div class="my-block__">
     <h3 class="my-block__header">
-      I am header in a BEM 'block' named 'my-block'.
+      I am header in a BEM 'block' named 'my-block__'.
     </h3>
     <p class="my-block__element-one">
       I am an element in the block, my name is 'my-block__element-one'.
@@ -50,7 +50,7 @@
     </p>
 
     <button [ngClass]="selectedModifiedStyle">
-      I am 'button-basic with modifier "{{ selectedModifiedStyle }}"'
+      I am 'btn-basic__ with class = "{{ selectedModifiedStyle }}"'
     </button>
   </div>
 </div>
