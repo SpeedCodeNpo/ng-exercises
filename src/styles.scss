@@ -22,21 +22,23 @@
   font-weight: bold;
 }
 
-// Here '.button' is cosidered a BEM block
-.button {
+// Here '.button-basic' is defined as a BEM block
+.button-basic {
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
 }
 
-// Notice we use the double underscore (__) to indicates an element in BEM CSS naming convention, while the hyphen (-) indicates a modifier. However, in the case of btn__normal, the normal part is not an element. It is a modifier of the btn block.
-.button__normal {
+// We can use modifiers on blocks and elments.
+// Here we use modifiers on the button-basic block.
+// There is no element. 
+.button-basic--state-normal {
   background-color: rgb(185, 220, 252);
 }
-.button--state-success {
+.button-basic--state-success {
   background-color: rgb(110, 241, 132);
 }
-.button--state-warn {
+.button-basic--state-warn {
   background-color: red;
   color: white;
 }
