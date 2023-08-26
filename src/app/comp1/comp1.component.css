@@ -32,13 +32,13 @@
 // We can use modifiers on blocks and elments.
 // Here we use modifiers on the button-basic block.
 // There is no element.
-.button-basic__--state-normal {
+.button-basic--state-normal {
   background-color: rgb(185, 220, 252);
 }
-.button-basic__--state-success {
+.button-basic--state-success {
   background-color: rgb(110, 241, 132);
 }
-.button-basic__--state-warn {
+.button-basic--state-warn {
   background-color: red;
   color: white;
 }
