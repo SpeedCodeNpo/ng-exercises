@@ -4,21 +4,12 @@ button {
   margin: 5px;
   padding: 5px;
 }
-
-.style1 {
-  mat-button: {
-    color: accent;
-  }
+.mat-radio-button {
+  z-index: 1;
 }
-
-.style2 {
-  mat-raised-button: {
-    color: warn;
-  }
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+  margin-left: 16px;
 }
-
-.style3 {
-  mat-stroked-button: {
-    color: primary;
-  }
+:host ::ng-deep .mat-radio-outer-circle {
+  shape: circle;
 }
