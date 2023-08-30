@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, inject } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-comp1',
@@ -6,7 +6,7 @@ import { Component, Input, OnInit, inject } from '@angular/core';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  selectedModifiedStyle = 'mat-raised-button color="accent"';
+  selectedStyle = 'style2';
 
   //=============================================
   // Functions

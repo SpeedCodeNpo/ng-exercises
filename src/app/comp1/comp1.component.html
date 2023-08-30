@@ -9,7 +9,7 @@
   <!-- ========================= -->
 
   <h3>Material Design Buttons</h3>
-  <label for="radio-group"
+  <!-- <label for="radio-group"
     >Click the radio buttons below to see different Material Design button
     styles. :
   </label>
@@ -18,8 +18,8 @@
       type="radio"
       id="option1"
       name="radio-group"
-      value='mat-button color="accent"'
-      [(ngModel)]="selectedModifiedStyle"
+      value="style1"
+      [(ngModel)]="selectedStyle"
     />
     <label for="option1">mat-button color="accent"</label>
     <br />
@@ -28,8 +28,8 @@
       type="radio"
       id="option2"
       name="radio-group"
-      value='mat-raised-button color="warn"'
-      [(ngModel)]="selectedModifiedStyle"
+      value="mat-raised-button"
+      [(ngModel)]="selectedStyle"
     />
     <label for="option2">mat-raised-button color="warn"</label>
     <br />
@@ -39,29 +39,17 @@
       id="option3"
       name="radio-group"
       value='mat-stroked-button color="primary"'
-      [(ngModel)]="selectedModifiedStyle"
+      [(ngModel)]="selectedStyle"
     />
     <label for="option3">mat-stroked-button color="primary"</label>
   </div>
+   -->
 
-  <hr />
-  <div class="my-block__">
-    <h3 class="my-block__header">
-      I am header in a BEM 'block' named 'my-block__'.
-    </h3>
-    <p class="my-block__element-one">
-      I am an element in the block, my name is 'my-block__element-one'.
-    </p>
-    <p class="my-block__element-one my-block__element-one--bold">
-      I am elment-one with modifier named : 'my-block__element-one--bold'.
-    </p>
+  <mat-radio-group [(ngModel)]="selectedStyle">
+    <mat-radio-button value="style1">Style 1</mat-radio-button>
+    <mat-radio-button value="style2">Style 2</mat-radio-button>
+    <mat-radio-button value="style3">Style 3</mat-radio-button>
+  </mat-radio-group>
 
-    <button
-      mat-stroked-button
-      color="primary"
-      [ngClass]="selectedModifiedStyle"
-    >
-      I am 'btn-basic__ with class = "{{ selectedModifiedStyle }}"'
-    </button>
-  </div>
+  <button class="style1">class = {{ selectedStyle }}</button>
 </div>
