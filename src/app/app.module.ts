@@ -3,7 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { MatButtonModule } from '@angular/material/button';
-import { MatRadioModule } from '@angular/material/radio';
+import {
+  MAT_RADIO_DEFAULT_OPTIONS,
+  MatRadioModule,
+} from '@angular/material/radio';
 
 import { AppComponent } from './app.component';
 import { Comp1Component } from './comp1/comp1.component';

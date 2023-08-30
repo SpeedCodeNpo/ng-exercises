@@ -4,12 +4,17 @@ button {
   margin: 5px;
   padding: 5px;
 }
-.mat-radio-button {
-  z-index: 1;
+
+.radio-group {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
 }
-.mat-mdc-radio-button ~ .mat-mdc-radio-button {
-  margin-left: 16px;
-}
-:host ::ng-deep .mat-radio-outer-circle {
-  shape: circle;
+
+.radio-button {
+  background-color: rgb(79, 151, 97);
+  color: blue !important;
+  margin: 5px;
 }
