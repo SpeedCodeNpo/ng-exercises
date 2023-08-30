@@ -1,21 +1,67 @@
 <div>
-  <h2>RxJs 'http' GET Observable</h2>
+  <h2>Angular Material Design Basics</h2>
   <p>
-    Using <a href="http://randomuser.me">randomuser.me</a> API to get fake user
-    data.
+    Material Design API for Angular is :
+    <a href="https://material.angular.io/">material.angular.io</a>.
   </p>
 
   <hr />
-  <h3>Getting a user</h3>
+  <!-- ========================= -->
 
-  <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
-    Get User
-  </button>
+  <h3>Material Design Buttons</h3>
+  <label for="radio-group"
+    >Click the radio buttons below to see different Material Design button
+    styles. :
+  </label>
+  <div class="radio-group">
+    <input
+      type="radio"
+      id="option1"
+      name="radio-group"
+      value='mat-button color="accent"'
+      [(ngModel)]="selectedModifiedStyle"
+    />
+    <label for="option1">mat-button color="accent"</label>
+    <br />
 
-  <h3 *ngIf="isGetUserActive; else elseBlock">
-    The user is : {{ userFullName }}
-  </h3>
-  <ng-template #elseBlock>
-    <h4>Wait ...</h4>
-  </ng-template>
+    <input
+      type="radio"
+      id="option2"
+      name="radio-group"
+      value='mat-raised-button color="warn"'
+      [(ngModel)]="selectedModifiedStyle"
+    />
+    <label for="option2">mat-raised-button color="warn"</label>
+    <br />
+
+    <input
+      type="radio"
+      id="option3"
+      name="radio-group"
+      value='mat-stroked-button color="primary"'
+      [(ngModel)]="selectedModifiedStyle"
+    />
+    <label for="option3">mat-stroked-button color="primary"</label>
+  </div>
+
+  <hr />
+  <div class="my-block__">
+    <h3 class="my-block__header">
+      I am header in a BEM 'block' named 'my-block__'.
+    </h3>
+    <p class="my-block__element-one">
+      I am an element in the block, my name is 'my-block__element-one'.
+    </p>
+    <p class="my-block__element-one my-block__element-one--bold">
+      I am elment-one with modifier named : 'my-block__element-one--bold'.
+    </p>
+
+    <button
+      mat-stroked-button
+      color="primary"
+      [ngClass]="selectedModifiedStyle"
+    >
+      I am 'btn-basic__ with class = "{{ selectedModifiedStyle }}"'
+    </button>
+  </div>
 </div>
