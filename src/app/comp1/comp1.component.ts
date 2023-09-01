@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  selectedStyle = 'style1';
+  selectedStyle = 'default';
 
   //=============================================
   // Functions
