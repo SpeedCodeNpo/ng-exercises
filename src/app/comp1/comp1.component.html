@@ -45,10 +45,20 @@
   </div>
    -->
 
-  <mat-radio-group class="radio-group" aria-label="Select an option">
-    <mat-radio-button class="radio-button" value="1">Option 1</mat-radio-button>
-    <mat-radio-button class="radio-button" value="2">Option 2</mat-radio-button>
-    <mat-radio-button class="radio-button" value="3">Option 3</mat-radio-button>
+  <mat-radio-group
+    class="radio-group"
+    aria-label="Select an option"
+    [(ngModel)]="selectedStyle"
+  >
+    <mat-radio-button value="style1"
+      >mat-button color="accent"</mat-radio-button
+    >
+    <mat-radio-button value="style2"
+      >mat-raised-button color="warn"</mat-radio-button
+    >
+    <mat-radio-button value="style3"
+      >mat-stroked-button color="primary"</mat-radio-button
+    >
   </mat-radio-group>
 
   <button class="style1">class = {{ selectedStyle }}</button>
