@@ -42,21 +42,27 @@ Subject: Angular Material
 - Here are the results of the different options:
 
 #### Switching to option 2 :
+
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/2c7462fd-302a-46ba-886e-3f338847513e)
 
 #### Switching to option 3 :
+
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0621df24-fef4-417f-aa68-abf2cc4f13a0)
 
-#### Switching to option 4 : 
+#### Switching to option 4 :
+
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/b7e4e07d-ef66-4ecf-b18f-5861a1a0c45c)
+
 ## Your task :
-- Install angular material library, set the default theme to whatever you want. In this example the chosen theme is :  "indigo-pink".
+
+- Install angular material library, set the default theme to whatever you want. In this example the chosen theme is : "indigo-pink".
 - Create a folder named "core-view" and inside create a module that wraps all the Angular Material modules. Name the module "MaterialModule".
 - Add to the starter comp1.component.html the code for the material radio group and the button.
 
 ## Included in the starter branch :
 
 - A component named 'comp1' which already has the boiler plate needed.
-- The component's template file with the starter layout.
+- The component's ts file sets the value for the default style.
+- The component's html-template file with the starter layout.
 - The component's scss file with the defenition for basic button style.
 - The styles.css with a basic style for the body.
