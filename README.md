@@ -49,9 +49,10 @@ In the interaction section the user interacts as follows: - When the use clicks 
 
 #### Switching to option 2 :
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/2c7462fd-302a-46ba-886e-3f338847513e)
-<br/>
+
 #### Switching to option 3 :
-[image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0621df24-fef4-417f-aa68-abf2cc4f13a0)
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0621df24-fef4-417f-aa68-abf2cc4f13a0)
+
 #### Switching to option 4 : 
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/b7e4e07d-ef66-4ecf-b18f-5861a1a0c45c)
 
