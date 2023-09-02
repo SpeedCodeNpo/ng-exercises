@@ -33,7 +33,8 @@ Subject: Angular Material
 
   #### Screenshot of initial page before user interaction :
 
-  ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/8695af42-4a2d-412f-8e54-b3842446b72f)
+  ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/2b86657b-e281-4438-a04a-15680fdf4b87)
+
 
   (2) This is the interaction section, it includes a header, button and another header.
 
@@ -44,9 +45,11 @@ In the interaction section the user interacts as follows: - When the use clicks 
 - The button stays disabled until the response arives. - The result headerdisplays "wait...".
 - When the response arrives the name of the random user is displayed and button is enabled again.
 
-#### Screenshot of page after clicking "Get User" button :
+#### Screenshot of page after clicking radio-button options 2 to 4 :
 
-![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0af1b238-2681-484a-bf0a-47c7b82f644a)
+(2) ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/2c7462fd-302a-46ba-886e-3f338847513e)
+(3) ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/0621df24-fef4-417f-aa68-abf2cc4f13a0)
+(4) ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/b7e4e07d-ef66-4ecf-b18f-5861a1a0c45c)
 
 ## Included in the starter branch :
 
