@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class Comp1Component {
   selectedStyle = 'default';
-
-  //=============================================
-  // Functions
-  //=============================================
-
-  /**
-   * Function to get user data
-   */
 } //end comp1

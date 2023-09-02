@@ -9,35 +9,4 @@
   <!-- ========================= -->
 
   <h3>Material Design Buttons</h3>
-  <mat-radio-group
-    class="radio-group"
-    aria-label="Select an option"
-    [(ngModel)]="selectedStyle"
-  >
-    <mat-radio-button value="default">default style</mat-radio-button>
-    <mat-radio-button value="style1"
-      >mat-button color="accent"</mat-radio-button
-    >
-    <mat-radio-button value="style3"
-      >mat-stroked-button color="primary"</mat-radio-button
-    >
-    <mat-radio-button value="style2"
-      >mat-raised-button color="warn"</mat-radio-button
-    >
-  </mat-radio-group>
-
-  <div [ngSwitch]="selectedStyle">
-    <div *ngSwitchCase="'style1'">
-      <button mat-button color="accent">mat-button color="accent"</button>
-    </div>
-    <div *ngSwitchCase="'style2'" mat-button color="accent">
-      <button mat-raised-button color="warn">
-        mat-raised-button color="warn"
-      </button>
-    </div>
-    <div *ngSwitchCase="'style3'" mat-button color="accent">
-      <button mat-stroked-button color>mat-stroked-button color</button>
-    </div>
-    <div *ngSwitchCase="'default'"><button>Default</button></div>
-  </div>
 </div>
