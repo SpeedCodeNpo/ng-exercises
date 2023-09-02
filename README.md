@@ -1,7 +1,8 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Solution version for assignment: card-20230817-1642
+Solution version for assignment: card-20230830-1100
+Subject: Angular Material
 
 ## Assignment title : Practice RxJs Subject and BehaviorSubject
 
@@ -9,27 +10,26 @@ Solution version for assignment: card-20230817-1642
 
 (1) Project starter:
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230817-1642-q
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230830-1100-q
 - Stackblitz link:
 
 (2) Project solution:
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230817-1642-s
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230830-1100-s
 - Stackblitz link:
 
 ### Assignment goals :
 
-- Practice RxJs http operator
-  - Create an shared http service
-  - Create an interface to model the incoming object
-  - Subscribe to the http RxJs Observable.
-  - Have the UI react to the pending http response.
-  - Unsubscribe from the observable.
+- Practice basics of Angular Material
+  - Create folder and module for Angular Material imports
+  - Use Angular Material radio buttons.
+  - Use Angular material buton with 3 different styles.
+  - Use ngSwitch directive to switch between the different button styles.
 
 ## App display:
 
 - The app displays two sections:
-  (1) A header and a paragraph with link to the randomuser.me website.
+  (1) A header and a paragraph with link to angular material website.
 
   #### Screenshot of initial page before user interaction :
 
@@ -55,17 +55,18 @@ In the interaction section the user interacts as follows: - When the use clicks 
 - The styles.css is also populated with classes needed.
 
 ## Your task :
+
 - (1) Add an interface named 'UserInterface' to support the following object format:
   results: [
-    {
-      email: string;
-      gender: string;
-      name: {
-        title: string;
-        first: string;
-        last: string;
-      };
-    }
+  {
+  email: string;
+  gender: string;
+  name: {
+  title: string;
+  first: string;
+  last: string;
+  };
+  }
   ];
 
 - (2) Add a service named 'HttpService' with a method 'getUser()' that uses the 'https://randomuser.me/api/' API to return an object of type 'UserInterface'.
