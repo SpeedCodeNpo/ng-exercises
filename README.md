@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Solution version for assignment: card-20230830-1100
+Starter version for assignment: card-20230830-1100
 Subject: Angular Material
 
 ## Assignment title : Practice RxJs Subject and BehaviorSubject
