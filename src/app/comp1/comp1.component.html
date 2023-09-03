@@ -1,21 +1,15 @@
 <div>
-  <h2>RxJs 'http' GET Observable</h2>
-  <p>
-    Using <a href="http://randomuser.me">randomuser.me</a> API to get fake user
-    data.
-  </p>
+  <h2>Login using Reactive Forms</h2>
+  <p>Xxxxxxxxxxxxxxx.</p>
 
   <hr />
-  <h3>Getting a user</h3>
+  <h3>Enter your login credentials:</h3>
 
+  <input type="text" />
+  <br />
+  <input type="text" />
+  <br />
   <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
-    Get User
+    Login
   </button>
-
-  <h3 *ngIf="isGetUserActive; else elseBlock">
-    The user is : {{ userFullName }}
-  </h3>
-  <ng-template #elseBlock>
-    <h4>Wait ...</h4>
-  </ng-template>
 </div>
