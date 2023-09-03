@@ -3,13 +3,21 @@
   <p>Xxxxxxxxxxxxxxx.</p>
 
   <hr />
-  <h3>Enter your login credentials:</h3>
 
-  <input type="text" />
-  <br />
-  <input type="text" />
-  <br />
-  <button (click)="onClickGetUser()" [disabled]="!isGetUserActive">
-    Login
-  </button>
+  <div class="login-div">
+    <h3>Enter your login credentials:</h3>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username" />
+    <br />
+    <label for="email">Email.......:</label>
+    <input type="email" id="email" placeholder="Enter your email address" />
+    <br />
+    <button
+      type="submit"
+      (click)="onSubmitLogin()"
+      [disabled]="!isLoginActive"
+    >
+      Login
+    </button>
+  </div>
 </div>

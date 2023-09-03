@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 div {
+  color: black;
   border: 2px solid black;
   margin: 5px;
   padding: 5px;
@@ -7,6 +8,10 @@ div {
 
 button {
   border-radius: 5px;
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
+}
+
+input {
+  margin: 10px;
 }
