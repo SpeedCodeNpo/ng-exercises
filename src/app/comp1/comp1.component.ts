@@ -23,4 +23,29 @@ export class Comp1Component {
     console.log('The form invalid reaction is: ', this.loginForm.invalid);
     this.isSubmitted = true;
   }
+
+  isUsernameFieldValid(): boolean | undefined {
+    const usernameProperty = this.loginForm.get('username');
+    const result: boolean | undefined =
+      usernameProperty?.invalid &&
+      (usernameProperty?.dirty ||
+        usernameProperty?.touched ||
+        this.isSubmitted);
+    return result;
+  }//isUsernameFieldValid()
+
+  isEmailFieldValid(): boolean | undefined {
+    const emailProperty = this.loginForm.get('email');
+    const result: boolean | undefined =
+      emailProperty?.invalid &&
+      (emailProperty?.dirty ||
+        emailProperty?.touched ||
+        this.isSubmitted);
+    return result;
+  }//isEmailFieldValid()
+
+
+  
+
+
 } //end comp1

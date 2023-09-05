@@ -12,22 +12,10 @@
         type="text"
         id="username"
         formControlName="username"
-        [class.invalid]="
-          loginForm.get('username')?.invalid &&
-          (loginForm.get('username')?.dirty ||
-            loginForm.get('username')?.touched ||
-            isSubmitted)
-        "
+        [class.invalid]="isUsernameFieldValid()"
         placeholder="Enter your username"
       />
-      <span
-        *ngIf="
-          loginForm.get('username')?.invalid &&
-          (loginForm.get('username')?.dirty ||
-            loginForm.get('username')?.touched ||
-            isSubmitted)
-        "
-        class="error"
+      <span *ngIf="isUsernameFieldValid()" class="error"
         >This feild is required</span
       >
       <br />
@@ -36,8 +24,10 @@
         type="email"
         id="email"
         formControlName="email"
+        [class.invalid]="isEmailFieldValid()"
         placeholder="Enter your email address"
       />
+      <span *ngIf="isEmailFieldValid()" class="error">Need email</span>
       <br />
       <button type="submit">Login</button>
     </form>
