@@ -25,20 +25,21 @@ export class Comp1Component {
       this.isSubmitted = true;
     } else {
       console.log('** WARNINIG ** Failed attempt to login.');
+      this.isSubmitted = false;
     }
   }
 
-  isUsernameFieldValid(): boolean | undefined {
+  isUsernameError(): boolean | undefined {
     const usernameProperty = this.loginForm.get('username');
     const result: boolean | undefined =
       usernameProperty?.invalid &&
       (usernameProperty?.dirty ||
         usernameProperty?.touched ||
         this.isSubmitted);
-    return result;
+    return Boolean(result);
   } //isUsernameFieldValid()
 
-  isEmailFieldValid(): boolean | undefined {
+  isEmailError(): boolean | undefined {
     const emailProperty = this.loginForm.get('email');
     const result: boolean | undefined =
       emailProperty?.invalid &&
@@ -47,16 +48,24 @@ export class Comp1Component {
   } //isEmailFieldValid()
 
   isAllFieldsValid(): boolean | undefined {
-    if (this.loginForm.value.email) {
-      if (this.loginForm.value.username) {
-        console.log(`Both fields are empty.`);
-      } else {
-        console.log(`Only email field has info.`);
-      }
+    const usernameFieldValue = this.loginForm.value.username;
+    const emailFieldValue = this.loginForm.value.email;
+    var result = false;
+    if (
+      Boolean(
+        usernameFieldValue &&
+          emailFieldValue &&
+          !this.isUsernameError() &&
+          !this.isEmailError()
+      )
+    ) {
+      console.log(`Both username and email are valid.`);
+      result = true;
     } else {
-      console.log(`Whatever.`);
+      console.log(`Either username and/or email are invalid.`);
+      this.isSubmitted = false;
+      result = false;
     }
-
-    return this.isUsernameFieldValid() && this.isEmailFieldValid();
+    return Boolean(result);
   } //isAllFieldsValid
 } //end comp1

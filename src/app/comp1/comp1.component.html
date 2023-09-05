@@ -12,10 +12,10 @@
         type="text"
         id="username"
         formControlName="username"
-        [class.invalid]="isUsernameFieldValid()"
+        [class.invalid]="isUsernameError()"
         placeholder="Enter your username"
       />
-      <span *ngIf="isUsernameFieldValid()" class="error"
+      <span *ngIf="isUsernameError()" class="error"
         >This feild is required</span
       >
       <br />
@@ -24,19 +24,19 @@
         type="email"
         id="email"
         formControlName="email"
-        [class.invalid]="isEmailFieldValid()"
+        [class.invalid]="isEmailError()"
         placeholder="Enter your email address"
       />
-      <span *ngIf="isEmailFieldValid()" class="error">Need email</span>
+      <span *ngIf="isEmailError()" class="error">Need email</span>
       <br />
-      <button type="submit" [disabled]="!isAllFieldsValid()">
+      <button type="submit" [disabled]="!this.isAllFieldsValid()">
         Submit to Login
       </button>
     </form>
   </div>
   <hr />
   <h3>The submitted values are:</h3>
-  <div *ngIf="isSubmitted">
+  <div *ngIf="this.isAllFieldsValid() && isSubmitted">
     <p>
       Username :
       <span class="highlight">{{ loginForm.value.username }}</span>
