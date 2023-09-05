@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-comp1',
@@ -8,20 +8,19 @@ import { FormBuilder } from '@angular/forms';
 })
 export class Comp1Component {
   loginForm = this.fb.group({
-    username: '',
-    email: '',
+    username: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
   });
-  isLoginActive = true;
+  isSubmitted = false;
 
   constructor(private fb: FormBuilder) {}
   //=============================================
   // Functions
   //=============================================
 
-  /**
-   * Function to get user data
-   */
   onSubmitLogin(): void {
     console.log('Form was submitted', this.loginForm.value);
+    console.log('The form invalid reaction is: ', this.loginForm.invalid);
+    this.isSubmitted = true;
   }
 } //end comp1

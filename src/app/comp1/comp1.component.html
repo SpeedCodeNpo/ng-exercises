@@ -8,12 +8,38 @@
     <h3>Enter your login credentials:</h3>
     <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
       <label for="username">Username:</label>
-      <input type="text" id="username" formControlName="username" placeholder="Enter your username" />
+      <input
+        type="text"
+        id="username"
+        formControlName="username"
+        [class.invalid]="
+          loginForm.get('username')?.invalid &&
+          (loginForm.get('username')?.dirty ||
+            loginForm.get('username')?.touched ||
+            isSubmitted)
+        "
+        placeholder="Enter your username"
+      />
+      <span
+        *ngIf="
+          loginForm.get('username')?.invalid &&
+          (loginForm.get('username')?.dirty ||
+            loginForm.get('username')?.touched ||
+            isSubmitted)
+        "
+        class="error"
+        >This feild is required</span
+      >
       <br />
       <label for="email">Email.......:</label>
-      <input type="email" id="email"  formControlName="email"  placeholder="Enter your email address" />
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        placeholder="Enter your email address"
+      />
       <br />
-      <button type="submit" [disabled]="!isLoginActive">Login</button>
+      <button type="submit">Login</button>
     </form>
   </div>
 </div>
