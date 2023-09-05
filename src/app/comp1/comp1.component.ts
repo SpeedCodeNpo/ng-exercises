@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-comp1',
@@ -6,8 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./comp1.component.scss'],
 })
 export class Comp1Component {
-  isLoginActive = false;
+  loginForm = this.fb.group({
+    username: '',
+    email: '',
+  });
+  isLoginActive = true;
 
+  constructor(private fb: FormBuilder) {}
   //=============================================
   // Functions
   //=============================================
@@ -15,5 +21,7 @@ export class Comp1Component {
   /**
    * Function to get user data
    */
-  onSubmitLogin() {}
+  onSubmitLogin(): void {
+    console.log('Form was submitted', this.loginForm.value);
+  }
 } //end comp1
