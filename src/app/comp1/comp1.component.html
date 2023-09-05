@@ -1,10 +1,10 @@
-<div>
+<div class="boxed">
   <h2>Login using Reactive Forms</h2>
   <p>Xxxxxxxxxxxxxxx.</p>
 
   <hr />
 
-  <div class="login-div">
+  <div class="boxed login-div">
     <h3>Enter your login credentials:</h3>
     <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
       <label for="username">Username:</label>
@@ -29,7 +29,21 @@
       />
       <span *ngIf="isEmailFieldValid()" class="error">Need email</span>
       <br />
-      <button type="submit">Login</button>
+      <button type="submit" [disabled]="!isAllFieldsValid()">
+        Submit to Login
+      </button>
     </form>
+  </div>
+  <hr />
+  <h3>The submitted values are:</h3>
+  <div *ngIf="isSubmitted">
+    <p>
+      Username :
+      <span class="highlight">{{ loginForm.value.username }}</span>
+    </p>
+    <p>
+      Email :
+      <span class="highlight">{{ loginForm.value.email }}</span>
+    </p>
   </div>
 </div>
