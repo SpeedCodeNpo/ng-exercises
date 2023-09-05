@@ -21,7 +21,9 @@ Subject: Reactive Forms
 ### Assignment goals :
 
 - Practice Reactive Forms by creating a basic login page
-  - 
+  - Use validation on input fields with error styling and message.
+  - Enabling the submit button only if input valid.
+  - Displaying the submitted data only if submited succesfuly.
 
 ## App display:
 
