@@ -8,8 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class Comp1Component {
   myUsername?: string;
-  myEmail?: string = 'hello';
-
+  myEmail?: string ;
   isSubmitted = false;
 
   constructor(private fb: FormBuilder) {}

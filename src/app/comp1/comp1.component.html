@@ -56,7 +56,7 @@
   </div>
   <hr />
   <h3>The submitted values are:</h3>
-  <div *ngIf="myLoginForm.valid">
+  <div *ngIf="myLoginForm.valid && isSubmitted">
     <p>
       Username :
       <span class="highlight">{{ myLoginForm.value.usernameField }}</span>
