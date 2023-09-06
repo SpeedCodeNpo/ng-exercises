@@ -1,5 +1,5 @@
 <div class="boxed">
-  <h2>Login using Reactive Forms</h2>
+  <h2>Login using Template Driven Forms</h2>
   <p>
     Using validation on input fields, disabling submit button until input is
     valid and displaying the submitted values.
@@ -9,44 +9,61 @@
 
   <div class="boxed login-div">
     <h3>Enter your login credentials:</h3>
-    <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+    <form
+      class="form"
+      #myLoginForm="ngForm"
+      (ngSubmit)="onSubmitLogin(myLoginForm)"
+    >
       <label for="username">Username:</label>
       <input
+        required
         type="text"
         id="username"
-        formControlName="username"
-        [class.invalid]="isUsernameError()"
+        name="usernameField"
+        #myUsernameControl="ngModel"
+        [(ngModel)]="myUsername"
+        [class.invalid]="myUsernameControl.invalid && myUsernameControl.touched"
         placeholder="Enter your username"
       />
-      <span *ngIf="isUsernameError()" class="error"
+      <span
+        *ngIf="myUsernameControl.invalid && myUsernameControl.touched"
+        class="error"
         >This feild is required</span
       >
       <br />
-      <label for="email">Email.......:</label>
+      <label for="idEmail">Email.......:</label>
       <input
+        required
         type="email"
-        id="email"
-        formControlName="email"
-        [class.invalid]="isEmailError()"
+        pattern=".+@.+"
+        id="idEmail"
+        name="emailField"
+        #myEmailControl="ngModel"
+        [(ngModel)]="myEmail"
+        [class.invalid]="myEmailControl.invalid && myEmailControl.touched"
         placeholder="Enter your email address"
       />
-      <span *ngIf="isEmailError()" class="error">Need email</span>
+      <span
+        *ngIf="myEmailControl.invalid && myEmailControl.touched"
+        class="error"
+        >Need email</span
+      >
       <br />
-      <button type="submit" [disabled]="!this.isAllFieldsValid()">
+      <button type="submit" [disabled]="!myLoginForm.valid">
         Submit to Login
       </button>
     </form>
   </div>
   <hr />
   <h3>The submitted values are:</h3>
-  <div *ngIf="this.isAllFieldsValid() && isSubmitted">
+  <div *ngIf="myLoginForm.valid">
     <p>
       Username :
-      <span class="highlight">{{ loginForm.value.username }}</span>
+      <span class="highlight">{{ myLoginForm.value.usernameField }}</span>
     </p>
     <p>
       Email :
-      <span class="highlight">{{ loginForm.value.email }}</span>
+      <span class="highlight">{{ myLoginForm.value.emailField }}</span>
     </p>
   </div>
 </div>
