@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Solution version for assignment: card-20230903-1530
+Starter version for assignment: card-20230903-1530
 Subject: Reactive Forms
 
 ## Assignment title : Practice Reactive Forms
