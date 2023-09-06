@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-comp1',
@@ -11,7 +10,7 @@ export class Comp1Component {
   myEmail?: string;
   isSubmitted = false;
 
-  constructor(private fb: FormBuilder) {}
+  constructor() {}
   //=============================================
   // Functions
   //=============================================
