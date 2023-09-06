@@ -37,6 +37,7 @@ Subject: Reactive Forms
 
 ## Interaction with app:
 
+
 ### Screenshot of invalid input and disabled Submit button
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a0b423a8-9954-458b-86c7-93443f29c2fd)
 
