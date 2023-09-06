@@ -28,14 +28,15 @@ Subject: Reactive Forms
 ## App display:
 
 - The app displays two sections:
-  (1) A header and a paragraph with link to the video solution.
+  (1) A header and a paragraph with info on exercise.
+  (2) A form with two input fields and a submit button.
+  (3) A section displayed the result of successful submit.
 
   #### Screenshot of initial page before user interaction :
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/060c04cd-ec3b-4e52-91b8-001f86051471)
 
-  (2) This is the interaction section, it includes two input fields and a button.
-
 ## Interaction with app:
+- The interaction happens in the form section.
 
 
 ### Screenshot of the two fields having inalid input :
