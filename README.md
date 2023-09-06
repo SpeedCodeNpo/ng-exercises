@@ -55,9 +55,12 @@ Subject: Reactive Forms
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/7f200763-1064-4405-ae83-438915de6005)
 
 ## Your task :
-
-- (1)
+- (1) Wireup reactive forms to app.module and comp1 component.
+- (2) Add validation and error effect to the two input fields.
+- (3) Add logic to manage Submit button accessability.
+- (4) Add logic to control the third section showing submitted values.
 
 ## Included in the starter branch :
-
--
+- The styles are predefined in the styles.scss and in comp1 component.
+- The comp1 template is pre-populated with the layout.
+- The comp1 ts class is pre-populated with function and variable names.
