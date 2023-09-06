@@ -44,15 +44,13 @@ Subject: Reactive Forms
 - If fields don't have valid data then the submit button is disabled.
 - When button enabled then clicking it will trigger the third section to display the submitted values.
 
-### Screenshot of the two fields having inalid input :
+### Screenshot of the two fields having inalid input and disabled Submit button:
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/6a134194-9dda-4bb8-af3b-ab9d4685b808)
 
-
+- 
 
 ### Screenshot of invalid input and disabled Submit button
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a0b423a8-9954-458b-86c7-93443f29c2fd)
-
-In the interaction section 
 
 #### Screenshot of page after clicking "Submit" button :
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/7f200763-1064-4405-ae83-438915de6005)
