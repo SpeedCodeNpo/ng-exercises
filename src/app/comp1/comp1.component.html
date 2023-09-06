@@ -9,27 +9,15 @@
 
   <div class="boxed login-div">
     <h3>Enter your login credentials:</h3>
-    <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+    <form class="form">
       <label for="username">Username:</label>
-      <input
-        type="text"
-        id="username"
-        formControlName="username"
-        [class.invalid]="isUsernameError()"
-        placeholder="Enter your username"
-      />
+      <input type="text" id="username" placeholder="Enter your username" />
       <span *ngIf="isUsernameError()" class="error"
         >This feild is required</span
       >
       <br />
       <label for="email">Email.......:</label>
-      <input
-        type="email"
-        id="email"
-        formControlName="email"
-        [class.invalid]="isEmailError()"
-        placeholder="Enter your email address"
-      />
+      <input type="email" id="email" placeholder="Enter your email address" />
       <span *ngIf="isEmailError()" class="error">Need email</span>
       <br />
       <button type="submit" [disabled]="!this.isAllFieldsValid()">
@@ -39,14 +27,14 @@
   </div>
   <hr />
   <h3>The submitted values are:</h3>
-  <div *ngIf="this.isAllFieldsValid() && isSubmitted">
+  <div>
     <p>
       Username :
-      <span class="highlight">{{ loginForm.value.username }}</span>
+      <span class="highlight">place holder</span>
     </p>
     <p>
       Email :
-      <span class="highlight">{{ loginForm.value.email }}</span>
+      <span class="highlight">place holder</span>
     </p>
   </div>
 </div>

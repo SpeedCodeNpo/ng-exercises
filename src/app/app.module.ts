@@ -4,11 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { Comp1Component } from './comp1/comp1.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, Comp1Component],
-  imports: [BrowserModule, HttpClientModule, ReactiveFormsModule],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
