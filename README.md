@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Solution version for assignment: card-20230906-1313
+Starter version for assignment: card-20230906-1313
 Subject: Template Driven Forms
 
 ## Assignment title : Practice Template Driven Forms
