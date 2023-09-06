@@ -8,7 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class Comp1Component {
   myUsername?: string;
-  myEmail?: string ;
+  myEmail?: string;
   isSubmitted = false;
 
   constructor(private fb: FormBuilder) {}
@@ -24,5 +24,9 @@ export class Comp1Component {
       console.log('** WARNINIG ** Failed attempt to login.');
       this.isSubmitted = false;
     }
+  }
+
+  flagOffSubmit() {
+    this.isSubmitted = false;
   }
 } //end comp1
