@@ -1,7 +1,7 @@
 # Ng Exercises
 
 Welcome to Speed Code Exercises
-Solution version for assignment: card-20230903-1530
+Solution version for assignment: card-20230906-1313
 Subject: Reactive Forms
 
 ## Assignment title : Practice Reactive Forms
@@ -10,12 +10,12 @@ Subject: Reactive Forms
 
 (1) Project starter:
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230903-1530-q
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230906-1313-q
 - Stackblitz link:
 
 (2) Project solution:
 
-- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230903-1530-s
+- GitHub link: https://github.com/SpeedCodeNpo/ng-exercises/tree/card-20230906-1313-s
 - Stackblitz link:
 
 ### Assignment goals :
