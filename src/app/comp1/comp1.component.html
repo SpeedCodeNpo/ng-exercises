@@ -9,61 +9,39 @@
 
   <div class="boxed login-div">
     <h3>Enter your login credentials:</h3>
-    <form
-      class="form"
-      #myLoginForm="ngForm"
-      (ngSubmit)="onSubmitLogin(myLoginForm)"
-    >
+    <form class="form">
       <label for="username">Username:</label>
       <input
-        required
         type="text"
         id="username"
-        name="usernameField"
-        #myUsernameControl="ngModel"
-        [(ngModel)]="myUsername"
-        [class.invalid]="myUsernameControl.invalid && myUsernameControl.touched"
+        [class.invalid]="true"
         placeholder="Enter your username"
       />
-      <span
-        *ngIf="myUsernameControl.invalid && myUsernameControl.touched"
-        class="error"
-        >This feild is required</span
-      >
+      <span *ngIf="true" class="error">This feild is required</span>
       <br />
       <label for="idEmail">Email.......:</label>
       <input
-        required
         type="email"
         pattern=".+@.+"
         id="idEmail"
-        name="emailField"
-        #myEmailControl="ngModel"
-        [(ngModel)]="myEmail"
-        [class.invalid]="myEmailControl.invalid && myEmailControl.touched"
+        [class.invalid]="true"
         placeholder="Enter your email address"
       />
-      <span
-        *ngIf="myEmailControl.invalid && myEmailControl.touched"
-        class="error"
-        >Need email</span
-      >
+      <span *ngIf="true" class="error">Need email</span>
       <br />
-      <button type="submit" [disabled]="!myLoginForm.valid">
-        Submit to Login
-      </button>
+      <button type="submit" [disabled]="true">Submit to Login</button>
     </form>
   </div>
   <hr />
   <h3>The submitted values are:</h3>
-  <div *ngIf="myLoginForm.valid && isSubmitted">
+  <div *ngIf="true">
     <p>
       Username :
-      <span class="highlight">{{ myLoginForm.value.usernameField }}</span>
+      <span class="highlight"> place-holder </span>
     </p>
     <p>
       Email :
-      <span class="highlight">{{ myLoginForm.value.emailField }}</span>
+      <span class="highlight"> place-holder </span>
     </p>
     {{ flagOffSubmit() }}
   </div>

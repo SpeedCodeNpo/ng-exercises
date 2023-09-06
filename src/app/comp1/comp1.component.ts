@@ -16,13 +16,6 @@ export class Comp1Component {
   //=============================================
 
   onSubmitLogin(loginForm: any): void {
-    if (loginForm.valid) {
-      console.log('Form was submitted', loginForm.value);
-      this.isSubmitted = true;
-    } else {
-      console.log('** WARNINIG ** Failed attempt to login.');
-      this.isSubmitted = false;
-    }
   }
 
   flagOffSubmit() {
