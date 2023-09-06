@@ -31,6 +31,7 @@ Subject: Reactive Forms
   (1) A header and a paragraph with link to the video solution.
 
   #### Screenshot of initial page before user interaction :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/060c04cd-ec3b-4e52-91b8-001f86051471)
 
   (2) This is the interaction section, it includes two input fields and a button.
 
@@ -38,7 +39,8 @@ Subject: Reactive Forms
 
 In the interaction section 
 
-#### Screenshot of page after clicking "Get User" button :
+#### Screenshot of page after clicking "Submit" button :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/7f200763-1064-4405-ae83-438915de6005)
 
 
 ## Your task :
