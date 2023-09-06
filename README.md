@@ -37,7 +37,12 @@ Subject: Reactive Forms
 
 ## Interaction with app:
 - The interaction happens in the form section.
-
+- The two input fields have validation as follows:
+  - For both fields if left empty then error effect is triggered.
+  - For rmail field if not in an email format then error.
+- The error effect changes color of input field color and displays a message.
+- If fields don't have valid data then the submit button is disabled.
+- When button enabled then clicking it will trigger the third section to display the submitted values.
 
 ### Screenshot of the two fields having inalid input :
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/6a134194-9dda-4bb8-af3b-ab9d4685b808)
