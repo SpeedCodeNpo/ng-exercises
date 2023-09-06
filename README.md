@@ -38,6 +38,11 @@ Subject: Reactive Forms
 ## Interaction with app:
 
 
+### Screenshot of the two fields having inalid input :
+![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/6a134194-9dda-4bb8-af3b-ab9d4685b808)
+
+
+
 ### Screenshot of invalid input and disabled Submit button
 ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/a0b423a8-9954-458b-86c7-93443f29c2fd)
 
