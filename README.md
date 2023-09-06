@@ -2,10 +2,9 @@
 
 Welcome to Speed Code Exercises
 Solution version for assignment: card-20230906-1313
-Subject: Reactive Forms
+Subject: Template Driven Forms
 
-## Assignment title : Practice Reactive Forms
-
+## Assignment title : Practice Template Driven Forms
 ### Assignment Links
 
 (1) Project starter:
@@ -20,21 +19,22 @@ Subject: Reactive Forms
 
 ### Assignment goals :
 
-- Practice Reactive Forms by creating a basic login page
+- Practice Template Driven Forms by creating a basic login page :
   - Use validation on input fields with error styling and message.
   - Enabling the submit button only if input valid.
   - Displaying the submitted data only if submited succesfuly.
 
 ## App display:
 
-- The app displays two sections:
+- The app displays three sections:
   (1) A header and a paragraph with info on exercise.
   (2) A form with two input fields and a submit button.
-  (3) A section displayed the result of successful submit.
+  (3) A section displaying the result of a successful submit.
 
   ## Screenshot of initial page before user interaction :
 
-- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/060c04cd-ec3b-4e52-91b8-001f86051471)
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/72dce3f5-902a-4095-8c18-69cae7dab5fa)
+
 
 ## Interaction with app:
 
@@ -45,17 +45,18 @@ Subject: Reactive Forms
 - The error effect changes color of input field color and displays a message.
 - If fields don't have valid data then the submit button is disabled.
 - When button enabled then clicking it will trigger the third section to display the submitted values.
+- The third section will be hidden if after submit one of the input fields is interacted with.
 
 ## Screenshot of the two fields having inalid input and disabled Submit button:
 
-- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/6a134194-9dda-4bb8-af3b-ab9d4685b808)
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/58642e75-2829-4c15-8e03-e7c322338efb)
 
 ## Screenshot of page after clicking "Submit" button :
 
-- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/7f200763-1064-4405-ae83-438915de6005)
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/69a1054a-e922-4294-8656-8beb621bee1e)
 
 ## Your task :
-- (1) Wireup reactive forms to app.module and comp1 component.
+- (1) Wireup FormsModule to app.module.
 - (2) Add validation and error effect to the two input fields.
 - (3) Add logic to manage Submit button accessability.
 - (4) Add logic to control the third section showing submitted values.
