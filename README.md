@@ -32,7 +32,7 @@ Subject: Reactive Forms
   (2) A form with two input fields and a submit button.
   (3) A section displayed the result of successful submit.
 
-  ### Screenshot of initial page before user interaction :
+  ## Screenshot of initial page before user interaction :
 
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/060c04cd-ec3b-4e52-91b8-001f86051471)
 
@@ -46,13 +46,11 @@ Subject: Reactive Forms
 - If fields don't have valid data then the submit button is disabled.
 - When button enabled then clicking it will trigger the third section to display the submitted values.
 
-### Screenshot of the two fields having inalid input and disabled Submit button:
+## Screenshot of the two fields having inalid input and disabled Submit button:
 
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/6a134194-9dda-4bb8-af3b-ab9d4685b808)
 
--
-
-### Screenshot of page after clicking "Submit" button :
+## Screenshot of page after clicking "Submit" button :
 
 - ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/7f200763-1064-4405-ae83-438915de6005)
 
